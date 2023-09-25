@@ -1,11 +1,11 @@
 # 🌍 Club Website
 
+<img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/site_preview.gif" width=440></img>
+<img src="https://media.discordapp.net/attachments/1147427497290506332/1155458898183061595/Image_9-24-23_at_4.00_AM.jpeg" width=440></img>
+
 An informational website about us, the Skyline College Computer Science Club!
 
-Currently hosted on Vercel @ https://skycsc.vercel.app.
-
-<img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/site_preview.gif" width=500></img>
-<img src="https://media.discordapp.net/attachments/1147427497290506332/1155458898183061595/Image_9-24-23_at_4.00_AM.jpeg" width=500></img>
+🔗 Currently hosted on Vercel @ https://skycsc.vercel.app.
 
 Will ideally contain stuff like showcases for our projects, our social media links & connections, possible Discord + GitHub integrations, a legitimate-looking photo #⌈📷」album, a blog?, resources, and whatever else our club would want to show to the world
 
@@ -18,7 +18,7 @@ Will ideally contain stuff like showcases for our projects, our social media lin
 * If using an external, standalone command-line shell, use the `cd` command like so: `cd "Documents\My Projects\project.ClubWebsite-main"`
 * **If you use VSCode**: after opening the folder, open a new VSCode Terminal; it will automatically navigate itself to the currently open directory. (see below)
   
-<img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/open_folder_and_terminal.gif" width=700></img>
+<img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/open_folder_and_terminal.gif" width=600></img>
 
 3) For this project, you only need to download one installer/program: **[📘Node.js](https://nodejs.org/en)**
 
@@ -37,13 +37,13 @@ yarn dev
 
 Steps 4 & 5 can be seen here:
 
-<img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/npm_install_and_run.gif" width=900></img>
+<img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/npm_install_and_run.gif" width=740></img>
 
 With it running, open http://localhost:3000 in any browser to see your locally hosted website.
 
 You can start by editing the home page; modifying the file `pages/index.js`. The page auto-updates every time you save the file.
 
-After this setup, you only need to run Step 5) to continue editing the project in the future.
+After this initial setup, you will only need to re-run Step 5) to continue editing the project in the future.
 
 ## ⚙️ Important Technical Details
 
