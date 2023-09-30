@@ -1,12 +1,19 @@
-# Club Website
+# 🌍 Club Website
 
-An informational website about the Skyline College Computer Science Club.
+An informational website about us, the Skyline College Computer Science Club.
+
+Plans to contain stuff like showcases for our projects, our social media links & connections, Discord and GitHub integration, a legitimate-looking photo #⌈📷」album, a blog? and whatever else our club would want to showcase.
 
 ## Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+After installing [Node.js](https://nodejs.org/en), run the following command in the directory of the downloaded project to install the required dependencies, which includes the Next.js framework:
+```
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
