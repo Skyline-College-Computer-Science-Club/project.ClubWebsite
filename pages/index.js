@@ -9,83 +9,48 @@ import Col from "react-bootstrap/Col";
 // Feel free to change this accordingly once new officers are elected and/or new roles are added.
 const officers = [
   {
-    name: "Matthew Dacanay",
+    name: "Tyler Kuwada",
     role: "President",
-    imgSrc: "/assets/imgs/phonto.png",
+    imgSrc: "/assets/imgs/tylerkuwadapfp.png",
+    socialLink: "https://www.instagram.com/tyler_kuwada/",
   },
-  { name: "Owen Fan", role: "Vice President", imgSrc: "/" },
-  { name: "Eden Huang", role: "Treasurer", imgSrc: "/" },
-  { name: "Camille Catolos", role: "Secretary", imgSrc: "/" },
-  { name: "John Carlo Manuel", role: "Project Manager", imgSrc: "/" },
-  { name: "Denise Hum", role: "Co-Advisor", imgSrc: "/" },
-  { name: "Bryan Swartout", role: "Co-Advisor", imgSrc: "/" },
+  {
+    name: "Jonas Quiballo", 
+    role: "Vice President", 
+    imgSrc: "/assets/imgs/jonasquiballofixed.png",
+    socialLink: "https://www.instagram.com/_.waffly._/",
+  },
+  {
+    name: "Lance Ruiz",
+    role: "Project Manager",
+    imgSrc: "/assets/imgs/lanceruizpfp.png",
+    socialLink: "",
+  },
+  {
+    name: "Jayan Pintor",
+    role: "Treasurer",
+    imgSrc: "/assets/imgs/jayanpintorpfp.jpg",
+    socialLink: "https://www.instagram.com/0p_photos/"
+  },
+  {
+    name: "Chris Tse",
+    role: "SOCC Advisor/Rep",
+    imgSrc: "/assets/imgs/christsepfp.png",
+    socialLink: "https://www.instagram.com/cchristse/",
+  },
+  {
+    name: "Kaila Bautista", 
+    role: "Secretary", 
+    imgSrc: "/assets/imgs/kailabautistapfp.jpg",
+    socialLink: "https://instagram.com/kqilamae?igshid=OGQ5ZDc2ODk2ZA==",
+  },
+ // { name: "Owen Fan", role: "Vice President", imgSrc: "/" },
+ // { name: "Eden Huang", role: "Treasurer", imgSrc: "/" },
+ // { name: "Camille Catolos", role: "Secretary", imgSrc: "/" },
+ // { name: "John Carlo Manuel", role: "Project Manager", imgSrc: "/" },
+ // { name: "Denise Hum", role: "Co-Advisor", imgSrc: "/" },
+ // { name: "Bryan Swartout", role: "Co-Advisor", imgSrc: "/" },
 ];
-
-// Project lists 2023
-const projects = [
-  {
-    name: "Project 1",
-    desc: "Description...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 2",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 3",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 4",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 5",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 6",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 7",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 8",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 9",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 10",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 11",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 12",
-    desc: "Description...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-];
-
-
 export default function Home() {
   return (
     <>
@@ -112,7 +77,7 @@ export default function Home() {
               <div className="px-lg-5">
                 <h2 className="display-5 fw-bold">About Us</h2>
                 <p>
-                  Story about our club + other things that readers should know
+                  Story about our club + other things that readers should know:
                 </p>
                 <Col className="mb-4">
                   <h3 className="display-6 fw-bold d-flex py-5 justify-content-center">
@@ -129,14 +94,14 @@ export default function Home() {
                       // Read more: https://reactjs.org/docs/lists-and-keys.html#keys
                       <div className="col" key={officer.toString()}>
                         <div className="card border-0">
-                          <Image
-                            // src={officer.imgSrc}
-                            src="/assets/imgs/phonto.png"
-                            className="card-img-top"
-                            width={500}
-                            height={500}
-                            alt={officer.name}
-                          />
+                        <Image
+                          src={officer.imgSrc}
+                          //src="/assets/imgs/pat.jpg"
+                          className="card-img-top"
+                          width={500}
+                          height={500}
+                          alt={officer.name}
+                        />
                           <div className="card-body">
                             <h5 className="card-title text-center">
                               {officer.name}
@@ -144,6 +109,8 @@ export default function Home() {
                             <p className="card-text text-center">
                               {officer.role}
                             </p>
+                            <a className="card-text text-center" href={officer.socialLink}>Social Media
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -162,31 +129,6 @@ export default function Home() {
                 <p>
                   We&apos;re currently planning a few projects! Stay tuned!{" "}
                 </p>
-                <div className="row row-cols-1 row-cols-md-4 g-4 py-5 py-lg-3">
-                {projects.map((project, index) => (
-                      <div className="col" key={project.toString()}>
-                        <div className="card border-0">
-                          <Image
-                            src={project.imgSrc}
-                            className="card-img-top rounded-top"
-                            width={500}
-                            height={350}
-                            alt={project.name}
-                          />
-
-                          <div className={`card-body rounded-bottom ${index % 2 === 0 ? `blue-background` : `yellow-background`}`}>
-                            <h5 className="card-title text-center">
-                              {project.name}
-                            </h5>
-                            <p className="card-text text-center">
-                              {project.desc}
-                            </p>
-                          </div>
-
-                        </div>
-                      </div>
-                    ))}
-                    </div>
                 {/* <div className="col mb-4">
                   <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
                     <div class="col">
