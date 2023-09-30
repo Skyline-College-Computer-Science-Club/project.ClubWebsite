@@ -44,8 +44,8 @@ const officers = [
     imgSrc: "/assets/imgs/christsepfp.png",
     socialLink: "https://www.instagram.com/cchristse/",
   },
-  { name: "Denise Hum", role: "Co-Advisor", imgSrc: "/", socialLink: "" },
-  { name: "Bryan Swartout", role: "Co-Advisor", imgSrc: "/",  socialLink: ""},
+  { name: "Denise Hum", role: "Co-Advisor", imgSrc: "/assets/imgs/phonto.gif", socialLink: "" },
+  { name: "Bryan Swartout", role: "Co-Advisor", imgSrc: "/assets/imgs/phonto.gif",  socialLink: ""},
  // { name: "Owen Fan", role: "Vice President", imgSrc: "/" },
  // { name: "Eden Huang", role: "Treasurer", imgSrc: "/" },
  // { name: "Camille Catolos", role: "Secretary", imgSrc: "/" },
@@ -96,38 +96,21 @@ const projects = [
     desc: "Meow...",
     imgSrc: "/assets/imgs/catCoding.png",
   },
-  {
-    name: "Project 9",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 10",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 11",
-    desc: "Meow...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
-  {
-    name: "Project 12",
-    desc: "Description...",
-    imgSrc: "/assets/imgs/catCoding.png",
-  },
 ];
 
 export default function Home() {
   return (
+
     <>
       <MyNavbar/>
-
       <main id="main-page" className="py-lg-4">
         <section id="hero" className="py-60">
           <Container fluid>
             <Row>
-              <div className="p-5 mb-4 bg-light shadow-sm">
+              <div className='p-5 mb-4 bg-light shadow-sm' style={{
+                  backgroundImage: 'url(/assets/imgs/grid_bg.png)',
+                  backgroundPosition: 'center',
+                }}>
                 <div className="px-lg-5 justify-content-center">
                   <h1 className="display-5 fw-bold text-center">Skyline College&apos;s Computer Science Club</h1>
                   <p className="col-md-12 fs-4 text-center">💾 A STEM club at Skyline College that fosters on student growth for both software engineering and data science. 🌱</p>
@@ -139,8 +122,6 @@ export default function Home() {
 
 
 
-
-        
         <section id="about" className="bg-light">
           <Container fluid>
             <div className="p-5 mb-4 rounded-3">
@@ -151,7 +132,7 @@ export default function Home() {
                 </p>
                 <Col className="mb-4">
                   <h3 className="display-6 fw-bold d-flex py-5 justify-content-center">
-                    🔰 Meet the Leadership!
+                    🔰 Meet the Officers!
                   </h3>
                   {/* Using the css version of Bootstrap since I am not sure on how to rewrite it 
                       with the React-Bootstrap version */}
@@ -162,16 +143,15 @@ export default function Home() {
                       // errors from occurring. I decide to use .toString() on 'officers' since each object
                       // within the list is already unique
                       // Read more: https://reactjs.org/docs/lists-and-keys.html#keys
-                      <div className="col shadow-lg" key={officer.toString()}>
+                      <div className="col shadow-lg rounded-3" key={officer.toString()}>
                         <div className="card border-0">
-                        <Image
-                          src={officer.imgSrc}
-                          //src="/assets/imgs/pat.jpg"
-                          className="card-img-top"
-                          width={500}
-                          height={500}
-                          alt={officer.name}
-                        />
+                          <Image
+                            src={officer.imgSrc}
+                            className="card-img-top"
+                            width={500}
+                            height={500}
+                            alt={officer.name}
+                          />
                           <div className="card-body">
                             <h5 className="card-title text-center">
                               <strong>{officer.name}</strong>
@@ -179,7 +159,7 @@ export default function Home() {
                             <p className="card-text text-center">
                               {officer.role}
                             </p>
-                            <p className="card-text text-center">
+                            <p className="card-text text-center"> { /* implemented by Jonnald */ }
                               <a style={{textDecoration: 'none'}} href={officer.socialLink}><strong>🔗 Social Media</strong></a>
                             </p>
                           </div>
@@ -197,7 +177,7 @@ export default function Home() {
 
 
 
-        <section id="projects" className="col-md-offset-2 bg-light">
+        <section id="projects" className="col-md-offset-2 bg-warn">
           <Container fluid>
             <div className="p-5 mb-4 rounded-3">
               <div className="px-lg-5">
@@ -212,13 +192,13 @@ export default function Home() {
                       <div className="card border-0 shadow">
                         <Image
                           src={project.imgSrc}
-                          className="card-img-top rounded-top"
+                          className="card-img rounded"
                           width={500}
                           height={350}
                           alt={project.name}
                         />
 
-                        <div className={`card-body rounded-bottom ${index % 2 === 0 ? `bg-info bg-gradient` : `bg-warning bg-gradient`}`}>
+                        <div className={`card-body rounded ${index % 2 === 0 ? `bg-info bg-gradient` : `bg-warning bg-gradient `}`}>
                           <h5 className="card-title text-center">
                             {project.name}
                           </h5>
@@ -304,7 +284,7 @@ export default function Home() {
           </Container>
         </section>
       </main>
-      <Footer />
+      <Footer/>
     </>
   );
 }

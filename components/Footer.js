@@ -48,7 +48,14 @@ function FooterIcon(props) {
 // Source for footer design: https://gist.github.com/Luke-zhang-04/7cb523899ca4044f805f0d0909e4c5c1
 export default function Footer() {
   return (
-    <div className="bg-light" id="footer">
+
+    <div className="bg-light" id="footer" style={{
+      backgroundImage: 'url(/assets/imgs/grid_bg.png)',
+      backgroundPosition: 'center',
+    }}>
+
+    <div></div>
+
       <Container className="bg-light">
         <footer className="page-footer font-small pt-4">
           <Container fluid className="text-center">
@@ -134,9 +141,11 @@ export default function Footer() {
               </Col>
             </Row>
           </Container>
-          <div className="text-center py-3">
+
+          <div className="text-center py-3" >
             <p id="copyright-message">{`© Copyright ${new Date().getFullYear()} Skyline College Computer Science Club.`}</p>
           </div>
+
         </footer>
       </Container>
     </div>
