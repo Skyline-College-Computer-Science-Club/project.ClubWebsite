@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";  */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@500&family=Signika:wght@500&family=Source+Code+Pro&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500');
+
+@layer base{
+
+  body {
+    background-color: black;
+    
+  }
+
+  h1.title-main {
+    @apply font-[Poppins];
+  }
+
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+
+  h1.source-code {
+    /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Signika', sans-serif; */
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+}
