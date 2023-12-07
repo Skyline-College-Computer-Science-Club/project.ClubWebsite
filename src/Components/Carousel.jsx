@@ -63,7 +63,7 @@ const Projects = {
     },
 }
 
-const Carousel = () => {
+export default function Carousel() {
     const [play_sfxClick] = useSound(sfxClick)
     const [play_sfxTunedClick] = useSound(sfxTunedClick)
 
@@ -122,6 +122,7 @@ const Carousel = () => {
                                             play_sfxClick()
                                             
                                         }}
+                                        key={projectName}
                                     >
                                         <div key={projectName} className='m-1 relative shadow-md opacity-50 hover:opacity-100 hover:-translate-y-2 transition duration-500 ease-out'>
                                             <img className='object-cover w-80 h-40 rounded-md' src={Projects[projectName].thumbnail} alt={projectName}/>
@@ -139,9 +140,6 @@ const Carousel = () => {
         </div>
     )
 }
-
-export default Carousel
-
 /*
  <div className='shadow-md w-80 h-40'>
     <img className='object-cover w-full h-full' src={previewArtR} alt='Project Preview Artbox'/>

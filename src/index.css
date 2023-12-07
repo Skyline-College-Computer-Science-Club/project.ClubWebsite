@@ -6,15 +6,33 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";  */
 
+/* TODO: merge these URLs together at some point */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@500&family=Signika:wght@500&family=Source+Code+Pro&family=Ubuntu:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500');
 
 @layer base{
 
+  /* scrollbar css */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #252525;
+    border-radius: 20px;
+  }
+
+  :-webkit-scrollbar-thumb:hover {
+    background-color: #454545 !important;
+  }
+
   body {
     background-color: black;
-    
   }
 
   h1.title-main {

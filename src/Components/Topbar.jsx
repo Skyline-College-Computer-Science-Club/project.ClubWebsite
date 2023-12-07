@@ -5,6 +5,8 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 import { useState } from 'react'
 
+const ANNOUNCE_TEXT = '🚧 Mind the mess! Our site is undergoing constant development. 🛠️'
+
 export default function Topbar() {
 
   const [nav, setNav] = useState(false);
@@ -14,7 +16,7 @@ export default function Topbar() {
 
     <div>
         <div className='z-10 bg-gradient-to-b from-[#aa5b00] to-[rgba(87,35,0,0.1)] bg-opacity-25 fixed font-semibold text-md w-full h-[45px] flex justify-between items-center px-4'>
-          <p className='z-1 w-full text-center text-white'>🚧 Mind the mess! This site is undergoing constant development. 🚧</p>
+          <p className='z-1 w-full text-center text-white'>{ANNOUNCE_TEXT}</p>
       </div>
 
       { /* Announcement banner */ }

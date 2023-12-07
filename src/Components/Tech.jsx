@@ -1,65 +1,56 @@
+import { motion } from 'framer-motion'
 import React from 'react'
+import { FaJava } from 'react-icons/fa'
+import { SiJavascript, SiHtml5, SiCss3, SiTypescript, SiPython, SiLua, SiRust, SiCplusplus } from 'react-icons/si'
+
 import CoderCat from '../assets/CoderCat.png'
+
+const TECHNOLOGY_CLASSSET = 'title-main my-auto mx-10 font-semibold text-2xl'
+
+const TECHNOLOGIES = {
+    'JavaScript': (<SiJavascript size={'100%'} color='rgb(255, 220, 50)'/>),
+    'HTML': (<SiHtml5 size={'100%'} color='rgb(255, 80, 50)'/>),
+    'CSS': (<SiCss3 size={'100%'} color='rgb(120, 120, 255)'/>),
+    'TypeScript': (<SiTypescript size={'100%'} color='rgb(80, 120, 255)'/>),
+    'Python': (<SiPython size={'100%'} color='rgb(255, 230, 100)'/>),
+    'Lua': (<SiLua size={'100%'} color='rgb(80, 80, 255)'/>),
+    'Rust': (<SiRust size={'100%'} color='rgb(255, 150, 100)'/>),
+    'C++': (<SiCplusplus size={'100%'} color='rgb(50, 150, 240)'/>),
+    'Java': (<FaJava size={'100%'} color='rgb(255, 100, 100)'/>),
+}
 
 const Tech = () => {
   return (
-    <div name='tech' className = 'w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div name='tech' className='w-full h-[40vh] bg-[#0a192f] text-gray-300 overflow-hidden'>
+        <h1 name='title' className='title-main text-2xl text-center sm:text-4xl text-shadow shadow-black font-bold text-[#e7e9ef]'>Explore Technologies</h1>
 
-        {/*Container*/}
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full '>
-            <div>
-                <p className='text-4xl font-bold inline border-b-4 border-[#4681f4] '>Technologies</p>
-                <p className='py-4'>Technologies we've worked with</p>
-            </div>
-
-            <div className='w-full grid grid-cols-3 sm:grid-cols-4 gap-4 text-center py-8 '>
-                <div className='shadow-md shadow-[#040c16]'>
-                    <img className = "w-20 mx-auto" src={CoderCat} alt="Meow" />
-                    <p className='my-4'>Modify</p>
-                </div>
-
-                <div className='shadow-md shadow-[#040c16]'>
-                    <img className = "w-20 mx-auto" src={CoderCat} alt="Meow" />
-                    <p className='my-4'>Modify</p>
-                </div>
-
-                <div className='shadow-md shadow-[#040c16]'>
-                    <img className = "w-20 mx-auto" src={CoderCat} alt="Meow" />
-                    <p className='my-4'>Modify</p>
-                </div>
-
-                <div className='shadow-md shadow-[#040c16]'>
-                    <img className = "w-20 mx-auto" src={CoderCat} alt="Meow" />
-                    <p className='my-4'>Modify</p>
-                </div>
-
-                <div className='shadow-md shadow-[#040c16]'>
-                    <img className = "w-20 mx-auto" src={CoderCat} alt="Meow" />
-                    <p className='my-4'>Modify</p>
-                </div>
-
-                <div className='shadow-md shadow-[#040c16]'>
-                    <img className = "w-20 mx-auto" src={CoderCat} alt="Meow" />
-                    <p className='my-4'>Modify</p>
-                </div>
-
-                <div className='shadow-md shadow-[#040c16]'>
-                    <img className = "w-20 mx-auto" src={CoderCat} alt="Meow" />
-                    <p className='my-4'>Modify</p>
-                </div>
-
-                <div className='shadow-md shadow-[#040c16]'>
-                    <img className = "w-20 mx-auto" src={CoderCat} alt="Meow" />
-                    <p className='my-4'>Modify</p>
-                </div>
-
-            </div>
+        <div className='my-10 w-[500vw] overflow-hidden  '>
+            <motion.div className='flex' animate={{transform: `translate(100vw)`}} initial={{transform: 'translate(-160vw)'}} transition={{repeat: Infinity, ease: 'linear', duration: 25}}>
+                {Object.entries(TECHNOLOGIES).map(([technology_name]) => {
+                    const className = `flex h-[10vh] mx-5`
+                    return (
+                        <div key={technology_name} className={className}>
+                            {TECHNOLOGIES[technology_name]}
+                            <h1 className={TECHNOLOGY_CLASSSET}>{technology_name}</h1>
+                        </div>
+                    )
+                })}
+            </motion.div>
+            <motion.div className='flex my-8' animate={{transform: `translate(-160vw)`}} initial={{transform: 'translate(100vw)'}} transition={{repeat: Infinity, ease: 'linear', duration: 25, delay: 5}}>
+                {Object.entries(TECHNOLOGIES).map(([technology_name]) => {
+                    const className = `flex h-[10vh] mx-5`
+                    return (
+                        <div key={technology_name} className={className}>
+                            {TECHNOLOGIES[technology_name]}
+                            <h1 className={TECHNOLOGY_CLASSSET}>{technology_name}</h1>
+                        </div>
+                    )
+                })}
+            </motion.div>
+             
         </div>
-
-
-
     </div>
   )
 }
 
-export default Tech
+export default Tech     
