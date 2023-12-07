@@ -21,12 +21,15 @@ const TECHNOLOGIES = {
     'Java': (<FaJava color='rgb(255, 100, 100)' className={TECH_ICON_CLASSES}/>),
 }
 
-const Tech = () => {
+export default function Tech() {
   return (
     <div name='tech' className='w-full h-[40vh] bg-[#0a192f] text-gray-300 overflow-hidden'>
         <h1 name='title' className='title-main text-2xl text-center sm:text-4xl text-shadow shadow-black font-bold text-[#e7e9ef]'>Explore Technologies</h1>
  
-        
+        <div name='vignette-overlay'>
+            {/* left   */} <div className='bg-gradient-to-r from-black to-transparent' style={{position:'absolute', left:0, width:'33%', height:'100%'}}></div>
+            {/* right  */} <div className='bg-gradient-to-l from-black to-transparent' style={{position:'absolute', right:0, width:'33%', height:'100%'}}></div>
+        </div>
 
         <div className='flex my-10 h-[20vh] bg-contain bg-center' style={{backgroundImage: `url(${conveyorTreading})`}}>
             <motion.div className='flex h-full' initial={{transform: 'translateX(-100%)'}} animate={{transform: `translateX(100%)`}} transition={{repeat: Infinity, ease: 'linear', duration: 25}}>
@@ -44,5 +47,3 @@ const Tech = () => {
     </div>
   )
 }
-
-export default Tech     

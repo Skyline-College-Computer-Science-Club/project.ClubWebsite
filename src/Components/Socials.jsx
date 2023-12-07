@@ -1,5 +1,4 @@
 import React from 'react'
-import CoderCat from '../assets/CoderCat.png'
 import {FaBars,FaTimes,FaGithub,FaLinkedin,FaDiscord,FaInstagram} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 
@@ -8,8 +7,7 @@ import { useState } from 'react'
 
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 
-const Socials = () => {
-
+export default function Socials() {
   const [nav, setNav] = useState(false);
 
   const handleClick = () => setNav(!nav);
@@ -47,9 +45,6 @@ const Socials = () => {
 
         </div>
 
-
     </div>
   )
 }
-
-export default Socials

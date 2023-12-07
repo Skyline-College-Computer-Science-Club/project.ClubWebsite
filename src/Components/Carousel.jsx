@@ -1,8 +1,9 @@
 import NavBar from './Topbar';
 
-import { React, useState} from 'react'
-import { SiHtml5, SiCss3, SiJavascript, SiLua, SiPython, SiNodedotjs, SiReact, SiBlender } from 'react-icons/si'
+import { React, useState } from 'react'
+import { SiHtml5, SiCss3, SiJavascript, SiLua, SiPython, SiRust, SiNodedotjs, SiReact, SiBlender } from 'react-icons/si'
 import { FaGithub, FaTrello, FaAngleDoubleUp } from 'react-icons/fa'
+import { BiLogoTypescript } from 'react-icons/bi'
 
 // import Typed from 'react-typed'
 
@@ -17,18 +18,20 @@ import useSound from 'use-sound'
 import sfxClick from '../assets/sound_fx/click.mp3'
 import sfxTunedClick from '../assets/sound_fx/tuned_click.mp3'
 
-const TAG_ATTRIBUTES = `inline mr-1 self-center`
+const TAG_CLASSES = `inline mr-1 self-center`
 const Tags = {
-    'HTML': { color: 'bg-orange-700', icon: (<SiHtml5 className={TAG_ATTRIBUTES}/>) },
-    'CSS': { color: 'bg-blue-700', icon: (<SiCss3 className={TAG_ATTRIBUTES}/>) },
-    'JavaScript': { color:'bg-[#e1790d]', icon: (<SiJavascript className={TAG_ATTRIBUTES}/>) } ,
-    'Lua': { color:'bg-[#0e7490]', icon: (<SiLua className={TAG_ATTRIBUTES}/>) },
-    'Python': { color:'bg-[#0369a1]', icon: (<SiPython className={TAG_ATTRIBUTES}/>) },
+    'HTML': { color: 'bg-orange-700', icon: (<SiHtml5 className={TAG_CLASSES}/>) },
+    'CSS': { color: 'bg-blue-700', icon: (<SiCss3 className={TAG_CLASSES}/>) },
+    'JavaScript': { color:'bg-[#e1790d]', icon: (<SiJavascript className={TAG_CLASSES}/>) } ,
+    'TypeScript': { color:'bg-[#3178C6)]', icon: (<BiLogoTypescript className={TAG_CLASSES}/>) } ,
+    'Lua': { color:'bg-[#0e7490]', icon: (<SiLua className={TAG_CLASSES}/>) },
+    'Python': { color:'bg-[#0369a1]', icon: (<SiPython className={TAG_CLASSES}/>) },
+    'Rust': { color:'bg-[#A16A03]', icon: (<SiRust className={TAG_CLASSES}/>) },
 
-    'Node.js': { color:'bg-[#41722b]', icon: (<SiNodedotjs className={TAG_ATTRIBUTES}/>) },
-    'React': { color:'bg-[#3a7b8c]', icon: (<SiReact className={TAG_ATTRIBUTES}/>) },
+    'Node.js': { color:'bg-[#41722b]', icon: (<SiNodedotjs className={TAG_CLASSES}/>) },
+    'React': { color:'bg-[#3a7b8c]', icon: (<SiReact className={TAG_CLASSES}/>) },
 
-    'Blender': { color:'bg-[#e1790d]', icon: (<SiBlender className={TAG_ATTRIBUTES}/>) },
+    'Blender': { color:'bg-[#e1790d]', icon: (<SiBlender className={TAG_CLASSES}/>) },
 }
 
 const Projects = {
@@ -84,8 +87,10 @@ export default function Carousel() {
                     {/* left   */} <div className='bg-gradient-to-r from-black to-transparent' style={{position:'absolute', left:0, width:'33%', height:'100%'}}></div>
                 </div>
 
+                { /* The main background preview video clip */ }
                 <video name='project-backdrop' className=' w-full h-full object-cover' src={projectDetails.backdrop || fallBackdrop} preload='auto' autoPlay muted loop/>
 
+                { /* Bottom projects drawer selector, along with left-side project details */ }
                 <div name='project-drawer' className='mx-2' style={{position:'absolute', bottom:0}}>
 
                     <div name='project-info' className='p-4 z-10 -translate-y-[calc(50vh-5rem)]' style={{position:'absolute', top:0, width:'100%', height:'100%'}}>

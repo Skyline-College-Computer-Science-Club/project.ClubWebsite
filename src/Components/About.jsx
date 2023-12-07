@@ -1,6 +1,4 @@
-import React from 'react'
-
-const About = () => {
+export default function About() {
   return (
 
     <div name='about' className='w-full h-screen bg-gradient-to-b from-black to-[#0a192f] text-gray-300'>
@@ -31,5 +29,3 @@ const About = () => {
     </div>
   )
 }
-
-export default About

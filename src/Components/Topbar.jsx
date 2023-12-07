@@ -54,7 +54,7 @@ export default function Topbar() {
         {/* Mobile Menu */}
         <div className={ !nav ? 'hidden' : ' absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
 
-            <ul  className=''>
+            <ul className=''>
                 <li className='py-6 text-4xl'>
                   <Link onClick={handleClick} to='home' smooth='true' duration={500}>
                     Home
