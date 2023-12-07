@@ -1,4 +1,4 @@
-# 🌍 Club Website - Hosted on Vercel @ https://skycsc.vercel.app.
+# 🌍 Club Website - Hosted on Vercel @ https://skylinecsc-git-technology-update-skylinecsclub.vercel.app.
 
 <img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/site_preview2.gif" width=420></img>
 <img src="https://media.discordapp.net/attachments/1147427497290506332/1155458898183061595/Image_9-24-23_at_4.00_AM.jpeg" width=420></img>
