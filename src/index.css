@@ -12,44 +12,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500');
 
 @layer base{
+    /* scrollbar css */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
 
-  /* scrollbar css */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
 
-  ::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
+    ::-webkit-scrollbar-thumb {
+        background-color: #252525;
+        border-radius: 20px;
+    }
 
-  ::-webkit-scrollbar-thumb {
-    background-color: #252525;
-    border-radius: 20px;
-  }
+    :-webkit-scrollbar-thumb:hover {
+        background-color: #454545 !important;
+    }
 
-  :-webkit-scrollbar-thumb:hover {
-    background-color: #454545 !important;
-  }
+    body {
+        background-color: black;
+    }
 
-  body {
-    background-color: black;
-  }
+    p {
+        color: white;
+    }
 
-  h1.title-main {
-    @apply font-[Poppins];
-  }
+    h1 {
+        color: white;
+    }
 
-  li {
-    @apply px-4;
-    @apply cursor-pointer;
-  }
+    h1.title-main {
+        @apply font-[Poppins];
+    }
 
-  h1.source-code {
-    /* font-family: 'Open Sans', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Signika', sans-serif; */
-    /* font-family: 'Source Code Pro', monospace; */
-    font-family: 'Ubuntu', sans-serif;
-  }
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
 
+    h1.source-code {
+        /* font-family: 'Open Sans', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Signika', sans-serif; */
+        /* font-family: 'Source Code Pro', monospace; */
+        font-family: 'Ubuntu', sans-serif;
+    }
 }

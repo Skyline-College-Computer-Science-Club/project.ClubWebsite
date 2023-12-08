@@ -34,6 +34,7 @@ const Tags = {
     'Blender': { color:'bg-[#e1790d]', icon: (<SiBlender className={TAG_CLASSES}/>) },
 }
 
+// TODO: Continue to fill these out
 const Projects = {
     'Join us on GitHub & Trello': {
         backdrop: drop1,
@@ -94,7 +95,7 @@ export default function Carousel() {
                 <div name='project-drawer' className='mx-2' style={{position:'absolute', bottom:0}}>
 
                     <div name='project-info' className='p-4 z-10 -translate-y-[calc(50vh-5rem)]' style={{position:'absolute', top:0, width:'100%', height:'100%'}}>
-                        <p className='text-4xl font-bold max-w-lg text-gray-100 text-shadow shadow-gray-500'>{currentProject}</p>
+                        <p className='text-4xl font-bold max-w-lg text-gray-100 text-shadow shadow-gray-700'>{currentProject}</p>
                         {/* <Typed className='text-4xl font-bold' strings={[currentProject]} typeSpeed={120} backSpeed={120} backDelay={3000} loop></Typed> */}
                         <p className='py-2 font-xl max-w-md text-shadow-lg text-gray-200 shadow-gray-900'>{projectDetails.description}</p>
 
@@ -112,7 +113,7 @@ export default function Carousel() {
                     </div>
 
                     <div className='translate-y-20 hover:translate-y-0 transition duration-700 ease-out'>
-                        <FaAngleDoubleUp className='-translate-y-[10] mx-auto' size={30}/>
+                        {/* <FaAngleDoubleUp className='-translate-y-[10] mx-auto' size={30}/> */}
                         <div className='flex'>
                             {Object.entries(Projects).map(([projectName]) => 
                                 (
@@ -125,7 +126,6 @@ export default function Carousel() {
                                         onMouseEnter={() => {
                                             console.log('Hovered to preview project: "' + projectName + '"') 
                                             play_sfxClick()
-                                            
                                         }}
                                         key={projectName}
                                     >
@@ -146,7 +146,7 @@ export default function Carousel() {
     )
 }
 /*
- <div className='shadow-md w-80 h-40'>
+<div className='shadow-md w-80 h-40'>
     <img className='object-cover w-full h-full' src={previewArtR} alt='Project Preview Artbox'/>
     <p className='absolute bottom-0 '>Description</p>
     <div className='absolute top-0 w-full h-full bg-gradient-to-t from-black to-transparent'></div>
