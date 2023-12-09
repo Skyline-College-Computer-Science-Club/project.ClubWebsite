@@ -15,11 +15,12 @@ export default function About() {
                         <p>Hi! Nice to meet ya'll. Please take a look around.</p>
                     </div>
 
-                    <p className = 'text-[16px]'>
+                    <p className='text-[16px]'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.Harum natus iste ipsa molestias eum beatae illo culpa ipsum voluptates, maxime optio aperiam. Et exercitationem magni suscipit! Recusandae perferendis impedit reiciendis!
                     </p>
                 </div>
             </div>
+
         </div>
     )
 }

@@ -91,26 +91,26 @@ export default function Carousel() {
                 { /* The main background preview video clip */ }
                 <video name='project-backdrop' className=' w-full h-full object-cover' src={projectDetails.backdrop || fallBackdrop} preload='auto' autoPlay muted loop/>
 
+                <div name='project-info' className='p-4 z-0' style={{position:'absolute', top:'27.5%', width:'100%', height:'100%'}}>
+                    <p className='text-4xl font-bold max-w-lg text-gray-100 text-shadow shadow-gray-700'>{currentProject}</p>
+                    {/* <Typed className='text-4xl font-bold' strings={[currentProject]} typeSpeed={120} backSpeed={120} backDelay={3000} loop></Typed> */}
+                    <p className='py-2 font-xl max-w-md text-shadow-lg text-gray-200 shadow-gray-900'>{projectDetails.description}</p>
+
+                    <div name='project-badges'>
+                        {projectDetails.tags.map((tag) => ( 
+                            <div className={`text-sm ${Tags[tag].color} shadow-sm text-gray-100 bg-opacity-75 mr-1 font-semibold px-2 py-1 rounded-md inline-block`}>{Tags[tag].icon}{tag}</div>
+                            // <div className={`text-sm shadow-sm shadow-white text-gray-100 bg-opacity-90 mr-1 font-semibold px-2 py-1 rounded-md inline-block`}>{Tags[tag].icon}{tag}</div>
+                        ))}
+                    </div> 
+
+                    <div name='project-links' className='py-4'>
+                        <a href={projectDetails.github} target='_blank' rel='noreferrer'><FaGithub className='inline mx-1' size={30}/></a>
+                        <a href={projectDetails.trello} target='_blank' rel='noreferrer'><FaTrello className='inline mx-1' size={30}/></a>
+                    </div>  
+                </div>
+
                 { /* Bottom projects drawer selector, along with left-side project details */ }
                 <div name='project-drawer' className='mx-2' style={{position:'absolute', bottom:0}}>
-
-                    <div name='project-info' className='p-4 z-10 -translate-y-[calc(50vh-5rem)]' style={{position:'absolute', top:0, width:'100%', height:'100%'}}>
-                        <p className='text-4xl font-bold max-w-lg text-gray-100 text-shadow shadow-gray-700'>{currentProject}</p>
-                        {/* <Typed className='text-4xl font-bold' strings={[currentProject]} typeSpeed={120} backSpeed={120} backDelay={3000} loop></Typed> */}
-                        <p className='py-2 font-xl max-w-md text-shadow-lg text-gray-200 shadow-gray-900'>{projectDetails.description}</p>
-
-                        <div name='project-badges'>
-                            {projectDetails.tags.map((tag) => ( 
-                                <div className={`text-sm ${Tags[tag].color} shadow-sm text-gray-100 bg-opacity-75 mr-1 font-semibold px-2 py-1 rounded-md inline-block`}>{Tags[tag].icon}{tag}</div>
-                                // <div className={`text-sm shadow-sm shadow-white text-gray-100 bg-opacity-90 mr-1 font-semibold px-2 py-1 rounded-md inline-block`}>{Tags[tag].icon}{tag}</div>
-                            ))}
-                        </div> 
-
-                        <div name='project-links' className='py-4'>
-                            <a href={projectDetails.github} target='_blank' rel='noreferrer'><FaGithub className='inline mx-1' size={30}/></a>
-                            <a href={projectDetails.trello} target='_blank' rel='noreferrer'><FaTrello className='inline mx-1' size={30}/></a>
-                        </div>  
-                    </div>
 
                     <div className='translate-y-20 hover:translate-y-0 transition duration-700 ease-out'>
                         {/* <FaAngleDoubleUp className='-translate-y-[10] mx-auto' size={30}/> */}
