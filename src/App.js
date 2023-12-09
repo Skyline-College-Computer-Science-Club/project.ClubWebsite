@@ -1,17 +1,13 @@
-import Topbar from './Components/Topbar';
-import Home from './Components/Home';
-import About from './Components/About';
-import Tech from './Components/Tech';
-import Contact from './Components/Contact';
-import History from './Components/History'
-import Socials from './Components/Socials';
-import ProjectCarousel from './Components/Carousel';
+import Topbar from './components/Topbar';
+import Home from './components/Home';
+import About from './components/About';
+import Tech from './components/Tech';
+import Contact from './components/Contact';
+import History from './components/History'
+import Socials from './components/Socials';
+import ProjectCarousel from './components/Carousel';
 
-/*
-
-*/
-
-function App() {
+export default function App() {
     return (
         <div>
             <Topbar/>
@@ -25,5 +21,3 @@ function App() {
         </div>
     );
 }
-
-export default App;
