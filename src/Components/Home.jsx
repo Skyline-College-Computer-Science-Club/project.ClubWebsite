@@ -6,12 +6,12 @@ import { Link } from 'react-scroll'
 
 import backdrop from '../assets/backdrop.png'
 
-const TYPED_KEYWORDS = ['Design','Explore','Build', 'Share Code', 'Collaborate', 'Nurture', '$ git commit']
+const TYPED_KEYWORDS = ['Design','Explore','Build', 'Learn', 'Collaborate', 'Develop', 'Delegate', '$ git commit']
 
 export default function Home() {
     return (
         <div name='home' className='w-full h-screen bg-[#0a192f]'>
-            <img className='absolute w-full h-[99vh] blur-sm object-cover' src={backdrop} alt='background banner'/>
+            <img className='absolute w-full h-[99vh] blur-[1px] object-cover' src={backdrop} alt='background banner'/>
 
             {/* INTRODUCTION */}
             <div className='absolute w-full h-full mx-auto flex flex-col justify-center'>

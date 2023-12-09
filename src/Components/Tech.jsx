@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+
+
 import { FaJava } from 'react-icons/fa'
 import { SiJavascript, SiHtml5, SiCss3, SiTypescript, SiPython, SiLua, SiRust, SiCplusplus } from 'react-icons/si'
 
@@ -35,7 +37,7 @@ export default function Tech() {
 
                 {/* <div className='z-10 flex my-10 h-[10vw] bg-contain bg-center' style={{backgroundImage: `url(${conveyorTreading})`}}> */}
                 <div className='z-10 flex my-10 h-[10vw] bg-repeat-x bg-bottom' style={{backgroundImage: `url(${conveyorFront})`}}>
-                    <motion.div className='flex h-full' initial={{transform: 'translateX(-100%)'}} animate={{transform: `translateX(100%)`}} transition={{repeat: Infinity, ease: 'linear', duration: 45}}>
+                    <motion.div className='flex h-full' initial={{transform: 'translateX(-100%)'}} animate={{transform: `translateX(100vw)`}} transition={{repeat: Infinity, type: 'tween', ease: 'linear', duration: 40    }}>
                         {Object.entries(TECHNOLOGIES).map(([technology_name]) => {
                             const className = `flex h-full mx-5`
                             return (
