@@ -1,4 +1,4 @@
-import NavBar from './Topbar';
+// import NavBar from './Topbar';
 
 import { React, useState } from 'react'
 import { SiHtml5, SiCss3, SiJavascript, SiLua, SiPython, SiRust, SiNodedotjs, SiReact, SiBlender } from 'react-icons/si'
@@ -6,13 +6,12 @@ import { FaGithub, FaTrello, FaAngleDoubleUp } from 'react-icons/fa'
 import { BiLogoTypescript } from 'react-icons/bi'
 
 // import Typed from 'react-typed'
-
 import fallBackdrop from '../assets/projects/backdrops/mw2.mp4'
 import drop1 from '../assets/projects/backdrops/mw2019_cleanhouse.mp4'
 import previewArt1 from '../assets/projects/thumbnails/roblox.jpg'
 import previewArt2 from '../assets/projects/thumbnails/art1.png'
 import previewArt3 from '../assets/projects/thumbnails/art2.png'
-import githubTrello from '../assets/projects/thumbnails/github+trello.png'
+import githubTrello from '../assets/projects/thumbnails/github_trello.png'
 
 import useSound from 'use-sound'
 import sfxClick from '../assets/sound_fx/click.mp3'
@@ -77,7 +76,7 @@ export default function Carousel() {
     return (
         <div name='carousel'>
 
-            <NavBar/>
+            {/* <NavBar/> */}
 
             {/* translate-y-20 h-[calc(100vh-80px)] */}
             <div className='w-full translate-y-20 h-[calc(100vh-80px)] overflow-y-hidden bg-[#0a192f] text-gray-300'>
@@ -102,7 +101,7 @@ export default function Carousel() {
                             // <div className={`text-sm shadow-sm shadow-white text-gray-100 bg-opacity-90 mr-1 font-semibold px-2 py-1 rounded-md inline-block`}>{Tags[tag].icon}{tag}</div>
                         ))}
                     </div> 
-
+                    
                     <div name='project-links' className='py-4'>
                         <a href={projectDetails.github} target='_blank' rel='noreferrer'><FaGithub className='inline mx-1' size={30}/></a>
                         <a href={projectDetails.trello} target='_blank' rel='noreferrer'><FaTrello className='inline mx-1' size={30}/></a>

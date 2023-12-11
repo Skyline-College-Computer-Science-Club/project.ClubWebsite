@@ -26,7 +26,7 @@ npm install
 ```
 You should see a new folder `node_modules` with said dependancies.
 
-5) Now that we have all our required resources, you can now test-run and host the website on your local computer using:
+5) Now that we have all our required libaries, you can now test-run and host the website on your local computer using:
 ```bash
 npm run dev
 # or
