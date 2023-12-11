@@ -1,4 +1,7 @@
 # 🌍 Club Website
+Large parts of this README.md are in need of refactoring, with outdated information being crossed out.
+
+These preview .gifs are out of date as of 12/11/23.
 
 <img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/site_preview2.gif" width=400></img>
 <img src="https://media.discordapp.net/attachments/1147427497290506332/1155458898183061595/Image_9-24-23_at_4.00_AM.jpeg" width=400></img>
@@ -10,28 +13,32 @@ Will serve stuff like showcases for our projects, social media links & connectio
 
 ## 🔰 Quick Setup / Getting Started
 
-1) First off, download a local copy of the project to your computer. 
-* You can do so by clicking the green `<> Code` button above, then clicking on "Download ZIP".
+1) First off, clone a local copy of the project to your computer.
 
+* Simply create a new folder where you'll store the project, open Terminal pointing at said folder (use `cd`), and run `git clone <URL>`.
+* You can retrieve the URL link by clicking the green `<> Code` button above.
+
+<s>
 2) Extract the contents of the .zip into a folder, and open a command-line shell and CD into the directory of said folder.
 * If using an external, standalone command-line shell, use the `cd` command like so: `cd "Documents\My Projects\project.ClubWebsite-main"`
 * **If you use VSCode**: after opening the folder, open a new VSCode Terminal; it will automatically navigate itself to the currently open directory. (see below)
+</s>
   
 <img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/open_folder_and_terminal.gif" width=600></img>
 
-3) For this project, you only need to download one installer/program: **[📘Node.js](https://nodejs.org/en)**
+3) For this project, you only need to manually download **[📘Node.js](https://nodejs.org/en)**
 
 4) After installing Node.js, run the following command in the directory of the downloaded project to install our project's required dependencies, which includes React and the Next.js frameworks:
 ```
 npm install
 ```
-You should see a new folder `node_modules` with said dependancies.
+You should see a new folder `node_modules` appear in the project directory with said project dependancies.
 
 5) Now that we have all our required libaries, you can now test-run and host the website on your local computer using:
 ```bash
-npm run dev
+npm start
 # or
-yarn dev
+yarn start
 ```
 
 Steps 4 & 5 can be seen here:
@@ -40,10 +47,12 @@ Steps 4 & 5 can be seen here:
 
 With it running, open http://localhost:3000 in any browser to see your locally hosted website.
 
-You can start by editing the home page; modifying the file `pages/index.js`. The page auto-updates every time you save the file.
+You can start by editing the modules inside of the `./src` directory. The page auto-updates every time you make changes and save any file.
 
 After this initial setup, you will only need to re-run Step 5) to continue editing the project in the future.
 
+<s>
+  
 ## ⚙️ Important Technical Details
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -51,6 +60,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
 
 ## 📚 Important Resources and Documentation
 
@@ -61,6 +71,7 @@ To **learn more** about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+</s>
 
 ## Deploy on Vercel
 
