@@ -1,4 +1,4 @@
-# 🌍 Club Website 
+# 🌍 Club Website
 
 <img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/site_preview2.gif" width=400></img>
 <img src="https://media.discordapp.net/attachments/1147427497290506332/1155458898183061595/Image_9-24-23_at_4.00_AM.jpeg" width=400></img>
@@ -27,7 +27,7 @@ npm install
 ```
 You should see a new folder `node_modules` with said dependancies.
 
-5) Now that we have all our required resources, you can now test-run and host the website on your local computer using:
+5) Now that we have all our required libaries, you can now test-run and host the website on your local computer using:
 ```bash
 npm run dev
 # or
