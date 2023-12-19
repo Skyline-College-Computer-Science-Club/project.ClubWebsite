@@ -1,11 +1,10 @@
-import React from 'react'
-import CoderCat from '../assets/CoderCat.png'
+import { React, useState } from 'react'
+import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
-import { Link } from 'react-scroll'
-import { useState } from 'react'
+import mascot from '../assets/mascot.png'
 
-const ANNOUNCE_TEXT = '🚧 Mind the mess! Our site is undergoing constant development. 🛠️'
+const ANNOUNCE_TEXT = '🚧 Welcome! Mind the mess—our website is undergoing constant development. 👷'
 
 export default function Topbar() {
 
@@ -14,18 +13,19 @@ export default function Topbar() {
 
     return (
         <div>
-            <div className='z-10 bg-gradient-to-b from-[#aa5b00] to-[rgba(87,35,0,0.1)] bg-opacity-25 fixed font-semibold text-md w-full h-[45px] flex justify-between items-center px-4'>
-                <p className='z-1 w-full text-center text-white'>{ANNOUNCE_TEXT}</p>
+            { /* Announcement banner */ }
+            <div className='z-50 bg-gradient-to-b from-[#33200d] to-[#000000] fixed font-semibold text-md w-full h-[45px] flex justify-between items-center px-4'>
+                <p className='w-full text-center text-orange-200'>{ANNOUNCE_TEXT}</p>
             </div>
 
-            { /* Announcement banner */ }
-            <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#1d1d1d00] top-[45px] text-gray-300'>
+            { /* Top bar */ }
+            <div className='z-50 fixed w-full h-[80px] flex justify-between items-center bg-[#1d1d1d00] top-[45px] text-gray-300'>
 
-                <div>
-                    <img src={CoderCat} alt="Skyline CSC Logo (The Cat)" className='rounded-2xl' style={{width:'50px'}}/>
-                </div>
+                <div className='z-10 bg-gradient-to-b from-black to-transparent absolute top-0 w-full h-[45%]'></div>
 
-                <div>
+                <img src={mascot} alt="Skyline CSC Logo (The Cat)" className='z-20 drop-shadow-lg ml-4 rounded-2xl hover:rotate-180' style={{width:'50px'}}/>
+
+                <div className='mr-4'>
                     <ul className='hidden md:flex'>
                         <li className='text-white font-semibold'>
                         <Link to='home' smooth={true} duration={500}>

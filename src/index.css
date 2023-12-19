@@ -42,7 +42,7 @@
         color: white;
     }
 
-    h1.title-main {
+    .title-main {
         @apply font-[Poppins];
     }
 

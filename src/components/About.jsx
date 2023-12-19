@@ -12,11 +12,11 @@ export default function About() {
 
                 <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                     <div className='sm:text-right text-4xl font-bold '>
-                        <p>Hi! Nice to meet ya'll. Please take a look around.</p>
+                        <p>Welcome!</p>
                     </div>
 
                     <p className='text-[16px]'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Harum natus iste ipsa molestias eum beatae illo culpa ipsum voluptates, maxime optio aperiam. Et exercitationem magni suscipit! Recusandae perferendis impedit reiciendis!
+                        We are a STEM club fostering community-based student growth in software engineering, design & development. 🌱
                     </p>
                 </div>
             </div>

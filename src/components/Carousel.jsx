@@ -17,7 +17,7 @@ import useSound from 'use-sound'
 import sfxClick from '../assets/sound_fx/click.mp3'
 import sfxTunedClick from '../assets/sound_fx/tuned_click.mp3'
 
-const TAG_CLASSES = `inline mr-1 self-center`
+const TAG_CLASSES = 'inline mr-1 self-center'
 const Tags = {
     'HTML': { color: 'bg-orange-700', icon: (<SiHtml5 className={TAG_CLASSES}/>) },
     'CSS': { color: 'bg-blue-700', icon: (<SiCss3 className={TAG_CLASSES}/>) },
@@ -118,7 +118,7 @@ export default function Carousel() {
                                 (
                                     <button 
                                         onClick={() => {
-                                            console.log('Clicked to show project: "' + projectName + '"')    
+                                            console.log('Clicked to show project: "' + projectName + '"')
                                             play_sfxTunedClick()
                                             setCurrentProject(projectName)
                                         }}

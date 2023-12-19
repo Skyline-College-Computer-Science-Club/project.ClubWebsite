@@ -1,18 +1,19 @@
 import { motion } from 'framer-motion'
-import React from 'react'
 
+import React from 'react'
+import Typed from 'react-typed'
+import useSound from 'use-sound'
 
 import { FaJava } from 'react-icons/fa'
 import { SiJavascript, SiHtml5, SiCss3, SiTypescript, SiPython, SiLua, SiRust, SiCplusplus } from 'react-icons/si'
 
-import conveyorTreading from '../assets/conveyor_treading.png'
-import conveyorFront from '../assets/conveyor_front.png'
-
-import CoderCat from '../assets/CoderCat.png'
+import sfxClick from '../assets/sound_fx/click.mp3'
+import conveyorFront from '../assets/home/conveyor_front.png'
+import kittyAstro from '../assets/home/kitty_astro.png'
 
 const TECH_TEXT_CLASSES = 'title-main my-auto mx-10 font-semibold text-2xl'
-const TECH_ICON_SHADOW = {filter: 'drop-shadow(4px 4px 2px rgba(0, 0, 0, 1))'}
-const TECH_ICON_CLASSES = 'my-auto w-[4vw] h-full shadow-lg duration-200  hover:scale-110'
+const TECH_ICON_SHADOW = { filter: 'drop-shadow(4px 4px 2px rgba(0, 0, 0, 1))' }
+const TECH_ICON_CLASSES = 'my-auto w-[4vw] h-full shadow-lg'
 
 const TECHNOLOGIES = {
     'JavaScript': (<SiJavascript color='rgb(255, 220, 50)' className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
@@ -27,23 +28,35 @@ const TECHNOLOGIES = {
 }
 
 export default function Tech() {
+
+    const [play_click] = useSound(sfxClick)
+
     return (
-        <div name='tech' className='w-full h-[40vh] text-gray-300 overflow-hidden'>
-            <h1 name='title' className='title-main text-2xl text-center sm:text-4xl text-shadow shadow-gray-700 font-bold text-[#e7e9ef]'>Explore Technologies</h1>
+        <div name='tech' className='w-full h-[50vh] my-80 text-gray-300 overflow-hidden'>
+
+            <motion.img width={'6%'} src={kittyAstro} className='mx-auto my-10' initial={{transform: 'translateY(-10%)'}}  animate={{transform: `translateY(10%)`}} transition={{repeat: Infinity, repeatType: 'mirror', type: 'tween', ease: 'linear', duration: 2 }}/>
+            
+            <h1 className='title-main mx-auto text-2xl text-center sm:text-4xl font-extrabold text-[#e7e9ef]'>
+                <span className='text-shadow shadow-gray-700'>Join us in Exploring</span> <Typed name='title' strings={['Technologies', 'Libraries', 'Frameworks', 'Software']} typeSpeed={50} backSpeed={75} backDelay={5000} loop className='bg-gradient-to-t from-yellow-300 to-green-400 bg-clip-text text-transparent'></Typed>
+            </h1>
+
+            {/* <h1 className='my-10 title-main text-2xl bg-gradient-to-t from-white to-green-400 bg-clip-text text-transparent inline-block w-full  text-center sm:text-4xl font-bold'>Sample Text</h1> */}
 
             <div className='relative'>
-                {/* left   */} <div className='z-20 absolute bg-gradient-to-r from-black to-transparent left-0 h-full w-[28vw] pointer-events-none'></div>
-                {/* right  */} <div className='z-20 absolute bg-gradient-to-l from-black to-transparent right-0 h-full w-[28vw] pointer-events-none'></div>
+                {/* left   */} <div className='z-10 absolute bg-gradient-to-r from-black to-transparent left-0 h-full w-[28vw] pointer-events-none'></div>
+                {/* right  */} <div className='z-10 absolute bg-gradient-to-l from-black to-transparent right-0 h-full w-[28vw] pointer-events-none'></div>
 
                 {/* <div className='z-10 flex my-10 h-[10vw] bg-contain bg-center' style={{backgroundImage: `url(${conveyorTreading})`}}> */}
-                <div className='z-10 flex my-10 h-[10vw] bg-repeat-x bg-bottom' style={{backgroundImage: `url(${conveyorFront})`}}>
-                    <motion.div className='flex h-full' initial={{transform: 'translateX(-100%)'}} animate={{transform: `translateX(100vw)`}} transition={{repeat: Infinity, type: 'tween', ease: 'linear', duration: 40    }}>
+                <div className='flex my-10 h-[18vh] bg-repeat-x bg-bottom' style={{backgroundImage: `url(${conveyorFront})`}}>
+                    <motion.div className='flex h-full' initial={{transform: 'translateX(-100%)'}} animate={{transform: `translateX(100vw)`}} transition={{repeat: Infinity, type: 'tween', ease: 'linear', duration: 40 }}>
                         {Object.entries(TECHNOLOGIES).map(([technology_name]) => {
-                            const className = `flex h-full mx-5`
                             return (
-                                <div key={technology_name} className={className}>
+                                <div onMouseEnter={() => {
+                                    play_click()
+                                }} 
+                                key={technology_name} className='flex h-full mx-5 hover:scale-110 duration-200'>
                                     {TECHNOLOGIES[technology_name]}
-                                    <h1 className={TECH_TEXT_CLASSES}>{technology_name}</h1>
+                                    <Typed strings={[technology_name]} className={TECH_TEXT_CLASSES}></Typed>
                                 </div>
                             )
                         })}
