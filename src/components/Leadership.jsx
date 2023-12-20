@@ -68,7 +68,7 @@ function LeaderCard(props) {
 
 export default function Leadership() {
     return (
-        <div name='leadership' className='w-full h-full my-80 bg-gradient-to-b from-black via-[#0e2402] to-black text-gray-300'>
+        <div name='leadership' className='w-full h-full py-80 bg-gradient-to-b from-slate-950 via-[#0e2402] to-black text-gray-300'>
             <div className='flex flex-col justify-center items-center w-full h-full'>
                 <h1 className='title-main mx-auto my-4 text-3xl font-semibold inline border-b-2 border-[#86f446] drop-shadow-[0_0_60px_rgba(50,255,50,1)]'>Our Club Leadership</h1>
                 <div className='grid grid-cols-4 gap-4 my-4 mx-[20%]'>

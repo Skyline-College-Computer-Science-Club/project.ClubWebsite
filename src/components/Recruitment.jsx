@@ -1,8 +1,6 @@
-import React from 'react'
-
-export default function Contact() {
+export default function Recruitment() {
     return (
-        <div name = "contact" className='w-full h-screen flex justify-center items-center p-4'>
+        <div name="recruitment" className='w-full h-screen flex justify-center items-center p-4'>
             <iframe title='discord' className='mx-10' src="https://ptb.discord.com/widget?id=939701223144185867&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             <form action="" className='flex flex-col max-w-[600px] w-full '>
                 <div className='pb-8'>
