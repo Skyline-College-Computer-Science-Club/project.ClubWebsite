@@ -33,12 +33,13 @@ export const leadership = {
         'linktree': 'https://www.linktr.ee/devalto',
         'instagram': '',
         'github': 'https://www.github.com/dev-alto',
-        'website': 'https://the-devalto-experiments.000webhostapp.com/'
+        'website': 'https://the-devalto-experiments.000webhostapp.com/',
+        'quote': 'This is for the record. History is written by the victor. History is filled with liars.'
     },
     'Chris Tse': {
         'role': 'SOCC Advisor',
         'imgSrc': lanceruiz,
-        'linktree': '',
+        'linktree': 'https://linktr.ee/isaiahrashadfan',
         'instagram': 'https://www.instagram.com/cchristse/'
     },
     'Denise Hum': {

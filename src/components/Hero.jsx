@@ -15,16 +15,15 @@ export default function Hero() {
         <div name='hero' className='w-full h-screen bg-[#0a192f]'>
             <img className='absolute w-full h-[99vh] blur-[0px] object-cover' src={backdrop} alt='background banner'/>
 
-            {/* INTRODUCTION */}
             <div className='absolute w-full h-full mx-auto flex flex-col justify-center'>
                 
                 <img src={heroOverlay} className='opacity-30 absolute top-0 w-full h-full' alt='overlay'/>
                 
                 <div name='vignette-overlay'>
                     {/* top        */} <div className='bg-gradient-to-b from-black to-transparent absolute top-0 w-full h-[15%]'></div>
-                    {/* bottom     */} <div className='bg-gradient-to-t from-black to-transparent absolute bottom-0 w-full h-[15%]'></div>
-                    {/* cent-left  */} <div className='bg-gradient-to-l from-[#00000075] to-transparent absolute top-0 left-[25%] w-[25%] h-full'></div>
-                    {/* cent-right */} <div className='bg-gradient-to-r from-[#00000075] to-transparent absolute top-0 right-[25%] w-[25%] h-full'></div>
+                    {/* bottom     */} <div className='bg-gradient-to-t from-black to-transparent absolute bottom-0 w-full h-[20%]'></div>
+                    {/* cent-left  */} <div className='bg-gradient-to-l from-[#00000085] to-transparent absolute top-0 left-[25%] w-[25%] h-full'></div>
+                    {/* cent-right */} <div className='bg-gradient-to-r from-[#00000085] to-transparent absolute top-0 right-[25%] w-[25%] h-full'></div>
                 </div>
 
                 <h1 name='title' className='z-20 title-main text-2xl text-center sm:text-5xl text-shadow shadow-black font-bold text-[#e7e9ef]'>Skyline Computer Science Club</h1>
@@ -36,8 +35,9 @@ export default function Hero() {
                     </h1>
                 </div>
 
+                {/* Currently need a weird arbit. offset of -200 for this particular scroll */}
                 <div className='z-20 mx-auto'>
-                    <Link to='tech' smooth={true} duration={500}>
+                    <Link to='tech' offset={-200} smooth={true} duration={1400}>
                         <button className='text-white font-semibold group border-2 px-6 py-3 my-2 flex items-center hover:bg-green-600 duration-300 hover:border-green-300'>
                             See What We're About
                             <span className='group-hover:rotate-90 duration-300'>
