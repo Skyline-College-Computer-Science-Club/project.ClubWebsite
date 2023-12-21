@@ -5,19 +5,17 @@ import { SiHtml5, SiCss3, SiJavascript, SiLua, SiPython, SiRust, SiNodedotjs, Si
 import { FaGithub, FaTrello, FaAngleDoubleUp } from 'react-icons/fa'
 import { BiLogoTypescript } from 'react-icons/bi'
 
+import { projects } from '../dispositions/projects.js'
+
 // import Typed from 'react-typed'
 import fallBackdrop from '../assets/projects/backdrops/mw2.mp4'
-import drop1 from '../assets/projects/backdrops/mw2019_cleanhouse.mp4'
-import previewArt1 from '../assets/projects/thumbnails/roblox.jpg'
-import previewArt2 from '../assets/projects/thumbnails/art1.png'
-import previewArt3 from '../assets/projects/thumbnails/art2.png'
-import githubTrello from '../assets/projects/thumbnails/github_trello.png'
 
 import useSound from 'use-sound'
 import sfxClick from '../assets/sound_fx/click.mp3'
 import sfxTunedClick from '../assets/sound_fx/tuned_click.mp3'
 
 const TAG_CLASSES = 'inline mr-1 self-center'
+
 const Tags = {
     'HTML': { color: 'bg-orange-700', icon: (<SiHtml5 className={TAG_CLASSES}/>) },
     'CSS': { color: 'bg-blue-700', icon: (<SiCss3 className={TAG_CLASSES}/>) },
@@ -33,48 +31,15 @@ const Tags = {
     'Blender': { color:'bg-[#e1790d]', icon: (<SiBlender className={TAG_CLASSES}/>) },
 }
 
-// TODO: Continue to fill these out
-const Projects = {
-    'Join us on GitHub & Trello': {
-        backdrop: drop1,
-        thumbnail: githubTrello,
-        description: 'Stay up-to-date in both interacting with and contributing towards our projects!',
-        tags: [],
-        github: 'https://github.com/Skyline-College-Computer-Science-Club',
-        trello: 'https://trello.com/b/sURZQegY/🚧-project-the-club-website'
-    },
-    'The Computer Science Club Website': {
-        thumbnail: previewArt1,
-        description: 'You\'re already here! An informational website about us—Skyline College\'s Computer Science Club. The one-stop shop for club events, resources and opportunities, projects, and more.',
-        tags: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'React'],
-        github: 'https://github.com/Skyline-College-Computer-Science-Club/project.ClubWebsite',
-        trello: ''
-    },
-    'Project: Game Development': {
-        thumbnail: previewArt2,
-        description: 'A ground-breaking development scope that incorporates programming skills via the comprehensive medium of game design.',
-        tags: ['Lua', 'Blender'],
-        github: 'https://github.com/Skyline-College-Computer-Science-Club/project.GameDevelop',
-        trello: 'https://trello.com/b/IbBcq4DY/🚧-project-game-development'
-    },
-    'Generic Project 3': {
-        thumbnail: previewArt3,
-        description: 'This is a description for project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        tags: ['Python'],
-        github: '',
-        trello: ''
-    },
-}
-
 export default function Carousel() {
     const [play_sfxClick] = useSound(sfxClick)
     const [play_sfxTunedClick] = useSound(sfxTunedClick)
 
-    const [currentProject, setCurrentProject] = useState(Object.keys(Projects)[0])
-    const projectDetails = Projects[currentProject]
+    const [currentProject, setCurrentProject] = useState(Object.keys(projects)[0])
+    const projectDetails = projects[currentProject]
     
     return (
-        <div name='carousel'>
+        <div name='projects_carousel'>
 
             {/* <NavBar/> */}
 
@@ -93,7 +58,7 @@ export default function Carousel() {
                 <div name='project-info' className='p-4 z-0' style={{position:'absolute', top:'27.5%', width:'100%', height:'100%'}}>
                     <p className='text-4xl font-bold max-w-lg text-gray-100 text-shadow shadow-gray-700'>{currentProject}</p>
                     {/* <Typed className='text-4xl font-bold' strings={[currentProject]} typeSpeed={120} backSpeed={120} backDelay={3000} loop></Typed> */}
-                    <p className='py-2 font-xl max-w-md text-shadow-lg text-gray-200 shadow-gray-900'>{projectDetails.description}</p>
+                    <p className='py-2 font-xl max-w-md text-shadow-lg text-gray-200 shadow-gray-900 whitespace-break-spaces'>{projectDetails.description}</p>
 
                     <div name='project-badges'>
                         {projectDetails.tags.map((tag) => ( 
@@ -114,7 +79,7 @@ export default function Carousel() {
                     <div className='translate-y-20 hover:translate-y-0 transition duration-700 ease-out'>
                         {/* <FaAngleDoubleUp className='-translate-y-[10] mx-auto' size={30}/> */}
                         <div className='flex'>
-                            {Object.entries(Projects).map(([projectName]) => 
+                            {Object.entries(projects).map(([projectName]) => 
                                 (
                                     <button 
                                         onClick={() => {
@@ -128,8 +93,8 @@ export default function Carousel() {
                                         }}
                                         key={projectName}
                                     >
-                                        <div key={projectName} className='m-1 relative shadow-md opacity-50 hover:opacity-100 hover:-translate-y-2 transition duration-500 ease-out'>
-                                            <img className='object-cover w-80 h-40 rounded-md' src={Projects[projectName].thumbnail} alt={projectName}/>
+                                        <div key={projectName} className='m-1 relative opacity-50 hover:opacity-100 hover:-translate-y-2 transition duration-500 ease-out'>
+                                            <img className='object-cover w-80 h-40 rounded-md' src={projects[projectName].thumbnail} alt={projectName}/>
                                             <p className='z-10 p-2 font-bold text-gray-200 absolute bottom-0'>{projectName}</p>
                                             <div className='z-0 absolute top-0 w-full h-full bg-gradient-to-t from-black to-transparent'></div>
                                         </div>

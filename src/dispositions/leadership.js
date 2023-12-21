@@ -5,7 +5,8 @@ export const leadership = {
         'role': 'President',
         'imgSrc': lanceruiz,
         'linktree': '',
-        'instagram': 'https://www.instagram.com/tyler_kuwada/'
+        'instagram': 'https://www.instagram.com/tyler_kuwada/',
+        'discord': 'https://discordapp.com/users/227633077545992192',
     },
     'Jonas Quiballo': {
         'role': 'Vice President',
@@ -32,7 +33,9 @@ export const leadership = {
         'imgSrc': lanceruiz,
         'linktree': 'https://www.linktr.ee/devalto',
         'instagram': '',
+        'discord': 'https://discordapp.com/users/168406210687533056',
         'github': 'https://www.github.com/dev-alto',
+        'linkedin': 'https://www.linkedin.com/in/lance-ruiz',
         'website': 'https://the-devalto-experiments.000webhostapp.com/',
         'quote': 'This is for the record. History is written by the victor. History is filled with liars.'
     },
@@ -40,6 +43,7 @@ export const leadership = {
         'role': 'SOCC Advisor',
         'imgSrc': lanceruiz,
         'linktree': 'https://linktr.ee/isaiahrashadfan',
+        'discord': 'https://discordapp.com/users/85194740890337280',
         'instagram': 'https://www.instagram.com/cchristse/'
     },
     'Denise Hum': {
@@ -52,6 +56,9 @@ export const leadership = {
         'role': 'Co-Advisor',
         'imgSrc': lanceruiz,
         'linktree': '',
+        'discord': 'https://discordapp.com/users/316816595668172800',
         'github': ''
     }
 }
+
+export default leadership

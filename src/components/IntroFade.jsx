@@ -1,7 +1,12 @@
-import { motion } from 'framer-motion'
+import { useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 
 export default function IntroFade() {
+
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
     return (
-        <motion.div name='overlay_introfade' initial={{opacity: 1}} animate={{opacity: 0}} transition={{duration: 2, ease: 'easeOut'}} className='z-50 pointer-events-none absolute w-full h-full bg-black'/>
+        <motion.div name='overlay_introfade'ref={ref} initial={{opacity: 1}} animate={isInView ? {opacity: 0} : {opacity: 1}} transition={{duration: 2, ease: 'easeOut'}} className='z-50 pointer-events-none absolute w-full h-full bg-black'/>
     )
 }

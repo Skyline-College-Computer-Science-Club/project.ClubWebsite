@@ -53,7 +53,9 @@ export default function Topbar() {
                         </li>
                         <li className='text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out'>
                             <FiTool className='my-auto mr-2'/>
-                            Projects
+                            <Link to='projects_carousel' smooth={true} duration={20000}>
+                                Projects
+                            </Link>
                         </li>
                         <li className='text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out'>
                             <GoCodeOfConduct className='my-auto mr-2'/>

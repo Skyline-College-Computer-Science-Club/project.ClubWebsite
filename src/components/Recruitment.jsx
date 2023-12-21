@@ -1,7 +1,7 @@
 export default function Recruitment() {
     return (
         <div name="recruitment" className='w-full h-screen flex justify-center items-center p-4'>
-            <iframe title='discord' className='mx-10' src="https://ptb.discord.com/widget?id=939701223144185867&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <iframe title='discord' className='mx-10' src="https://ptb.discord.com/widget?id=939701223144185867&theme=dark" width="350" height="500" allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             <form action="" className='flex flex-col max-w-[600px] w-full '>
                 <div className='pb-8'>
                         <p className='text-4xl font-bold inline border-b-4 border-[#4681f4] text-gray-300'>Contact</p>
