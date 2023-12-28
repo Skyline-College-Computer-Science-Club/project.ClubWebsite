@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import { Element } from 'react-scroll'
 
 import Image from 'next/image'
 import { motion, useInView, useAnimate } from 'framer-motion'
@@ -37,7 +38,8 @@ const GalleryPiece: React.FC<props_GalleryPiece> = ({ pieceDetails, index }) => 
 
 export default function Gallery() {
     return (
-        <div name='gallery' className='w-full bg-gradient-to-b from-slate-900 via-black to-black text-gray-300'>
+        <div className='w-full bg-gradient-to-b from-slate-900 via-black to-black text-gray-300'>
+            <Element name='gallery'/>
             <div className='py-[8vh] overflow-hidden'>
                 <div className='flex flex-wrap w-full group'>
                     {gallery.map((pieceDetails, index) => (<GalleryPiece key={crypto.randomUUID()} pieceDetails={pieceDetails} index={index}/>))}

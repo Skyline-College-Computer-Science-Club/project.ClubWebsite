@@ -63,7 +63,7 @@ export default function Topbar() {
 
                         <li className='text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out'>
                             <GoQuestion className='my-auto mr-2'/>
-                            <Link to='about' smooth={true} duration={1500}>
+                            <Link to='about' offset={-180} smooth={true} duration={1500}>
                                 About
                             </Link>
                         </li>

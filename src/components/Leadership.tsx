@@ -1,6 +1,8 @@
 'use client'
 
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState } from 'react'
+import { Element } from 'react-scroll'
+
 import Image from 'next/image'
 
 import { motion, useInView } from 'framer-motion'
@@ -89,7 +91,8 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
 
 export default function Leadership() {
     return (
-        <div name='leadership' className='w-full h-full py-80 text-gray-300 bg-[#031302] bg-[radial-gradient(#02230a_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_70%_50%_at_50%_50%,#000_60%,transparent_100%)]'>
+        <div className='w-full h-full py-80 text-gray-300 bg-[#031302] bg-[radial-gradient(#02230a_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_70%_50%_at_50%_50%,#000_60%,transparent_100%)]'>
+            <Element name='leadership'/>
             <div className='flex flex-col justify-center items-center w-full h-full'>
                 <h1 className='title-main mx-auto my-4 text-4xl font-semibold border-b-2 border-[#86f446] drop-shadow-[0_0_60px_rgba(50,255,50,1)]'>Our Club Leadership</h1>
                 <div className='grid grid-cols-4 gap-6 my-4 mx-[20%]'>

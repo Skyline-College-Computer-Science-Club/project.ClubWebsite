@@ -2,7 +2,9 @@
 
 import React from 'react'
 import Typed from 'react-typed'
-import useSound from 'use-sound'
+import { Element } from 'react-scroll'
+
+import useSound from 'use-sound';
 
 import { motion } from 'framer-motion'
 
@@ -58,7 +60,9 @@ export default function Tech() {
     const [playSfx_Click] = useSound(sfxClick)
 
     return (
-        <div name='tech' className='w-full h-full mt-60 text-gray-300 overflow-hidden'>
+        <div className='w-full h-full mt-60 text-gray-300 overflow-hidden'>
+
+            <Element name='tech'/>
 
             <motion.img width={'100'} src={kittyAstro} className='mx-auto my-10 hover:!scale-105 transition duration-300 ease-out' initial={{transform: 'translateY(-10%)'}}  animate={{transform: `translateY(10%)`}} transition={{repeat: Infinity, repeatType: 'mirror', type: 'tween', ease: 'linear', duration: 2 }}/>
             

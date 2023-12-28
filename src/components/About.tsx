@@ -26,7 +26,9 @@ export default function About() {
     const [card3Animating, setCard3Animating] = useState(false)
 
     return (
-        <div name='about' ref={ref} className='w-full h-full bg-gradient-to-b from-black to-slate-950 text-gray-300 py-[24vh] mt-40'>
+        <div ref={ref} className='w-full h-full bg-gradient-to-b from-black to-slate-950 text-gray-300 py-[24vh] mt-40'>
+
+            <Element name='about'/>
 
             {/* <Element name='about'/> */}
 

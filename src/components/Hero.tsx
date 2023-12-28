@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Typed from 'react-typed'
+import { Element } from 'react-scroll'
 
 import Image from 'next/image'
 
@@ -16,7 +17,9 @@ const TYPED_KEYWORDS = ['Design', 'Pioneer', 'Optimize', 'Build', 'Compile', '3D
 
 export default function Hero() {
     return (
-        <div name='hero' className='w-full h-screen bg-[#0a192f]'>
+        <div className='w-full h-screen bg-[#0a192f]'>
+            <Element name='hero'/>
+
             <Image width={1920} height={1080} className='absolute w-full h-[99vh] blur-[0px] object-cover' src={backdrop} alt='background banner'/>
 
             <div className='absolute w-full h-full mx-auto flex flex-col items-center justify-center'>
@@ -34,15 +37,15 @@ export default function Hero() {
                     </h1>
                 </div>
 
-                {/* Currently requires a weird arbit. offset of -200 for this particular scroll */}
-                <Link to='about' smooth={true} duration={1500} className='z-20 mt-4 relative group w-[14vw] active:scale-95 duration-150 border-2 hover:border-green-900 border-white hover:outline-double active:outline-8 text-white text-lg title-main overflow-hidden'>
+                {/* Currently requires a weird arbit. offset of -180 for this particular scroll */}
+                <Link to='about' smooth={true} offset={-180} duration={1500} className='z-20 mt-4 relative group w-[14vw] active:scale-95 duration-150 border-2 hover:border-green-900 border-white hover:outline-double active:outline-8 text-white text-lg title-main overflow-hidden'>
                     <IoMdArrowRoundDown className='absolute w-full h-full group-hover:translate-y-0 -translate-y-[100%] duration-300 pointer-events-none bg-gradient-to-t from-[#16a34aec] to-[#ffffff91]'/>
                     <button className='flex w-full justify-center p-2 font-semibold text-shadow-lg shadow-black hover:bg-green-600 duration-300 hover:border-green-300 overflow-hidden'>
                         <p className='text-center'>See what we&apos;re About</p>
                     </button>
                 </Link>
 
-                {/* <Link className='z-20 mx-auto' to='tech' offset={-200} smooth={true} duration={1400}>
+                {/* <Link className='z-20 mx-auto' to='tech' offset={-180} smooth={true} duration={1400}>
                     <button className='relative group w-[10vw] h-[3vw] border-2 hover:bg-green-600 duration-300 hover:border-green-300 overflow-hidden'>
                         <p className='absolute text-white font-semibold w-full text-center bg-[#ffffff1a]'>See What We're About</p>
                         <IoMdArrowRoundDown className='group-hover:translate-y-0 -translate-y-[100%] text-white duration-300 w-full h-full'/>
