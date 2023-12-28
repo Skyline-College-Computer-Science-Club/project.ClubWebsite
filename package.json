@@ -15,7 +15,7 @@
         "react-dom": "^18",
         "react-scroll": "^1.9.0",
         "url-loader": "^4.1.1",
-        "use-sound": "^4.0.1"
+        "use-sound": "^2.2.0"
     },
     "devDependencies": {
         "@types/node": "^20.10.5",
