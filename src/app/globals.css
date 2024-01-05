@@ -41,8 +41,6 @@ body {
     font-display: swap;
 }
 
-
-
 @layer base{
     /* scrollbar css */
     ::-webkit-scrollbar {
