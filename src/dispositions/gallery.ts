@@ -14,8 +14,8 @@ const previewArt3 = '/assets/projects/thumbnails/art2.png'
 const githubTrello = '/assets/projects/thumbnails/github_trello.png'
 
 interface GalleryPiece {
-    remark: string;
-    imgSrc: string;
+    remark: string,
+    imgSrc: string
 }
 
 export const gallery: GalleryPiece[] = [
