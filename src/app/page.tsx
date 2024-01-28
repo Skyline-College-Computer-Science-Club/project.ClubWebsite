@@ -16,6 +16,8 @@ import Leadership from '../components/Leadership'
 import Recruitment from '../components/Recruitment'
 import ProjectCarousel from '../components/Carousel'
 
+import Footer from '../components/Footer'
+
 export default function App() {
     return (
         <div>
@@ -32,7 +34,9 @@ export default function App() {
             <History/>
             <Recruitment/>
             {/* <Socials/> */}
+            
             <ProjectCarousel/>
+            <Footer/>
         </div>
     )
 }

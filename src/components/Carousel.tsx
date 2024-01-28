@@ -49,7 +49,7 @@ export default function Carousel() {
     const projectDetails: ProjectDetails = projects[currentProject]
     
     return (
-        <div >
+        <div>
 
             {/* <NavBar/> */}
 
