@@ -19,24 +19,24 @@ import ProjectCarousel from '../components/Carousel'
 import Footer from '../components/Footer'
 
 export default function App() {
-    return (
-        <div>
-            <IntroFade/>
-            <Topbar/>
+  return (
+    <div>
+      <IntroFade />
+      <Topbar />
 
-            <Hero/>
-            <Tech/>
+      <Hero />
+      <Tech />
 
-            <About/>
-            <Gallery/>
-            
-            <Leadership/>
-            <History/>
-            <Recruitment/>
-            {/* <Socials/> */}
-            
-            <ProjectCarousel/>
-            <Footer/>
-        </div>
-    )
+      <About />
+      <Gallery />
+
+      <Leadership />
+      <History />
+      <Recruitment />
+      {/* <Socials/> */}
+
+      <ProjectCarousel />
+      <Footer />
+    </div>
+  )
 }

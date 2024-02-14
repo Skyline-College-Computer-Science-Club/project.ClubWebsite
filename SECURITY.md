@@ -4,11 +4,11 @@ This document concerns our club's general security policy.
 
 ## 🛠️ Project-Specific Supported Versions
 
-| Version | Supported          |
-| ------- | ------------------ |
+| Version                              | Supported          |
+| ------------------------------------ | ------------------ |
 | All Current Builds (excludes Legacy) | :white_check_mark: |
 
-We currently rely on Dependabot and CodeQL on our repositories to monitor for new potential vulnerabilities in all pushes. 
+We currently rely on Dependabot and CodeQL on our repositories to monitor for new potential vulnerabilities in all pushes.
 
 We of course, however, need to account for cases that fly past that first automated line of defense.
 

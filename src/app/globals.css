@@ -34,58 +34,58 @@ body {
 
 /* From Public Directory */
 @font-face {
-    font-family: 'Kurale';
-    src: url('/fonts/Kurale.ttf');
-    font-style: medium;
-    font-weight: normal;
-    font-display: swap;
+  font-family: 'Kurale';
+  src: url('/fonts/Kurale.ttf');
+  font-style: medium;
+  font-weight: normal;
+  font-display: swap;
 }
 
-@layer base{
-    /* scrollbar css */
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
+@layer base {
+  /* scrollbar css */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 
-    ::-webkit-scrollbar-track {
-        background-color: transparent;
-    }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
 
-    ::-webkit-scrollbar-thumb {
-        background-color: #252525;
-        border-radius: 20px;
-    }
+  ::-webkit-scrollbar-thumb {
+    background-color: #252525;
+    border-radius: 20px;
+  }
 
-    :-webkit-scrollbar-thumb:hover {
-        background-color: #454545 !important;
-    }
+  :-webkit-scrollbar-thumb:hover {
+    background-color: #454545 !important;
+  }
 
-    body {
-        background-color: black;
-    }
+  body {
+    background-color: black;
+  }
 
-    p {
-        color: white;
-    }
+  p {
+    color: white;
+  }
 
-    h1 {
-        color: white;
-    }
+  h1 {
+    color: white;
+  }
 
-    .title-main {
-        font-family: var(--font-poppins);
-    }
+  .title-main {
+    font-family: var(--font-poppins);
+  }
 
-    li {
-        @apply px-4;
-        @apply cursor-pointer;
-    }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
 
-    h1.source-code {
-        /* font-family: 'Open Sans', sans-serif;
+  h1.source-code {
+    /* font-family: 'Open Sans', sans-serif;
         font-family: 'Oswald', sans-serif;
         font-family: 'Signika', sans-serif; */
-        /* font-family: 'Source Code Pro', monospace; */
-        font-family: 'Ubuntu', sans-serif;
-    }
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'Ubuntu', sans-serif;
+  }
 }
