@@ -15,7 +15,7 @@ const heroOverlay = '/assets/home/hero_overlay_alt.gif'
 // TODO: Move to a disposition file
 const TYPED_KEYWORDS = ['Design', 'Pioneer', 'Optimize', 'Build', 'Compile', '3D-model', 'Deploy', 'Problem-Solve', 'Interpret', 'Learn', 'Collaborate', 'Develop', 'Delegate', '$ git commit']
 
-export default function Hero() {
+export default function Hero() : React.ReactNode {
     return (
         <div className='w-full h-screen bg-[#0a192f]'>
             <Element name='hero'/>

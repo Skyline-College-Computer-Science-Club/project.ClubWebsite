@@ -89,7 +89,7 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
     )
 }
 
-export default function Leadership() {
+export default function Leadership() : React.ReactNode {
     return (
         <div className='w-full h-full py-80 text-gray-300 bg-[#031302] bg-[radial-gradient(#02230a_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_70%_50%_at_50%_50%,#000_60%,transparent_100%)]'>
             <Element name='leadership'/>

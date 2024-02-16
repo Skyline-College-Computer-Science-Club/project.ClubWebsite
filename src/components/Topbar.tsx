@@ -24,7 +24,7 @@ const mascot = '/assets/mascot.png'
 const ANNOUNCEMENT_TEXT = '🚧 Welcome! Mind the mess—our website is undergoing constant development. 👷'
 const ANNOUNCEMENT_GRAD_COLOR = 'from-[#33200d]'
 
-export default function Topbar() {
+export default function Topbar() : React.ReactNode {
 
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)

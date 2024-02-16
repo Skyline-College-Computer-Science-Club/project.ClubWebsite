@@ -36,7 +36,7 @@ const GalleryPiece: React.FC<props_GalleryPiece> = ({ pieceDetails, index }) => 
     )
 }
 
-export default function Gallery() {
+export default function Gallery() : React.ReactNode {
     return (
         <div className='w-full bg-gradient-to-b from-slate-900 via-black to-black text-gray-300'>
             <Element name='gallery'/>

@@ -2,7 +2,7 @@
 
 import { Element } from 'react-scroll'
 
-export default function Recruitment() {
+export default function Recruitment() : React.ReactNode {
     return (
         <div className='w-full h-screen flex justify-center items-center p-4'>
             <Element name='Recruitment'/>

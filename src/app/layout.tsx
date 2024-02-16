@@ -14,7 +14,7 @@ export const metadata = {
     description: 'A description must go here! Somebody please!',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) : React.ReactNode {
     return (
         <html className={`${poppins.variable}`}>
             <body>{children}</body>

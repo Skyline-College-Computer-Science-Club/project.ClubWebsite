@@ -55,7 +55,7 @@ const TECHNOLOGIES: { [key: string]: JSX.Element } = {
     'Blender': (<SiBlender color='rgb(255, 120, 60)'            className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
 }
 
-export default function Tech() {
+export default function Tech() : React.ReactNode {
 
     const [playSfx_Click] = useSound(sfxClick)
 

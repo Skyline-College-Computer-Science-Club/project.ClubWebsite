@@ -8,7 +8,7 @@ import {HiOutlineMail} from 'react-icons/hi'
 
 // import {BsFillPersonLinesFill} from 'react-icons/bs'
 
-export default function Socials() {
+export default function Socials() : React.ReactNode {
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
             <div className = 'hidden lg:flex fixed flex-col top-[35%] left-0 '>

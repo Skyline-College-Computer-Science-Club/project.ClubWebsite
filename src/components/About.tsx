@@ -14,7 +14,7 @@ const sfxClunk = '/assets/sound_fx/clunk.mp3'
 
 // TODO: Make cards scroll to relevant sectors of home page
 
-export default function About() {
+export default function About() : React.ReactNode {
 
     const [playSfx_clunk] = useSound(sfxClunk)
 

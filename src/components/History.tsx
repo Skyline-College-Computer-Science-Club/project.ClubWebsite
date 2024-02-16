@@ -2,7 +2,7 @@
 
 import { Element } from 'react-scroll'
 
-export default function History() {
+export default function History() : React.ReactNode {
     return (
         <div className='w-full h-screen bg-gradient-to-b from-black via-gray-900 to-black text-gray-300'>
             <Element name='history'/>

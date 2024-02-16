@@ -3,7 +3,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
-export default function IntroFade() {
+export default function IntroFade() : React.ReactNode {
 
     const ref = useRef(null)
     const isInView = useInView(ref)

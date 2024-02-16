@@ -15,7 +15,7 @@ const fallBackdrop = '/assets/projects/backdrops/mw2.mp4'
 
 const sfxClick = '/assets/sound_fx/click.mp3'
 const sfxClick2 = '/assets/sound_fx/click2.mp3'
-const sfxTunedClick = '/assets/sound_fx/tuned_click.mp3'
+// const sfxTunedClick = '/assets/sound_fx/tuned_click.mp3'
 
 const TAG_CLASSES = 'inline mr-1 self-center'
 
