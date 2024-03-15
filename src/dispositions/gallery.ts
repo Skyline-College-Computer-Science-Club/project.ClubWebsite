@@ -6,12 +6,7 @@
 
 */
 
-const lanceruiz = '/assets/home/leader_portraits/lanceruiz.png'
-const clubWebsiteThumb = '/assets/projects/thumbnails/club_website.jpg'
-const robloxDevThumb = '/assets/projects/thumbnails/roblox.jpg'
-const previewArt2 = '/assets/projects/thumbnails/art1.png'
-const previewArt3 = '/assets/projects/thumbnails/art2.png'
-const githubTrello = '/assets/projects/thumbnails/github_trello.png'
+const dir_gallery = '/assets/home/gallery/'
 
 interface GalleryPiece {
     remark: string,
@@ -20,24 +15,52 @@ interface GalleryPiece {
 
 export const gallery: GalleryPiece[] = [
     {
+        remark: 'December 1, 2022',
+        imgSrc: dir_gallery + 'boba_social_2022.jpg'
+    },
+    {
         remark: 'December 1, 2023',
-        imgSrc: clubWebsiteThumb
+        imgSrc: dir_gallery + 'calhacks_dinner.jpg'
     },
     {
-        remark: 'December 2, 2023',
-        imgSrc: robloxDevThumb
+        remark: 'December 1, 2023',
+        imgSrc: dir_gallery + 'calhacks_downtown.jpg'
     },
     {
-        remark: 'December 3, 2023',
-        imgSrc: previewArt2
+        remark: 'December 1, 2023',
+        imgSrc: dir_gallery + 'calhacks_rundown.jpg'
     },
     {
-        remark: 'December 4, 2023',
-        imgSrc: previewArt3
+        remark: 'December 1, 2023',
+        imgSrc: dir_gallery + 'expand_3dmodel_ws.jpg'
     },
     {
-        remark: 'December 5, 2023',
-        imgSrc: githubTrello
+        remark: 'December 1, 2023',
+        imgSrc: dir_gallery + 'intro_arduino.jpg'
+    },
+    {
+        remark: 'December 1, 2023',
+        imgSrc: dir_gallery + 'leadership_2022.png'
+    },
+    {
+        remark: 'December 1, 2023',
+        imgSrc: dir_gallery + 'officers_2022.jpg'
+    },
+    {
+        remark: 'December 1, 2023',
+        imgSrc: dir_gallery + 'touchgrass_chase360.jpg'
+    },
+    {
+        remark: 'December 1, 2023',
+        imgSrc: dir_gallery + 'touchgrass_group.jpg'
+    },
+    {
+        remark: 'December 1, 2023',
+        imgSrc: dir_gallery + 'touchgrass_hike.jpg'
+    },
+    {
+        remark: 'December 1, 2023',
+        imgSrc: dir_gallery + 'touchgrass_leaving.jpg'
     },
 ]
 
