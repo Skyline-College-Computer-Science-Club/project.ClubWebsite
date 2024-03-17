@@ -56,14 +56,14 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
                     playSfx_clunk()
                 }} onMouseUp={() => playSfx_clunk()}>
                     
-                <motion.div animate={displayQuote ? {opacity: 1} : {opacity: 0}} className='z-10 absolute outline-4 active:outline-8 active:outline-neutral-100 duration-200 outline-double opacity-0 outline-black bg-gradient-to-b from-[#040a0470] to-black rounded-xl drop-shadow-2xl'>
+                <motion.div animate={displayQuote ? {opacity: 1} : {opacity: 0}} className='z-10 absolute w-full outline-4 active:outline-8 active:outline-neutral-100 duration-200 outline-double opacity-0 outline-black bg-gradient-to-b from-[#040a0470] to-black rounded-xl drop-shadow-2xl'>
                     <motion.div className='absolute' initial={{transform: 'translateY(-8%)'}} animate={{transform: 'translateY(8%)'}} transition={{repeat: Infinity, repeatType: 'mirror', ease: 'linear', duration: 1.5 }}>
                         <FaQuoteLeft size={32} className='m-4'/>
                     </motion.div>
 
                     <div className='aspect-square w-full flex items-center px-10 font-semibold text-shadow-lg shadow-black'>
-                        {/* whitespace-pre-wrap enables usage of specifically \n */}
-                        <div className='text-center whitespace-pre-wrap'>{leaderDetails.quote ? leaderDetails.quote : FALLBACK_QUOTE}</div>
+                        {/* whitespace-pre-line enables usage of specifically \n */}
+                        <div className='text-center whitespace-pre-line'>{leaderDetails.quote ? leaderDetails.quote : FALLBACK_QUOTE}</div>
                     </div>
                 </motion.div> 
 

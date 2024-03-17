@@ -13,6 +13,7 @@
         'website': 'https://the-devalto-experiments.000webhostapp.com/'
 
 */
+
 const dir_leaderPortraits = '/assets/home/leader_portraits/'
 
 const pfp_president = dir_leaderPortraits +'tylerkuwadaport.png'
@@ -30,27 +31,28 @@ export const FALLBACK_QUOTE = (<p>That was no message. <i>This</i> is a message.
 
 export const leadership = {
     'Tyler Kuwada': {
-        'role': 'President',
+        'role': 'The President',
         'imgSrc': pfp_president,
+        'quote': <p>{"Oh these weren't homemade, they were made in a factory. A bomb factory. They're bombs."}</p>,
         'linktree': '',
         'instagram': 'https://www.instagram.com/tyler_kuwada/',
         'discord': 'https://discordapp.com/users/227633077545992192',
     },
     'Jonas Quiballo': {
-        'role': 'Vice President',
+        'role': 'The Vice President',
         'imgSrc': pfp_vicepresident,
         'linktree': '',
         'github': 'https://github.com/Waffly10',
         'instagram': 'https://www.instagram.com/_.waffly._/'
     },
     'Kaila Bautista': {
-        'role': 'Secretary',
+        'role': 'The Secretary',
         'imgSrc': pfp_secretary,
         'linktree': '',
         'instagram': 'https://instagram.com/kqilamae'
     },
     'Jayan Pintor': {
-        'role': 'Treasurer',
+        'role': 'The Treasurer',
         'imgSrc': pfp_treasurer,
         'linktree': '',
         'github': 'https://github.com/CoderLearnerTime',
@@ -66,23 +68,24 @@ export const leadership = {
         'github': 'https://www.github.com/dev-alto',
         'linkedin': 'https://www.linkedin.com/in/lance-ruiz',
         'website': 'https://the-devalto-experiments.000webhostapp.com/'
-    },
+    },  
     'Chris Tse': {
         'role': 'SOCC Advisor',
         'imgSrc': pfp_auxillary1,
-        'quote': (<p>True Isaiah Rashad fan.</p>),
+        'quote': (<p>A true Isaiah Rashad fan.</p>),
         'linktree': 'https://linktr.ee/isaiahrashadfan',
         'discord': 'https://discordapp.com/users/85194740890337280',
         'instagram': 'https://www.instagram.com/cchristse/'
     },
     'Denise Hum': {
-        'role': 'Co-Advisor',
+        'role': 'Club Co-Advisor',
         'imgSrc': pfp_coadvisor1,
         'linktree': '',
+        'discord': 'https://discordapp.com/users/735277805662765066',
         'github': ''
     },
     'Bryan Swartout': {
-        'role': 'Co-Advisor',
+        'role': 'Club Co-Advisor',
         'imgSrc': pfp_coadvisor2,
         'linktree': '',
         'discord': 'https://discordapp.com/users/316816595668172800',

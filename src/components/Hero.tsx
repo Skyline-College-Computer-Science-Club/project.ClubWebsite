@@ -11,6 +11,7 @@ import { Link } from 'react-scroll'
 
 const TYPED_KEYWORDS = ['Design', 'Pioneer', 'Optimize', 'Build', 'Compile', '3D-model', 'Deploy', 'Problem-Solve', 'Interpret', 'Learn', 'Collaborate', 'Develop', 'Delegate', '$ git commit']
 
+const mascot = '/assets/mascot.png'
 const backdrop = '/assets/home/hero_back.png'
 const heroOverlay = '/assets/home/hero_overlay_alt.gif'
 
@@ -21,11 +22,13 @@ export default function Hero() : React.ReactNode {
 
             {/* Actual backdrop image */}
             <Image width={1920} height={1080} className='absolute w-full h-[99vh] blur-[0px] object-cover' src={backdrop} alt='background banner' priority/>
+            
+            {/* Hero .gif overlay */}
+            <Image width={1920} height={1080} src={heroOverlay} className='opacity-20 absolute top-0 w-full h-full' alt='overlay' priority/>
 
-            <div className='absolute w-full h-full mx-auto flex flex-col items-center justify-center'>
+            <div className='absolute w-full h-full mx-auto flex flex-col items-center justify-center pb-20'>
                 
-                {/* Hero .gif overlay */}
-                <Image width={1920} height={1080} src={heroOverlay} className='opacity-20 absolute top-0 w-full h-full' alt='overlay' priority/>
+                <Image width={80} height={80} src={mascot} alt="mascot" className="z-20 mb-4"/>
 
                 {/* The main texts */}
                 <h1 className='z-20 title-main text-2xl text-center sm:text-5xl text-shadow shadow-black font-bold text-white'>Computer Science Club at Skyline</h1>

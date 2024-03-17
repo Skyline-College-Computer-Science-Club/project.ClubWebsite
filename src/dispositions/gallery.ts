@@ -15,51 +15,63 @@ interface GalleryPiece {
 
 export const gallery: GalleryPiece[] = [
     {
-        remark: 'December 1, 2022',
+        remark: 'STEM Center Boba Social 12/10/2022',
         imgSrc: dir_gallery + 'boba_social_2022.jpg'
     },
     {
-        remark: 'December 1, 2023',
+        remark: 'Mediterranean Dinner @ CalHacks v10.0',
         imgSrc: dir_gallery + 'calhacks_dinner.jpg'
     },
     {
-        remark: 'December 1, 2023',
+        remark: 'A Downtown Morning in San Francisco @ CalHacks v10.0',
         imgSrc: dir_gallery + 'calhacks_downtown.jpg'
     },
     {
-        remark: 'December 1, 2023',
+        remark: 'The Graveyard Shift @ CalHacks v10.0',
         imgSrc: dir_gallery + 'calhacks_rundown.jpg'
     },
     {
-        remark: 'December 1, 2023',
-        imgSrc: dir_gallery + 'expand_3dmodel_ws.jpg'
+        remark: 'Arriving in The City @ CalHacks v10.0',
+        imgSrc: dir_gallery + 'calhacks_sfarrival.png'
     },
     {
-        remark: 'December 1, 2023',
+        remark: 'Expand Your Horizons 2022 - TinkerCAD 3D Design Workshop #1',
+        imgSrc: dir_gallery + 'expand_tinkercad_ws1.jpg'
+    },
+    {
+        remark: 'Expand Your Horizons 2022 - TinkerCAD 3D Design Printing Close-Up',
+        imgSrc: dir_gallery + 'expand_print_closeup.jpg'
+    },
+    {
+        remark: 'Expand Your Horizons 2022 - TinkerCAD 3D Design Workshop #2',
+        imgSrc: dir_gallery + 'expand_tinkercad_ws2.jpg'
+    },
+    {
+        remark: 'Intro to Arduino Workshop 12/10/2022',
         imgSrc: dir_gallery + 'intro_arduino.jpg'
     },
     {
-        remark: 'December 1, 2023',
+        remark: 'Club Officers and Members of 2022',
         imgSrc: dir_gallery + 'leadership_2022.png'
     },
     {
-        remark: 'December 1, 2023',
+        remark: 'Club Officers of 2022',
         imgSrc: dir_gallery + 'officers_2022.jpg'
     },
     {
-        remark: 'December 1, 2023',
+        remark: '"Touching Grass" Hiking Trip feat. Chase',
         imgSrc: dir_gallery + 'touchgrass_chase360.jpg'
     },
     {
-        remark: 'December 1, 2023',
+        remark: '"Touching Grass" Hiking Trip: Group Photo',
         imgSrc: dir_gallery + 'touchgrass_group.jpg'
     },
     {
-        remark: 'December 1, 2023',
+        remark: '"Touching Grass" Hiking Trip: Upward Trails',
         imgSrc: dir_gallery + 'touchgrass_hike.jpg'
     },
     {
-        remark: 'December 1, 2023',
+        remark: '"Touching Grass" Hiking Trip: Heading Out',
         imgSrc: dir_gallery + 'touchgrass_leaving.jpg'
     },
 ]
