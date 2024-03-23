@@ -33,7 +33,7 @@ export const leadership = {
     'Tyler Kuwada': {
         'role': 'The President',
         'imgSrc': pfp_president,
-        'quote': <p>{"Oh these weren't homemade, they were made in a factory. A bomb factory. They're bombs."}</p>,
+        'quote': <p>{"Oh, these weren't homemade, they were made in a factory. A bomb factory. They're bombs."}</p>,
         'linktree': '',
         'instagram': 'https://www.instagram.com/tyler_kuwada/',
         'discord': 'https://discordapp.com/users/227633077545992192',
