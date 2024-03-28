@@ -28,20 +28,20 @@ const GalleryPiece: React.FC<props_GalleryPiece> = ({ pieceDetails, index }) => 
     const [isAnimating, setIsAnimating] = useState(true)
 
     return (
-        <motion.div ref={ref} onAnimationComplete={() => {setIsAnimating(false)}} initial={{opacity: 0, transform: 'scale(1.05) translateY(10%)'}} animate={isInView ? {opacity: 1, transform: 'scale(1) translateY(0%)'} : {}} transition={{duration: 1, delay: index * 0.2, ease: 'easeInOut'}} 
-            className={listItemClasses + (isAnimating ? ' pointer-events-none' : '')}>
+        <motion.div ref={ref} onAnimationComplete={() => {setIsAnimating(false)}} initial={{opacity: 0, transform: "scale(1.05) translateY(10%)"}} animate={isInView ? {opacity: 1, transform: "scale(1) translateY(0%)"} : {}} transition={{duration: 1, delay: index * 0.2, ease: "easeInOut"}} 
+            className={listItemClasses + (isAnimating ? " pointer-events-none" : "")}>
             <Image className={imageClasses} width={1200} height={800} alt={pieceDetails.remark} src={pieceDetails.imgSrc}/>
-            <p className='z-20 group-hover/inner:opacity-100 opacity-0 absolute bottom-0 w-full text-center duration-300 font-semibold text-shadow-sm shadow-black bg-[#00000050]'>{pieceDetails.remark}</p>
+            <p className="z-20 group-hover/inner:opacity-100 opacity-0 absolute bottom-0 w-full text-center duration-300 font-semibold text-shadow-sm shadow-black bg-[#00000050]">{pieceDetails.remark}</p>
         </motion.div>
     )
 }
 
 export default function Gallery() : React.ReactNode {
     return (
-        <div className='w-full bg-gradient-to-b from-slate-900 via-black to-black text-gray-300'>
-            <Element name='gallery'/>
-            <div className='py-[200px] overflow-hidden'>
-                <div className='flex flex-wrap w-full group'>
+        <div className="w-full bg-gradient-to-b from-slate-900 via-black to-black text-gray-300">
+            <Element name="gallery"/>
+            <div className="py-[200px] overflow-hidden">
+                <div className="flex flex-wrap w-full group">
                     {gallery.map((pieceDetails, index) => (<GalleryPiece key={crypto.randomUUID()} pieceDetails={pieceDetails} index={index}/>))}
                 </div>
             </div>
