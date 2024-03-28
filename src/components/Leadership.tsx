@@ -1,21 +1,21 @@
-'use client'
+'use client';
 
-import React, { useRef, useState } from 'react'
-import { Element } from 'react-scroll'
+import React, { useRef, useState } from 'react';
+import { Element } from 'react-scroll';
 
-import Image from 'next/image'
+import Image from 'next/image';
 
-import { motion, useInView } from 'framer-motion'
-import { useSound } from 'use-sound'
+import { motion, useInView } from 'framer-motion';
+import { useSound } from 'use-sound';
 
-import { SiLinktree, SiGithub, SiInstagram, SiDiscord, SiLinkedin } from 'react-icons/si'
-import { FaNetworkWired, FaQuoteLeft } from 'react-icons/fa'
+import { SiLinktree, SiGithub, SiInstagram, SiDiscord, SiLinkedin } from 'react-icons/si';
+import { FaNetworkWired, FaQuoteLeft } from 'react-icons/fa';
 
-const sfx_clunk = '/assets/sound_fx/clunk.mp3'
-const sfx_hoverThunk = '/assets/sound_fx/muffled_hover_thunk.mp3'
-const sfx_discorda = '/assets/sound_fx/discorda.mp3'
+const sfx_clunk = '/assets/sound_fx/clunk.mp3';
+const sfx_hoverThunk = '/assets/sound_fx/muffled_hover_thunk.mp3';
+const sfx_discorda = '/assets/sound_fx/discorda.mp3';
 
-const { leadership, FALLBACK_QUOTE } = require('../dispositions/leadership.tsx')
+const { leadership, FALLBACK_QUOTE } = require('../dispositions/leadership.tsx');
 
 interface props_LeaderCard {
     leaderName: string;
@@ -24,21 +24,21 @@ interface props_LeaderCard {
 
 const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
 
-    const [playSfx_clunk] = useSound(sfx_clunk)
-    const [playSfx_hoverThunk] = useSound(sfx_hoverThunk)
-    const [playSfx_discorda] = useSound(sfx_discorda)
+    const [playSfx_clunk] = useSound(sfx_clunk);
+    const [playSfx_hoverThunk] = useSound(sfx_hoverThunk);
+    const [playSfx_discorda] = useSound(sfx_discorda);
 
-    const [displayQuote, setDisplayQuote] = useState(false)
-    const [isAnimating, setIsAnimating] = useState(false)
+    const [displayQuote, setDisplayQuote] = useState(false);
+    const [isAnimating, setIsAnimating] = useState(false);
 
-    const ref = useRef(null)
-    const isInView = useInView(ref, {once: true})
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once: true});
     
     // useEffect(() => {
     //     console.log("Element is in view: ", isInView)
     // }, [isInView])
 
-    const leaderDetails = leadership[leaderName]
+    const leaderDetails = leadership[leaderName];
 
 
     // console.log(leaderDetails)

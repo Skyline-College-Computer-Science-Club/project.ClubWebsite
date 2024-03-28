@@ -22,7 +22,6 @@ const clubWebsiteThumb = '/assets/projects/thumbnails/club_website.jpg'
 const robloxDevThumb = '/assets/projects/thumbnails/roblox.jpg'
 const previewArt2 = '/assets/projects/thumbnails/art1.png'
 const previewArt3 = '/assets/projects/thumbnails/art2.png'
-const githubTrello = '/assets/projects/thumbnails/github_trello.png'
 
 export interface ProjectDetails {
     backdrop: string,
@@ -36,7 +35,7 @@ export interface ProjectDetails {
 export const projects: { [key: string]: ProjectDetails } = {
     'Join us on GitHub & Trello': {
         backdrop: drop1,
-        thumbnail: githubTrello,
+        thumbnail: '/assets/kitty_banner.png',
         description: 'Stay up-to-date in both interacting with and contributing towards our projects!\n\n📥 Join our GitHub organization below to get started!',
         tags: [],
         github: 'https://github.com/Skyline-College-Computer-Science-Club',

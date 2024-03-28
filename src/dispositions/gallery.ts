@@ -15,64 +15,92 @@ interface GalleryPiece {
 
 export const gallery: GalleryPiece[] = [
     {
-        remark: 'STEM Center Boba Social 12/10/2022',
+        remark: '🧋 Fall Boba Social @ STEM Center 12-10-2022',
         imgSrc: dir_gallery + 'boba_social_2022.jpg'
     },
     {
-        remark: 'Mediterranean Dinner @ CalHacks v10.0',
+        remark: '🍽️ Mediterranean Dinner @ "CalHacks v10.0"',
         imgSrc: dir_gallery + 'calhacks_dinner.jpg'
     },
     {
-        remark: 'A Downtown Morning in San Francisco @ CalHacks v10.0',
+        remark: '🌇 Waking Up Downtown San Francisco\n@ "CalHacks v10.0"',
         imgSrc: dir_gallery + 'calhacks_downtown.jpg'
     },
     {
-        remark: 'The Graveyard Shift @ CalHacks v10.0',
+        remark: '🌃 The Graveyard Shift @ "CalHacks v10.0"',
         imgSrc: dir_gallery + 'calhacks_rundown.jpg'
     },
     {
-        remark: 'Arriving in The City @ CalHacks v10.0',
-        imgSrc: dir_gallery + 'calhacks_sfarrival.png'
-    },
-    {
-        remark: 'Expand Your Horizons 2022 - TinkerCAD 3D Design Workshop #1',
-        imgSrc: dir_gallery + 'expand_tinkercad_ws1.jpg'
-    },
-    {
-        remark: 'Expand Your Horizons 2022 - TinkerCAD 3D Design Printing Close-Up',
+        remark: '"Expand Your Horizons 2022"\nTinkerCAD 3D Design Printing Close-Up',
         imgSrc: dir_gallery + 'expand_print_closeup.jpg'
     },
     {
-        remark: 'Expand Your Horizons 2022 - TinkerCAD 3D Design Workshop #2',
+        remark: '"Expand Your Horizons 2022" - TinkerCAD 3D Design Workshop 1',
+        imgSrc: dir_gallery + 'expand_tinkercad_ws1.jpg'
+    },
+    {
+        remark: '🚄 Arriving Downtown The City\n@ "CalHacks v10.0"',
+        imgSrc: dir_gallery + 'calhacks_sfarrival.png'
+    },
+    {
+        remark: '"Expand Your Horizons 2022" - TinkerCAD 3D Design Workshop 2',
         imgSrc: dir_gallery + 'expand_tinkercad_ws2.jpg'
     },
     {
-        remark: 'Intro to Arduino Workshop 12/10/2022',
-        imgSrc: dir_gallery + 'intro_arduino.jpg'
+        remark: '⚡ Intro to Arduino Workshop 12-10-2022',
+        imgSrc: dir_gallery + 'intro_arduino_2.jpg'
     },
     {
-        remark: 'Club Officers and Members of 2022',
+        remark: '🔰 Our Club Leadership and Members of 2022-2023',
         imgSrc: dir_gallery + 'leadership_2022.png'
     },
     {
-        remark: 'Club Officers of 2022',
+        remark: '🔰 Our Club Officers of 2022-2023',
         imgSrc: dir_gallery + 'officers_2022.jpg'
     },
     {
-        remark: '"Touching Grass" Hiking Trip feat. Chase',
+        remark: '🌱 "Touching Grass" Hiking Trip: Feat. Chase',
         imgSrc: dir_gallery + 'touchgrass_chase360.jpg'
     },
     {
-        remark: '"Touching Grass" Hiking Trip: Group Photo',
+        remark: '🌱 "Touching Grass" Hiking Trip: Group Photo!',
         imgSrc: dir_gallery + 'touchgrass_group.jpg'
     },
     {
-        remark: '"Touching Grass" Hiking Trip: Upward Trails',
+        remark: '🌱 "Touching Grass" Hiking Trip: Upward Trails',
         imgSrc: dir_gallery + 'touchgrass_hike.jpg'
     },
     {
-        remark: '"Touching Grass" Hiking Trip: Heading Out',
+        remark: '🌱 "Touching Grass" Hiking Trip: Leaving Campus',
         imgSrc: dir_gallery + 'touchgrass_leaving.jpg'
+    },
+    {
+        remark: '🌱 "Expand Your Horizons" - Games with Scratch Workshop 1',
+        imgSrc: dir_gallery + 'eyh_ws1.jpg'
+    },
+    {
+        remark: '🌱 "Expand Your Horizons" - Games with Scratch Workshop 2',
+        imgSrc: dir_gallery + 'eyh_ws2.jpg'
+    },
+    {
+        remark: '🌱 "Expand Your Horizons" - Games with Scratch Workshop Group Photo',
+        imgSrc: dir_gallery + 'eyh_group.jpg'
+    },
+    {
+        remark: '🐕‍🦺 Boston Dog @ "CalHacks v10.0"',
+        imgSrc: dir_gallery + 'calhacks_dog.png'
+    },
+    {
+        remark: '😎 The Joeson Boys @ "CalHacks v10.0"',
+        imgSrc: dir_gallery + 'calhacks_table.jpg'
+    },
+    {
+        remark: '🚶 On The Way @ "CalHacks v10.0"',
+        imgSrc: dir_gallery + 'calhacks_walking.png'
+    },
+    {
+        remark: '🧋 The First Boba Social of Spring 2023 @ STEM Center',
+        imgSrc: dir_gallery + 'boba_social_2023.png'
     },
 ]
 

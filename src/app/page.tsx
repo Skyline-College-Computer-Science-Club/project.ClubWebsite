@@ -35,7 +35,7 @@ export default function App() {
             <Recruitment/>
             {/* <Socials/> */}
             
-            <ProjectCarousel/>
+            {/* <ProjectCarousel/> */}
             <Footer/>
         </div>
     )

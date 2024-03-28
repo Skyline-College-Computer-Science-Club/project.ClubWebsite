@@ -12,7 +12,7 @@ import { Link } from 'react-scroll'
 const TYPED_KEYWORDS = ['Design', 'Pioneer', 'Optimize', 'Build', 'Compile', '3D-Model', 'Deploy', 'Problem-Solve', 'Interpret', 'Collaborate', 'Develop', 'Delegate', '$ git commit']
 
 const mascotAnimated = '/assets/mascot.gif'
-const backdrop = '/assets/home/hero_back.png'
+const backdrop = '/assets/home/hero_back.jpg'
 const heroOverlay = '/assets/home/hero_overlay_alt.gif'
 
 export default function Hero() : React.ReactNode {
@@ -63,8 +63,8 @@ export default function Hero() : React.ReactNode {
             <div>
                 {/* top        */} <div className="bg-gradient-to-b from-black to-transparent absolute top-0 w-full h-[15%]"></div>
                 {/* bottom     */} <div className="bg-gradient-to-t from-black to-transparent absolute bottom-0 w-full h-[20%]"></div>
-                {/* cent-left  */} <div className="bg-gradient-to-l from-[#00000055] to-transparent absolute top-0 left-[25%] w-[25%] h-full"></div>
-                {/* cent-right */} <div className="bg-gradient-to-r from-[#00000055] to-transparent absolute top-0 right-[25%] w-[25%] h-full"></div>
+                {/* cent-left  */} <div className="bg-gradient-to-l from-[#00000095] to-transparent absolute top-0 left-[25%] w-[25%] h-full"></div>
+                {/* cent-right */} <div className="bg-gradient-to-r from-[#00000095] to-transparent absolute top-0 right-[25%] w-[25%] h-full"></div>
             </div>
         </div>
     )
