@@ -9,7 +9,7 @@ export default function Footer() {
 
                 <p className="text-center font-semibold">Let&apos;s connect.</p>
 
-                <div className="flex gap-3 justify-center pt-4">
+                <div className="flex gap-3 justify-center py-4 overflow-x-hidden">
                     <Link href="https://discord.com/invite/z5P9kccwRh" target="_blank">
                         <button className="flex group bg-neutral-700 dark:bg-neutral-900 bg-opacity-80 rounded-md gap-2 py-2 px-4 active:scale-95 hover:bg-blue-800 hover:outline-4 hover:text-white active:outline-2 hover:outline-double outline-white border-[1px] border-neutral-800 hover:outline-blue-600 active:outline-neutral-200 duration-200 active:duration-200">
                             <SiDiscord className="my-auto group-hover:text-white" />

@@ -4,7 +4,7 @@ import IntroFade from '../components/IntroFade'
 import Topbar from '../components/Topbar'
 
 import Hero from '../components/Hero'
-import Tech from '../components/Tech'
+import Technologies from '../components/Technologies'
 
 import About from '../components/About'
 import Gallery from '../components/Gallery'
@@ -25,7 +25,7 @@ export default function App() {
             <Topbar/>
 
             <Hero/>
-            <Tech/>
+            <Technologies/>
 
             <About/>
             <Gallery/>
