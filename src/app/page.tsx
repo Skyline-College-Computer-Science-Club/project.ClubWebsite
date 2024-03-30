@@ -1,7 +1,6 @@
 import React from 'react'
 
 import IntroFade from '../components/IntroFade'
-import Topbar from '../components/Topbar'
 
 import Hero from '../components/Hero'
 import Technologies from '../components/Technologies'
@@ -22,7 +21,6 @@ export default function App() {
     return (
         <div>
             <IntroFade/>
-            <Topbar/>
 
             <Hero/>
             <Technologies/>

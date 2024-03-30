@@ -2,6 +2,8 @@ import './globals.css'
 
 import { Poppins } from 'next/font/google';
 
+import Topbar from '../components/Topbar'
+
 const poppins = Poppins({
     subsets: ['latin'],
     display: 'swap',
@@ -17,7 +19,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) : React.ReactNode {
     return (
         <html className={`${poppins.variable}`}>
-            <body>{children}</body>
+            <body>
+                <Topbar />
+                {children}
+            </body>
         </html>
     )
 }

@@ -10,7 +10,8 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-import { Link } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll'
+import Link from 'next/link'
 
 import { GoHome, GoQuestion, GoCodeOfConduct } from 'react-icons/go'
 import { FaBars, FaTimes } from 'react-icons/fa'
@@ -54,28 +55,29 @@ export default function Topbar() : React.ReactNode {
                 {/* Navigation */}
                 <div className="z-20 mr-4">
                     <ul className="hidden md:flex">
-                        <li className="text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
-                            <GoHome className="my-auto mr-2"/>
-                            <Link to="hero" smooth={true} duration={1500}>
-                                Home
-                            </Link>
-                        </li>
 
                         <li className="text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
-                            <GoQuestion className="my-auto mr-2"/>
-                            <Link to="about" offset={40} smooth={true} duration={1500}>
-                                About
-                            </Link>
+                            <GoHome className="my-auto mr-2"/>
+                            <ScrollLink to="hero" smooth={true} duration={1500}>
+                                <Link href=".">Home</Link>
+                            </ScrollLink>
                         </li>
+
+                        {/* <li className="text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
+                            <GoQuestion className="my-auto mr-2"/>
+                            <ScrollLink to="about" offset={40} smooth={true} duration={1500}>
+                                About
+                            </ScrollLink>
+                        </li> */}
+
+
                         <li className="text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
                             <FiTool className="my-auto mr-2"/>
-                            <Link to="projects_carousel" smooth={true} duration={20000}>
-                                Projects
-                            </Link>
+                            <Link href="./projects">Projects</Link>
                         </li>
                         <li className="text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
                             <GoCodeOfConduct className="my-auto mr-2"/>
-                            Recruitment
+                            Join Us!
                         </li>
                     </ul>
                 </div>
@@ -92,24 +94,24 @@ export default function Topbar() : React.ReactNode {
 
                     <ul className="">
                         <li className="py-6 text-4xl">
-                            <Link 
+                            <ScrollLink 
                                 onClick={handleClick} 
                                 to="hero" 
                                 smooth="true" 
                                 duration={300}
                             >
                                 Home
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="py-6 text-4xl">
-                            <Link 
+                            <ScrollLink 
                                 onClick={handleClick} 
                                 to="about" 
                                 smooth="true" 
                                 duration={300}
                             >
                                 About
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="py-6 text-4xl">Projects</li>
                         <li className="py-6 text-4xl">Recruitment</li>
