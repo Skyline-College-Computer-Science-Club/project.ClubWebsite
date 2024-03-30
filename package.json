@@ -10,7 +10,6 @@
     },
     "dependencies": {
         "babel-eslint": "^10.1.0",
-        "eslint": "^8.57.0",
         "file-loader": "^6.2.0",
         "next": "14.0.4",
         "react": "^18",
@@ -20,18 +19,12 @@
         "use-sound": "^2.2.0"
     },
     "devDependencies": {
+        "autoprefixer": "^10.0.1",
         "@types/node": "^20.10.5",
         "@types/react": "^18",
         "@types/react-dom": "^18",
         "@types/react-scroll": "^1.8.10",
-        "@typescript-eslint/eslint-plugin": "^6.4.0",
-        "autoprefixer": "^10.0.1",
-        "eslint-config-next": "14.0.4",
-        "eslint-config-standard-with-typescript": "^43.0.0",
-        "eslint-plugin-import": "^2.25.2",
-        "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
-        "eslint-plugin-promise": "^6.0.0",
-        "eslint-plugin-react": "^7.33.2",
+        
         "framer-motion": "^10.16.14",
         "postcss": "^8",
         "react-icons": "^4.11.0",
