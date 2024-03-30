@@ -1,4 +1,6 @@
 {
+    "parser": "babel-eslint"
+
     // "extends": "next/core-web-vitals",
     // "env": {
     //     "node": true,
