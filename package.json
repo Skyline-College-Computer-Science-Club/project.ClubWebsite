@@ -9,6 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "eslint": "^8.57.0",
         "file-loader": "^6.2.0",
         "next": "14.0.4",
         "react": "^18",

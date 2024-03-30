@@ -32,8 +32,8 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
     const [isAnimating, setIsAnimating] = useState(false);
 
     const ref = useRef(null);
-    const isInView = useInView(ref, {once: true});
-    
+    const isInView = useInView(ref, { once: true });
+
     // useEffect(() => {
     //     console.log("Element is in view: ", isInView)
     // }, [isInView])
@@ -44,20 +44,20 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
     // console.log(leaderDetails)
 
     // <motion.div ref={ref} initial={{opacity: 0, transform: (index < COLUMNS ? 'translateX(100%)' : 'translateX(-100%)')}} animate={isInView ? {opacity: 1, transform: 'translateX(0%)'} : ''} transition={{duration: 1, delay: 0.2 + (props.index / 9), ease: 'easeOut'}} className='relative group opacity-0 hover:z-20 hover:rounded-b-none hover:!scale-105 transition duration-300 ease-out select-none rounded-xl bg-gradient-to-t from-[#040404] via-green-950 to-green-950' key={leaderName} onMouseEnter={playHoverThunk}>
-    
+
     return (
-        <motion.div ref={ref} onAnimationStart={() => {setIsAnimating(true)}} onAnimationComplete={() => {setIsAnimating(false)}} onMouseEnter={() => playSfx_hoverThunk()} 
-            initial={{opacity: 0, transform: "translateX(50%)"}} animate={isInView ? {opacity: 1, transform: "translateX(0%)"} : ""} transition={{duration: 0.6, delay: 0.2 + (index / 8), ease: "easeOut"}} 
-            className={`${isAnimating && "pointer-events-none"} hover:z-20 relative group opacity-0 hover:rounded-b-none hover:!scale-105 transition duration-300 ease-out select-none rounded-xl bg-gradient-to-t from-[#040404] via-green-950 to-green-950`} key={leaderName}>
-            
+        <motion.div ref={ref} onAnimationStart={() => {setIsAnimating(true)}} onAnimationComplete={() => {setIsAnimating(false)}} onMouseEnter={() => playSfx_hoverThunk()}
+            initial={{ opacity: 0, transform: "translateX(50%)" }} animate={isInView ? { opacity: 1, transform: "translateX(0%)" } : ""} transition={{duration: 0, delay: 0, ease: "easeOut"}} 
+            className={`${isAnimating && "pointer-events-none"} hover:z-20 outline-2 outline-green-950 outline relative group opacity-0 hover:rounded-b-none hover:!scale-105 transition duration-300 ease-out select-none rounded-xl bg-gradient-to-t from-[#040404] via-green-950 to-green-950`} key={leaderName}>
+
             {/* Leader"s quote, other details */}
             <div className="hover:scale-105 active:scale-95 transition duration-300 ease-out" onMouseDown={() => {
-                    setDisplayQuote(!displayQuote)
-                    playSfx_clunk()
+                    setDisplayQuote(!displayQuote);
+                    playSfx_clunk();
                 }} onMouseUp={() => playSfx_clunk()}>
-                    
-                <motion.div animate={displayQuote ? {opacity: 1} : {opacity: 0}} className="z-10 absolute w-full outline-4 active:outline-8 active:outline-neutral-100 duration-200 outline-double opacity-0 outline-black bg-gradient-to-b from-[#040a0470] to-black rounded-xl drop-shadow-2xl">
-                    <motion.div className="absolute" initial={{transform: "translateY(-8%)"}} animate={{transform: "translateY(8%)"}} transition={{repeat: Infinity, repeatType: "mirror", ease: "linear", duration: 1.5 }}>
+
+                <motion.div animate={displayQuote ? { opacity: 1 } : { opacity: 0 }} className="z-10 absolute w-full outline-4 active:outline-8 active:outline-neutral-100 duration-200 outline-double opacity-0 outline-black bg-gradient-to-b from-[#040a0470] to-black rounded-xl drop-shadow-2xl">
+                    <motion.div className="absolute" initial={{ transform: "translateY(-8%)" }} animate={{transform: "translateY(8%)"}} transition={{repeat: Infinity, repeatType: "mirror", ease: "linear", duration: 1.5 }}>
                         <FaQuoteLeft size={32} className="m-4"/>
                     </motion.div>
 
@@ -76,9 +76,9 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
             </div>
 
             {/* Leader socials and other links, dynamically generated */}
-            <div onMouseDown={() => playSfx_clunk()} onMouseUp={() => playSfx_clunk()} className="z-30 absolute hidden group-hover:flex justify-center w-full rounded-b-xl bg-gradient-to-b from-[#040a04] to-black gap-2 px-2 pb-2">
+            <div onMouseDown={() => playSfx_clunk()} onMouseUp={() => playSfx_clunk()} className="z-10 absolute hidden group-hover:flex border-b-4 border-green-700 justify-center w-full rounded-b-xl bg-gradient-to-b from-[#040a04] to-black gap-2 px-2 pb-2">
                 {leaderDetails.linktree ? <a className="hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out" href={leaderDetails.linktree} target="_blank" rel="noreferrer"><SiLinktree size={"3vh"} className="h-10"/></a> : <></>}
-                {leaderDetails.github ? <a className="hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out"  href={leaderDetails.github} target="_blank" rel="noreferrer"><SiGithub size={"3vh"} className="h-10"/></a> : <></>}
+                {leaderDetails.github ? <a className="hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out" href={leaderDetails.github} target="_blank" rel="noreferrer"><SiGithub size={"3vh"} className="h-10"/></a> : <></>}
                 {leaderDetails.instagram ? <a className="hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out" href={leaderDetails.instagram} target="_blank" rel="noreferrer"><SiInstagram size={"3vh"} className="h-10"/></a> : <></>}
                 {leaderDetails.discord ? <a className="hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out" href={leaderDetails.discord} target="_blank" rel="noreferrer"><SiDiscord onMouseUp={() => playSfx_discorda()} size={"3vh"} className="h-10"/></a> : <></>}
                 {leaderDetails.linkedin ? <a className="hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out" href={leaderDetails.linkedin} target="_blank" rel="noreferrer"><SiLinkedin size={"3vh"} className="h-10"/></a> : <></>}

@@ -56,6 +56,7 @@ export const leadership = {
         'imgSrc': pfp_treasurer,
         'linktree': '',
         'github': 'https://github.com/CoderLearnerTime',
+        'linkedin': 'https://www.linkedin.com/in/jayanthony-pintor/',
         'instagram': 'https://www.instagram.com/0p_photos/'
     },
     'Lance Ruiz': {
@@ -75,21 +76,24 @@ export const leadership = {
         'quote': (<p>A true Isaiah Rashad fan.</p>),
         'linktree': 'https://linktr.ee/isaiahrashadfan',
         'discord': 'https://discordapp.com/users/85194740890337280',
-        'instagram': 'https://www.instagram.com/cchristse/'
+        'instagram': 'https://www.instagram.com/cchristse',
+        'linkedin': 'https://www.linkedin.com/in/chris-tse/'
     },
     'Denise Hum': {
         'role': 'Club Co-Advisor',
         'imgSrc': pfp_coadvisor1,
         'linktree': '',
         'discord': 'https://discordapp.com/users/735277805662765066',
-        'github': ''
+        'github': '',
+        'linkedin': 'https://www.linkedin.com/in/denisehum/'
     },
     'Bryan Swartout': {
         'role': 'Club Co-Advisor',
         'imgSrc': pfp_coadvisor2,
         'linktree': '',
         'discord': 'https://discordapp.com/users/316816595668172800',
-        'github': ''
+        'github': '',
+        'linkedin': 'https://www.linkedin.com/in/swartoutbryan/'
     }
 }
 
