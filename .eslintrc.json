@@ -4,28 +4,7 @@
         "spread" : true,
         "restParams" : true
     },
-    "env" : {
-        "browser" : true,
-        "node" : true,
-        "es6" : true
-    },
-    "rules" : {
-        "no-unused-vars" : 2,
-        "no-undef" : 2
-    },
-    "parserOptions": {
-        "sourceType": "module"
-    }
-}
-
-    // "extends": "next/core-web-vitals",
-    // "env": {
-    //     "node": true,
-    //     "es6": true
-    // },
-    // "parserOptions": {
-    //     "ecmaVersion": 2021
-    // },
+    "extends": "next/core-web-vitals"
     // "rules": {
     //     "arrow-spacing": ["warn", { "before": true, "after": true }],
     //     "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
@@ -65,4 +44,4 @@
     //     "spaced-comment": "error",
     //     "yoda": "error"
     // }
-// }
+}

@@ -15,16 +15,16 @@ interface GalleryPiece {
 
 export const gallery: GalleryPiece[] = [
     {
-        remark: '🧋 Fall Boba Social @ STEM Center 12-10-2022',
-        imgSrc: dir_gallery + 'boba_social_2022.jpg'
+        remark: '🌇 Waking Up in Downtown San Francisco\n@ "CalHacks v10.0"',
+        imgSrc: dir_gallery + 'calhacks_downtown.jpg'
     },
     {
         remark: '🍽️ Mediterranean Dinner @ "CalHacks v10.0"',
         imgSrc: dir_gallery + 'calhacks_dinner.jpg'
     },
     {
-        remark: '🌇 Waking Up in Downtown San Francisco\n@ "CalHacks v10.0"',
-        imgSrc: dir_gallery + 'calhacks_downtown.jpg'
+        remark: '🧋 Fall Boba Social @ STEM Center 12-10-2022',
+        imgSrc: dir_gallery + 'boba_social_2022.jpg'
     },
     {
         remark: '🌃 The Graveyard Shift @ "CalHacks v10.0"',
@@ -43,8 +43,8 @@ export const gallery: GalleryPiece[] = [
         imgSrc: dir_gallery + 'calhacks_sfarrival.png'
     },
     {
-        remark: '🌄 "Expand Your Horizons" - TinkerCAD 3D Design Workshop 2',
-        imgSrc: dir_gallery + 'expand_tinkercad_ws2.jpg'
+        remark: '🌄 "Expand Your Horizons 2022" - Games with Scratch Workshop 1',
+        imgSrc: dir_gallery + 'eyh_ws1.jpg'
     },
     {
         remark: '⚡ Intro to Arduino Workshop 12-10-2022',
@@ -75,12 +75,12 @@ export const gallery: GalleryPiece[] = [
         imgSrc: dir_gallery + 'touchgrass_leaving.jpg'
     },
     {
-        remark: '🌄 "Expand Your Horizons 2022" - Games with Scratch Workshop 1',
-        imgSrc: dir_gallery + 'eyh_ws1.jpg'
-    },
-    {
         remark: '🌄 "Expand Your Horizons 2022" - Games with Scratch Workshop 2',
         imgSrc: dir_gallery + 'eyh_ws2.jpg'
+    },
+    {
+        remark: '🌄 "Expand Your Horizons" - TinkerCAD 3D Design Workshop 2',
+        imgSrc: dir_gallery + 'expand_tinkercad_ws2.jpg'
     },
     {
         remark: '🌄 "Expand Your Horizons 2022" - Games with Scratch Workshop Group Photo!',

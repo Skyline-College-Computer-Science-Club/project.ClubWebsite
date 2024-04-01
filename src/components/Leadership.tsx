@@ -34,23 +34,15 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
-    // useEffect(() => {
-    //     console.log("Element is in view: ", isInView)
-    // }, [isInView])
-
     const leaderDetails = leadership[leaderName];
 
-
-    // console.log(leaderDetails)
-
-    // <motion.div ref={ref} initial={{opacity: 0, transform: (index < COLUMNS ? 'translateX(100%)' : 'translateX(-100%)')}} animate={isInView ? {opacity: 1, transform: 'translateX(0%)'} : ''} transition={{duration: 1, delay: 0.2 + (props.index / 9), ease: 'easeOut'}} className='relative group opacity-0 hover:z-20 hover:rounded-b-none hover:!scale-105 transition duration-300 ease-out select-none rounded-xl bg-gradient-to-t from-[#040404] via-green-950 to-green-950' key={leaderName} onMouseEnter={playHoverThunk}>
 
     return (
         <motion.div ref={ref} onAnimationStart={() => {setIsAnimating(true)}} onAnimationComplete={() => {setIsAnimating(false)}} onMouseEnter={() => playSfx_hoverThunk()}
             initial={{ opacity: 0, transform: "translateX(50%)" }} animate={isInView ? { opacity: 1, transform: "translateX(0%)" } : ""} transition={{duration: 0, delay: 0, ease: "easeOut"}} 
-            className={`${isAnimating && "pointer-events-none"} hover:z-20 outline-2 outline-green-950 outline relative group opacity-0 hover:rounded-b-none hover:!scale-105 transition duration-300 ease-out select-none rounded-xl bg-gradient-to-t from-[#040404] via-green-950 to-green-950`} key={leaderName}>
+            className={`${isAnimating && "pointer-events-none"} min-w-[200px] max-w-[250px] hover:z-20 outline-2 outline-green-950 outline relative group opacity-0 hover:rounded-b-none hover:!scale-105 transition duration-300 ease-out select-none rounded-xl bg-gradient-to-t from-[#040404] via-green-950 to-green-950`} key={leaderName}>
 
-            {/* Leader"s quote, other details */}
+            {/* Leader Portrait + Leader Quote Overlay */}
             <div className="hover:scale-105 active:scale-95 transition duration-300 ease-out" onMouseDown={() => {
                     setDisplayQuote(!displayQuote);
                     playSfx_clunk();
@@ -70,6 +62,7 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
                 <Image width={1024} height={1024} className="rounded-xl aspect-square" alt="mascot" src={leaderDetails.imgSrc}/>
             </div>
 
+            {/* Leader Name and Role */}
             <div className="rounded-xl p-4 group-hover:pb-0">
                 <h1 className="title-main text-xl font-semibold text-center">{leaderName}</h1>
                 <h2 className="text-lg font-semibold text-center">{leaderDetails.role}</h2>
@@ -92,13 +85,21 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
 export default function Leadership() : React.ReactNode {
     return (
         // bg-[radial-gradient(#000_1px,transparent_1px)]
-        <div className="w-full h-full py-80 text-gray-300 bg-[#031302] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_50%,#000_50%,transparent_100%)]">
+        <div className="w-full h-full py-80 text-gray-300 bg-[#031302]">
+
             <Element name="leadership"/>
-            <div className="flex flex-col justify-center items-center w-full h-full">
-                <h1 className="title-main mx-auto my-4 text-4xl font-semibold border-b-2 border-[#86f446] drop-shadow-[0_0_60px_rgba(50,255,50,1)]">Our Club Leadership</h1>
-                <div className="grid grid-cols-4 gap-6 my-4 mx-[20%]">
+
+            <div className="flex flex-col justify-center items-center w-full h-full px-[8vw] xl:px-[15vw]">
+                <h1 className="title-main w-full text-center text-4xl font-semibold drop-shadow-[0_0_30px_rgba(255,255,255,1)]">Our Club Leadership</h1>
+                <h1 className="title-main w-full text-center text-2xl font-semibold">👑 2023-2024 👑</h1>
+                {/* <div className="grid grid-cols-4 gap-6 my-4 mx-[20%]"> */}
+                <div className="w-full mb-8 mt-4 text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]"></div>
+
+                <div className="flex flex-row flex-wrap justify-center align-middle gap-x-8 gap-y-6">
                     {Object.keys(leadership).map((leaderName, index) => (<LeaderCard key={crypto.randomUUID()} index={index} leaderName={leaderName}/>))}
                 </div>
+
+                <div className="w-full my-8 text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]"></div>
             </div>
         </div>
     )

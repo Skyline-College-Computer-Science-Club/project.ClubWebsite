@@ -13,7 +13,7 @@ const TYPED_KEYWORDS = ['Design', 'Pioneer', 'Optimize', 'Build', 'Compile', '3D
 
 const mascotAnimated = '/assets/mascot.gif'
 const backdrop = '/assets/home/hero_back.jpg'
-const heroOverlay = '/assets/home/hero_overlay_alt.gif'
+const heroOverlay = '/assets/home/hero_overlay_gray.gif'
 
 export default function Hero() : React.ReactNode {
     return (
@@ -24,12 +24,12 @@ export default function Hero() : React.ReactNode {
             <Image width={1920} height={1080} className="absolute w-full h-full blur-[0px] object-cover" src={backdrop} alt="background banner" priority/>
             
             {/* Hero .gif overlay */}
-            <Image width={1920} height={1080} src={heroOverlay} className="opacity-20 absolute top-0 w-full h-full drop-shadow-lg" alt="overlay" priority/>
+            <Image width={1920} height={1080} src={heroOverlay} className="opacity-10 absolute top-0 w-full h-full drop-shadow-lg" alt="overlay" priority/>
 
             <div className="absolute w-full h-full mx-auto flex flex-col items-center justify-center pb-20">
                 
                 {/* mascot */}
-                <Image width={100} height={100} src={mascotAnimated} alt="mascot" className="z-20 drop-shadow-[0_0_30px_rgba(252,214,144,0.4)]"/>
+                <Image width={100} height={100} src={mascotAnimated} alt="mascot" className="z-20 drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]"/>
 
                 {/* The main texts */}
                 <h1 className="z-20 title-main text-xl md:2xl text-center sm:text-5xl text-shadow shadow-black font-bold text-white my-2">Computer Science Club at Skyline</h1>
@@ -37,7 +37,7 @@ export default function Hero() : React.ReactNode {
                 <div className="z-20 text-white text-center text-shadow shadow-black sm:text-2xl text-xl font-semibold` w-full">
                     <p>Elevate Your Code—the Sky&apos;s the Limit.</p>
                     <h1 className="title-main font-bold sm:text-[30px] text-[20px] sm:pt-[20px] pt-[10px]">
-                        {">"} We <Typed className="text-green-400 drop-shadow-[0_0_10px_rgba(150,255,150,0.5)]" strings={TYPED_KEYWORDS} typeSpeed={120} backSpeed={80} backDelay={2000} fadeOut={true} loop/> {"<"}
+                        {">"} We <Typed className="text-green-400 drop-shadow-[0_0_8px_rgba(150,255,150,0.5)]" strings={TYPED_KEYWORDS} typeSpeed={120} backSpeed={80} backDelay={2000} fadeOut={true} loop/> {"<"}
                     </h1>
                 </div>
 

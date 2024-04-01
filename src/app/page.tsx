@@ -20,21 +20,22 @@ import Footer from '../components/Footer'
 export default function App() {
     return (
         <div>
-            <IntroFade/>
+            <IntroFade />
 
-            <Hero/>
-            <Technologies/>
+            <Hero />
+            <Leadership />
 
-            <About/>
-            <Gallery/>
+            <Technologies />
+
+            <About />
+            <Gallery />
             
-            <Leadership/>
-            <History/>
-            <Recruitment/>
+            <History />
+            <Recruitment />
             {/* <Socials/> */}
             
             {/* <ProjectCarousel/> */}
-            <Footer/>
+            <Footer />
         </div>
     )
 }

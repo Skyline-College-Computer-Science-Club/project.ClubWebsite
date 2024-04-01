@@ -10,7 +10,7 @@ export default function IntroFade() : React.ReactNode {
 
     return (
         <motion.div ref={ref} initial={{opacity: 1}} animate={isInView ? {opacity: 0} : {opacity: 1}} transition={{duration: 2, ease: "easeOut"}} 
-            className="z-50 pointer-events-none absolute w-full h-full bg-black"
+            className="z-30 pointer-events-none absolute w-full h-full bg-black"
         />
     )
 }
