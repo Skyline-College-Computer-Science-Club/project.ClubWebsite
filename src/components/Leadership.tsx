@@ -36,11 +36,10 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
 
     const leaderDetails = leadership[leaderName];
 
-
     return (
         <motion.div ref={ref} onAnimationStart={() => {setIsAnimating(true)}} onAnimationComplete={() => {setIsAnimating(false)}} onMouseEnter={() => playSfx_hoverThunk()}
-            initial={{ opacity: 0, transform: "translateX(50%)" }} animate={isInView ? { opacity: 1, transform: "translateX(0%)" } : ""} transition={{duration: 0, delay: 0, ease: "easeOut"}} 
-            className={`${isAnimating && "pointer-events-none"} min-w-[200px] max-w-[250px] hover:z-20 outline-2 outline-green-950 outline relative group opacity-0 hover:rounded-b-none hover:!scale-105 transition duration-300 ease-out select-none rounded-xl bg-gradient-to-t from-[#040404] via-green-950 to-green-950`} key={leaderName}>
+            initial={{ opacity: 0, transform: "translateX(50%)" }} animate={isInView ? { opacity: 1, transform: "translateX(0%)" } : ""} transition={{duration: 1, delay: index * 0.1, ease: "easeOut"}} 
+            className={`${isAnimating && "pointer-events-none"} min-w-[240px] max-w-[230px] hover:z-20 outline-2 outline-green-950 outline relative group opacity-0 hover:rounded-b-none hover:!scale-105 transition duration-300 ease-out select-none rounded-xl bg-gradient-to-t from-[#040404] via-green-950 to-green-950`} key={leaderName}>
 
             {/* Leader Portrait + Leader Quote Overlay */}
             <div className="hover:scale-105 active:scale-95 transition duration-300 ease-out" onMouseDown={() => {
@@ -64,6 +63,9 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
 
             {/* Leader Name and Role */}
             <div className="rounded-xl p-4 group-hover:pb-0">
+                <div className="absolute w-full">
+                    {leaderDetails.icon}
+                </div>
                 <h1 className="title-main text-xl font-semibold text-center">{leaderName}</h1>
                 <h2 className="text-lg font-semibold text-center">{leaderDetails.role}</h2>
             </div>
@@ -96,7 +98,7 @@ export default function Leadership() : React.ReactNode {
                 <div className="w-full mb-8 mt-4 text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]"></div>
 
                 <div className="flex flex-row flex-wrap justify-center align-middle gap-x-8 gap-y-6">
-                    {Object.keys(leadership).map((leaderName, index) => (<LeaderCard key={crypto.randomUUID()} index={index} leaderName={leaderName}/>))}
+                    {Object.keys(leadership).map((leaderName, index) => (<LeaderCard key={leaderName} index={index} leaderName={leaderName}/>))}
                 </div>
 
                 <div className="w-full my-8 text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]"></div>

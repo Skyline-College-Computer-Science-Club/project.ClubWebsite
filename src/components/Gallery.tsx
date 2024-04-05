@@ -12,7 +12,7 @@ import gallery from '../dispositions/gallery'
 const SECTION_TYPED_KEYWORDS = ["Social Events", "Hackathons", "Technology Workshops", "Field Trips"]
 
 const imageClasses = 'relative max-h-full w-full object-cover duration-500 hover:!opacity-100 hover:!scale-110 hover:outline-[6px] outline-0 outline-white outline rounded-lg group-hover:opacity-100' // 
-const listItemClasses = 'flex-grow p-1 h-[21vw] hover:z-10 group/inner duration-500 hover:!z-10 active:!scale-[140%] hover:max-h-[600px]'
+const listItemClasses = 'flex-grow p-1 min-h-[120px] h-[21vw] hover:z-10 group/inner duration-500 hover:!z-10 active:!scale-[140%] hover:max-h-[600px]'
 
 interface GalleryPiece {
     remark: string,
@@ -33,7 +33,7 @@ const GalleryPiece: React.FC<props_GalleryPiece> = ({ pieceDetails, index }) => 
     return (
         <motion.div ref={ref} onAnimationComplete={() => {setIsAnimating(false)}} initial={{opacity: 0, transform: "scale(1.05) translateY(10%)"}} animate={isInView ? {opacity: 1, transform: "scale(1) translateY(0%)"} : {}} transition={{duration: 1, delay: index * 0.2, ease: "easeInOut"}} 
             className={listItemClasses + (isAnimating ? " pointer-events-none" : "")}>
-            <Image key={Date.now()} className={imageClasses} width={1000} height={1000} alt={pieceDetails.remark} src={pieceDetails.imgSrc}/>
+            <Image key={index} className={imageClasses} width={1000} height={1000} alt={pieceDetails.remark} src={pieceDetails.imgSrc}/>
             <p className="z-20 group-hover/inner:opacity-100 opacity-0 absolute rounded-2xl bottom-0 w-full text-center duration-300 font-semibold text-shadow-lg shadow-black bg-[#00000090] whitespace-pre-line pointer-events-none">{pieceDetails.remark}</p>
         </motion.div>
     )
@@ -51,7 +51,7 @@ export default function Gallery() : React.ReactNode {
 
             <div className="py-20 overflow-hidden">
                 <div className="flex flex-wrap w-full group">
-                    {gallery.map((pieceDetails, index) => (<GalleryPiece key={crypto.randomUUID()} pieceDetails={pieceDetails} index={index}/>))}
+                    {gallery.map((pieceDetails, index) => (<GalleryPiece key={index} pieceDetails={pieceDetails} index={index}/>))}
                 </div>
             </div>
         </div>
