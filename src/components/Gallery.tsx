@@ -31,12 +31,12 @@ const GalleryPiece: React.FC<props_GalleryPiece> = ({ pieceDetails, index }) => 
     const [isAnimating, setIsAnimating] = useState(true)
 
     return (
-        <motion.div ref={ref} onAnimationComplete={() => {setIsAnimating(false)}} initial={{opacity: 0, transform: "scale(1.05) translateY(10%)"}} animate={isInView ? {opacity: 1, transform: "scale(1) translateY(0%)"} : {}} transition={{duration: 1, delay: index * 0.2, ease: "easeInOut"}} 
+        <motion.div ref={ref} onAnimationComplete={() => {setIsAnimating(false)}} initial={{opacity: 0, transform: "scale(1.05) translateY(10%)"}} animate={isInView ? {opacity: 1, transform: "scale(1) translateY(0%)"} : {}} transition={{duration: 0.7, delay: index * 0.2, ease: "easeInOut"}} 
             className={listItemClasses + (isAnimating ? " pointer-events-none" : "")}>
             <Image key={index} className={imageClasses} width={1000} height={1000} alt={pieceDetails.remark} src={pieceDetails.imgSrc}/>
             <p className="z-20 group-hover/inner:opacity-100 opacity-0 absolute rounded-2xl bottom-0 w-full text-center duration-300 font-semibold text-shadow-lg shadow-black bg-[#00000090] whitespace-pre-line pointer-events-none">{pieceDetails.remark}</p>
         </motion.div>
-    )
+        )
 }
 
 export default function Gallery() : React.ReactNode {
