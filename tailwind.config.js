@@ -3,6 +3,8 @@ const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 module.exports = {
     content: [ "./src/**/*.{js,jsx,ts,tsx}"],
 
@@ -19,6 +21,13 @@ module.exports = {
                 darkpall: '#493d29',
             }
         },
+
+        fontFamily: {
+            Poppins: ['var(--font-poppins)', ...defaultTheme.fontFamily.sans],
+            Rubik: ['var(--font-rubik)', ...defaultTheme.fontFamily.sans],
+            Ubuntu: ['var(--font-ubuntu)', ...defaultTheme.fontFamily.sans],
+            Open_Sans: ['var(--font-open_sans)', ...defaultTheme.fontFamily.sans],
+        },
     },
 
     variants: {
@@ -31,9 +40,9 @@ module.exports = {
         plugin(function ({ matchUtilities, theme }) {
             matchUtilities(
                 {
-                'text-shadow': (value) => ({
-                    textShadow: value,
-                }),
+                    'text-shadow': (value) => ({
+                        textShadow: value,
+                    }),
                 },
                 { values: theme('textShadow') }
             )

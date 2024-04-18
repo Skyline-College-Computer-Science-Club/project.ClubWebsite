@@ -108,7 +108,7 @@ export default function Carousel() {
                                         }}
                                         key={projectName}
                                     >
-                                        <div key={projectName} className="m-1 relative rounded-xl opacity-10 hover:!opacity-100 hover:border-double group-hover:opacity-70 active:translate-y-4 hover:-translate-y-2 transition duration-400 ease-out">
+                                        <div key={projectName} className="m-1 relative rounded-xl opacity-25 hover:!opacity-100 hover:border-double group-hover:opacity-70 active:translate-y-4 hover:-translate-y-2 transition duration-400 ease-out">
                                             <Image width={1280} height={720} className="object-cover w-80 h-40 rounded-xl" src={projects[projectName].thumbnail} alt={projectName}/>
                                             <p className="z-10 p-2 font-bold text-gray-200 absolute bottom-0">{projectName}</p>
                                             <div className="z-0 absolute top-0 w-full h-full bg-gradient-to-t from-black to-transparent"></div>

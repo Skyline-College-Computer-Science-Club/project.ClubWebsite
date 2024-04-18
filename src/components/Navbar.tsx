@@ -37,10 +37,12 @@ export default function Navbar() : React.ReactNode {
 
             { /* Announcement Banner */ }
             {ANNOUNCEMENT_TEXT ? 
-                <motion.div onMouseDown={() => {setAnnounceDismissed(true)}} className={`flex w-full h-[46px] bg-gradient-to-b ${ANNOUNCEMENT_GRAD_COLOR} to-[#000000] justify-between items-center overflow-hidden`}
+                <motion.div onMouseDown={() => {setAnnounceDismissed(true)}} 
+                    className={`flex w-full h-[46px] bg-gradient-to-b ${ANNOUNCEMENT_GRAD_COLOR} to-[#000000] justify-between items-center overflow-hidden`}
                     initial={{opacity: 0, translateY: "-100%", position: "static"}} animate={!announceDismissed ? {opacity: 1, translateY: "0%"} : {opacity: 0, translateY: "-100%", position: "absolute"}} transition={{duration: 1, ease: "easeOut"}}>
                     <p className="w-full font-semibold text-md text-center text-orange-200">{ANNOUNCEMENT_TEXT}</p>
                     <Image width={600} height={600} src={diagonalGlideOverlay} alt="" className="absolute w-full opacity-10"/>
+                    <p className="absolute text-neutral-600 font-semibold right-4">( click to dismiss )</p>
                 </motion.div> : <></>
             }
 
@@ -65,7 +67,7 @@ export default function Navbar() : React.ReactNode {
 
                     <li className="text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
                         <GoCodeOfConduct className="my-auto mr-2"/>
-                        Join Us!
+                        <a href="https://discord.gg/z5P9kccwRh">Join Us!</a>
                     </li>
                     
                 </ul>

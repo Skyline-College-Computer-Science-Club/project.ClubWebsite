@@ -1,6 +1,8 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import useSound from 'use-sound'
+
 import { Element } from 'react-scroll'
 import Typed from 'react-typed'
 
@@ -8,6 +10,8 @@ import Image from 'next/image'
 import { motion, useInView, useAnimate } from 'framer-motion'
 
 import gallery from '../dispositions/gallery'
+
+const sfxClunk = "/assets/sound_fx/clunk.mp3"
 
 const SECTION_TYPED_KEYWORDS = ["Social Events", "Hackathons", "Technology Workshops", "Field Trips"]
 
@@ -26,17 +30,19 @@ interface props_GalleryPiece {
 
 const GalleryPiece: React.FC<props_GalleryPiece> = ({ pieceDetails, index }) => {
 
+    const [playSfx_clunk] = useSound(sfxClunk)
+
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true})
     const [isAnimating, setIsAnimating] = useState(true)
 
     return (
-        <motion.div ref={ref} onAnimationComplete={() => {setIsAnimating(false)}} initial={{opacity: 0, transform: "scale(1.05) translateY(10%)"}} animate={isInView ? {opacity: 1, transform: "scale(1) translateY(0%)"} : {}} transition={{duration: 0.7, delay: index * 0.2, ease: "easeInOut"}} 
+        <motion.div ref={ref} onMouseEnter={() => {playSfx_clunk()}} onAnimationComplete={() => {setIsAnimating(false)}} initial={{opacity: 0, transform: "scale(1.05) translateY(10%)"}} animate={isInView ? {opacity: 1, transform: "scale(1) translateY(0%)"} : {}} transition={{duration: 0.7, delay: index * 0.2, ease: "easeInOut"}} 
             className={listItemClasses + (isAnimating ? " pointer-events-none" : "")}>
             <Image key={index} className={imageClasses} width={1000} height={1000} alt={pieceDetails.remark} src={pieceDetails.imgSrc}/>
             <p className="z-20 group-hover/inner:opacity-100 opacity-0 absolute rounded-2xl bottom-0 w-full text-center duration-300 font-semibold text-shadow-lg shadow-black bg-[#00000090] whitespace-pre-line pointer-events-none">{pieceDetails.remark}</p>
         </motion.div>
-        )
+    )
 }
 
 export default function Gallery() : React.ReactNode {
@@ -51,7 +57,7 @@ export default function Gallery() : React.ReactNode {
 
             <div className="py-20 overflow-hidden">
                 <div className="flex flex-wrap w-full group">
-                    {gallery.map((pieceDetails, index) => (<GalleryPiece key={index} pieceDetails={pieceDetails} index={index}/>))}
+                    {gallery.map((pieceDetails, index) => (<GalleryPiece key={pieceDetails.toString()} pieceDetails={pieceDetails} index={index}/>))}
                 </div>
             </div>
         </div>

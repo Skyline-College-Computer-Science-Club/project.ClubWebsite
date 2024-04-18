@@ -6,6 +6,8 @@ import { Element } from 'react-scroll'
 import { motion, useInView } from 'framer-motion'
 import { useSound } from 'use-sound'
 
+import Image from 'next/image'
+
 import { FcCollaboration, FcElectronics, FcIdea } from 'react-icons/fc'
 
 const sfxClunk = '/assets/sound_fx/clunk.mp3'
@@ -31,11 +33,11 @@ export default function About() : React.ReactNode {
 
             <Element name="about"/>
 
-            <motion.img width={"100"} src={kitty} className="mx-auto my-10 hover:!scale-105 transition duration-300 ease-out" initial={{transform: "translateY(-10%)"}}  animate={{transform: `translateY(10%)`}} transition={{repeat: Infinity, repeatType: "mirror", type: "tween", ease: "linear", duration: 2 }}/>
-
             {/* <Element name="about"/> */}
 
             <div className="flex flex-col">
+
+                <Image src={kitty} className="z-10 hover:!scale-105 transition duration-300 ease-out mx-auto mb-6" alt="" width={100} height={100} />
 
                 <h1 className="title-main mx-auto text-2xl text-center sm:text-4xl font-extrabold text-white mb-10"> 
                     <span>Join us in Exploring the </span><span className="text-yellow-300 animate-pulse drop-shadow-[0_0_10px_rgba(255,250,50,0.45)]">World of Computer Science</span>

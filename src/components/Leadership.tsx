@@ -87,20 +87,21 @@ const LeaderCard: React.FC<props_LeaderCard> = ({ leaderName, index }) => {
 export default function Leadership() : React.ReactNode {
     return (
         // bg-[radial-gradient(#000_1px,transparent_1px)]
-        <div className="w-full h-full py-80 text-gray-300 bg-[#031302]">
+        <div className="w-full h-full py-80  text-gray-300 bg-gradient-to-b from-black via-[#031302] to-black">
 
             <Element name="leadership"/>
 
             <div className="flex flex-col justify-center items-center w-full h-full px-[8vw] xl:px-[15vw]">
                 <h1 className="title-main w-full text-center text-4xl font-semibold drop-shadow-[0_0_30px_rgba(255,255,255,1)]">Our Club Leadership</h1>
-                <h1 className="title-main w-full text-center text-2xl font-semibold">👑 2023-2024 👑</h1>
+                <h1 className="title-main w-full text-center text-2xl font-semibold mt-2">👑 2023 - 2024 👑</h1>
                 {/* <div className="grid grid-cols-4 gap-6 my-4 mx-[20%]"> */}
                 <div className="w-full mb-8 mt-4 text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]"></div>
 
                 <div className="flex flex-row flex-wrap justify-center align-middle gap-x-8 gap-y-6">
-                    {Object.keys(leadership).map((leaderName, index) => (<LeaderCard key={leaderName} index={index} leaderName={leaderName}/>))}
+                    {Object.keys(leadership).map((leaderName, index) => (<LeaderCard key={leaderName + index} index={index} leaderName={leaderName}/>))}
                 </div>
 
+                <p className="mt-4 text-neutral-700 font-Poppins font-semibold">pssst! past Officers to be shown soon!</p>
                 <div className="w-full my-8 text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]"></div>
             </div>
         </div>
