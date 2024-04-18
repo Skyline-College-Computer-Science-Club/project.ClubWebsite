@@ -92,7 +92,7 @@ export const leadership = {
         'linktree': 'https://linktr.ee/isaiahrashadfan',
         'discord': 'https://discordapp.com/users/85194740890337280',
         'instagram': 'https://www.instagram.com/cchristse',
-        'linkedin': 'https://www.linkedin.com/in/chris-tse/',
+        'linkedin': 'https://www.linkedin.com/in/chris-tse-irf/',
         'icon': <FaRegHandPeace />
     },
     'Denise Hum': {

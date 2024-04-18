@@ -75,7 +75,7 @@ export default function Carousel() {
                     {/* Project Badges */}
                     <div>
                         {projectDetails.tags.map((tag: string) => (
-                            <div className={`text-sm ${Tags[tag].color} shadow-sm text-gray-100 bg-opacity-75 mr-1 font-semibold px-2 py-1 rounded-md inline-block`} key={crypto.randomUUID()}>{Tags[tag].icon}{tag}</div>
+                            <div className={`text-sm ${Tags[tag].color} shadow-sm text-gray-100 bg-opacity-75 mr-1 font-semibold px-2 py-1 rounded-md inline-block`} key={tag}>{Tags[tag].icon}{tag}</div>
                             // <div className={`text-sm shadow-sm shadow-white text-gray-100 bg-opacity-90 mr-1 font-semibold px-2 py-1 rounded-md inline-block`}>{Tags[tag].icon}{tag}</div>
                         ))}
                     </div>

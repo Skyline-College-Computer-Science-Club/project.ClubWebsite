@@ -89,7 +89,7 @@ export default function Leadership() : React.ReactNode {
                 <div className="flex flex-col justify-center items-center w-full h-full">
                     <h1 className="title-main mx-auto my-4 text-4xl font-semibold border-b-2 border-[#86f446] drop-shadow-[0_0_60px_rgba(50,255,50,1)]">Our Club Leadership</h1>
                     <div className="grid grid-cols-4 gap-6 my-4 mx-[20%]">
-                        {Object.keys(leadership).map((leaderName, index) => (<LeaderCard key={crypto.randomUUID()} index={index} leaderName={leaderName}/>))}
+                        {Object.keys(leadership).map((leaderName, index) => (<LeaderCard key={index} index={index} leaderName={leaderName}/>))}
                     </div>
                 </div>
             </div>
