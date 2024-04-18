@@ -75,7 +75,7 @@ export default function() {
                     <a href="https://drive.google.com/file/d/1H9kzRPuWqiKmZSB3WRJo_PqzxrOWLSpB/view?usp=sharing">
                         <div className="bg-[#ffd035a4] rounded-2xl p-2 px-6 font-semibold transition-all hover:scale-105">🕒 Timeline</div>
                     </a>
-                    <a href="https://skycsc.vercel.app/hackathon">
+                    <a href="https://docs.google.com/document/d/15pP7UGDzaynIAKgSyr7UfDeE1j1VzpseOmH3kx6Ukv0/edit?usp=sharing">
                         <div className="bg-[#cc00ff75] rounded-2xl p-2 px-6 font-semibold transition-all hover:scale-105">📖 Hacker Handbook</div>
                     </a>
                 </div>

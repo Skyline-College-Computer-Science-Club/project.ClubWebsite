@@ -13,6 +13,7 @@ import Image from 'next/image'
 import { Link as ScrollLink, animateScroll } from 'react-scroll'
 import Link from 'next/link'
 
+import { HiOutlineRocketLaunch } from 'react-icons/hi2';
 import { GoHome, GoQuestion, GoCodeOfConduct } from 'react-icons/go'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { FiTool } from 'react-icons/fi'
@@ -63,6 +64,11 @@ export default function Navbar() : React.ReactNode {
                     <li className="text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
                         <FiTool className="my-auto mr-2"/>
                         <Link href="./projects">Projects</Link>
+                    </li>
+
+                    <li className="text-yellow-300 font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
+                        <HiOutlineRocketLaunch className="my-auto mr-2"/>
+                        <Link href="./hackathon">The Intercollegiate Hackathon</Link>
                     </li>
 
                     <li className="text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
