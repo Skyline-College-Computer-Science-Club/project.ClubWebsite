@@ -12,24 +12,28 @@ import { useState, useEffect } from 'react'
 
 const SHOWTIME = new Date(0).setSeconds(1713830400)
 
-function secondsToDhms(seconds) {
-    const d = Math.floor(seconds / (3600*24));
-    const h = `${Math.floor(seconds % (3600*24) / 3600)}`.padStart(2, '0');
-    const m = `${Math.floor(seconds % 3600 / 60)}`.padStart(2, '0');
-    const s = `${Math.floor(seconds % 60)}`.padStart(2, '0');
-    
-    // const dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
-    // const hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
-    // const mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "";
-    // const sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
-    // return dDisplay + hDisplay + mDisplay + sDisplay;
-
-    return d + " : " + h + " : " + m + " : "  + s;
-}
 
 export default function() {
 
+    const [altFormat, setAltFormat] = useState(false)
     const [countdown, setCountDown] = useState(0);
+
+    function secondsToDhms(seconds: number) : string {
+        const d = Math.floor(seconds / (3600 * 24))
+        const h = Math.floor(seconds % (3600 * 24) / 3600)
+        const m = Math.floor(seconds % 3600 / 60)
+        const s = Math.floor(seconds % 60)
+        
+        if (altFormat) {
+            const dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
+            const hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
+            const mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "";
+            const sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "0 second";
+            return dDisplay + hDisplay + mDisplay + sDisplay;
+        }
+    
+        return d.toString().padStart(2, '0') + " : " + h.toString().padStart(2, '0') + " : " + m.toString().padStart(2, '0') + " : "  + s.toString().padStart(2, '0');
+    }
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -41,8 +45,8 @@ export default function() {
 
     return (
         <>
-            {/* <IntroFade /> */}
-            <div className="flex flex-col w-screen h-screen justify-center items-center">
+            <IntroFade />
+            <div className="flex flex-col w-screen h-screen justify-center items-center overflow-hidden">
 
                 <motion.div 
                     initial={{transform: "translateY(2%)"}} 
@@ -62,7 +66,28 @@ export default function() {
                 </motion.div>
 
                 {/* <div className="text-8xl font-bold text-orange-200">Hackathon</div> */}
-                <div className="text-4xl font-bold font-Ubuntu mt-4">{`${secondsToDhms(countdown / 1000)}`}</div>
+                <div className="text-4xl font-bold font-Ubuntu mt-4 bg-[#00000075] rounded-2xl p-2 px-12" onMouseEnter={() => { setAltFormat(true) }} onMouseLeave={() => { setAltFormat(false) }}>{`${secondsToDhms(countdown / 1000)}`}</div>
+
+                <div className="flex flex-row mt-4 gap-3">
+                    <a href="https://forms.gle/k9y4ZKbnatqiSBFRA">
+                        <div className="bg-[#1bff2675] rounded-2xl p-2 px-8 font-semibold transition-all hover:scale-105">✅ Apply Now!</div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1H9kzRPuWqiKmZSB3WRJo_PqzxrOWLSpB/view?usp=sharing">
+                        <div className="bg-[#ffd035a4] rounded-2xl p-2 px-6 font-semibold transition-all hover:scale-105">🕒 Timeline</div>
+                    </a>
+                    <a href="https://skycsc.vercel.app/hackathon">
+                        <div className="bg-[#cc00ff75] rounded-2xl p-2 px-6 font-semibold transition-all hover:scale-105">📖 Hacker Handbook</div>
+                    </a>
+                </div>
+
+                <div className="flex flex-row mt-2 gap-2">
+                    <a href="https://discord.gg/z5P9kccwRh">
+                        <div className="bg-[#00000075] rounded-2xl p-2 px-6 font-semibold transition-all hover:scale-105">Join Skyline's CSC Discord</div>
+                    </a>
+                    <a href="https://discord.gg/g8dvmWCXPB">
+                        <div className="bg-[#00000075] rounded-2xl p-2 px-6 font-semibold transition-all hover:scale-105">Join San Mateo's CSC Discord</div>
+                    </a>
+                </div>
 
             </div>
         </>
