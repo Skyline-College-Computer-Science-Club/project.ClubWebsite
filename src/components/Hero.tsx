@@ -42,7 +42,7 @@ export default function Hero() : React.ReactNode {
                 </div>
 
                 {/* Currently requires a weird arbit. offset of -180 for this particular scroll */}
-                <Link to="about" smooth={true} offset={40} duration={1500} className="z-20 mt-6 relative group w-[240px] active:scale-95 duration-150 border-[1px] hover:border-green-900 border-white rounded-2xl hover:outline-double hover:outline-[6px] active:outline-4 text-white text-lg title-main overflow-hidden">
+                <Link to="about" smooth={true} offset={40} duration={1500} className="z-20 mt-6 relative group w-[240px] active:scale-95 duration-150 border-[1px] hover:border-green-900 border-white rounded-2xl hover:outline hover:outline-[6px] active:outline-4 text-white text-lg title-main overflow-hidden">
                     <IoMdArrowRoundDown className="absolute w-full h-full group-hover:translate-y-0 -translate-y-[100%] duration-300 pointer-events-none bg-gradient-to-t from-[#16a34aec] to-[#ffffff91]"/>
                     <button className="flex w-full justify-center p-2 font-semibold text-shadow-lg shadow-black hover:bg-green-600 duration-300 hover:border-green-300 overflow-hidden">
                         <p className="text-center">I&apos;m Interested</p>

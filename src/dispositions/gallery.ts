@@ -114,6 +114,10 @@ export const gallery: GalleryPiece[] = [
         remark: '💪 Settling Outside Balcony Feat. Jonnald\n@ "CalHacks v10.0"',
         imgSrc: dir_gallery + 'calhacks_jonnald.jpg'
     },
+    {
+        remark: '🌉 Opening Night Group Photo feat. The Club and SFSU Friends @ "SFHacks 2024"',
+        imgSrc: dir_gallery + 'sfhacks_group.jpg'
+    }
 ]
 
 export default gallery

@@ -44,10 +44,10 @@ const TECHNOLOGIES: { [key: string]: JSX.Element } = {
     "JavaScript": (<SiJavascript color="rgb(255, 220, 50)"      className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
     "HTML": (<SiHtml5 color="rgb(255, 80, 50)"                  className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
     "CSS": (<SiCss3 color="rgb(100, 140, 255)"                  className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
-    "TypeScript": (<SiTypescript color="#3178C6"                className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
+    "TypeScript": (<SiTypescript color="#3178C6"              className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
     "Forge": (<SiCurseforge color="rgb(255, 120, 77)"           className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
     "Python": (<SiPython color="rgb(255, 230, 100)"             className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
-    "Lua": (<SiLua color="#3178C6"                              className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
+    "Lua": (<SiLua color="#3178C6"                            className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
     "Kotlin": (<SiKotlin color="rgb(135, 93, 247)"              className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
     "Node.js": (<SiNodedotjs color="rgb(109, 200, 95)"          className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
     "Studio": (<SiRobloxstudio color="rgb(0, 203, 255)"         className={TECH_ICON_CLASSES} style={TECH_ICON_SHADOW}/>),
@@ -85,8 +85,9 @@ export default function Technologies() : React.ReactNode {
                     <motion.div className="flex h-full" initial={{transform: "translateX(-100%)"}} animate={{transform: `translateX(100vw)`}} transition={{repeat: Infinity, type: "tween", ease: "linear", duration: 36 }}>
                         {Object.entries(TECHNOLOGIES).map(([technology_name]) => {
                             return (
-                                <div onMouseEnter={() => playSfx_Click()} key={technology_name} className="flex h-full mx-5 hover:scale-110 duration-300">
+                                <div onMouseEnter={() => playSfx_Click()} key={technology_name} className="flex h-[70%] mx-5 hover:scale-110 duration-300 bg-[#000000bb] outline outline-1 outline-white rounded-3xl pl-5">
                                     {TECHNOLOGIES[technology_name]}
+                                    {/* <p className={TECH_TEXT_CLASSES}>{technology_name}</p> */}
                                     <Typed strings={[technology_name]} className={TECH_TEXT_CLASSES}></Typed>
                                 </div>
                             )

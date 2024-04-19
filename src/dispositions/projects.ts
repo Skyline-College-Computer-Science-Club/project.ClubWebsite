@@ -41,7 +41,7 @@ export const projects: { [key: string]: ProjectDetails } = {
         github: 'https://github.com/Skyline-College-Computer-Science-Club',
         trello: 'https://trello.com/b/sURZQegY/🚧-project-the-club-website'
     },
-    'The Skyline Computer Science Club Website': {
+    'The Computer Science Club Website': {
         backdrop: clubWebsiteBack,
         thumbnail: clubWebsiteThumb,
         description: 'You\'re already here! An informational website about us—Skyline College\'s Computer Science Club. The one-stop shop for club events, resources and opportunities, projects, and more.',
@@ -60,7 +60,7 @@ export const projects: { [key: string]: ProjectDetails } = {
     'Generic Project 3': {
         backdrop: previewArt2,
         thumbnail: previewArt3,
-        description: 'This is a description for project 3.',
+        description: 'Skyline Shines',
         tags: ['Python'],
         github: '',
         trello: ''
