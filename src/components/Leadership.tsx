@@ -131,7 +131,7 @@ export default function Leadership() : React.ReactNode {
                 </div>
                 
                 {/* <div className="grid grid-cols-4 gap-6 my-4 mx-[20%]"> */}
-                <div className="w-full text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]"></div>
+                <div className="w-full text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)] overflow-hidden"></div>
 
                 {/* Major Leadership */}
                 <div className="flex flex-row flex-wrap justify-center align-middle gap-x-8 gap-y-6">

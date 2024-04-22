@@ -20,7 +20,7 @@ const pfp_president = dir_leaderPortraits +'tylerkuwadaport.png'
 const pfp_vicepresident = dir_leaderPortraits + 'jonasquiballoport.png'
 const pfp_secretary = dir_leaderPortraits + 'kailabautistaport.jpg'
 const pfp_treasurer = dir_leaderPortraits + 'jayanpintorport.jpg'
-const pfp_projectmanager = dir_leaderPortraits + 'lanceruizport.png'
+const pfp_projectmanager = dir_leaderPortraits + 'lanceruizport.jpg'
 
 const pfp_auxillary1 = dir_leaderPortraits + 'christseport.png'
 

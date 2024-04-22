@@ -58,17 +58,17 @@ export default function Navbar() : React.ReactNode {
 
                     <li className="text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
                         <GoHome className="my-auto mr-2"/>
-                        <Link href="." onMouseUp={() => {animateScroll.scrollToTop()}}>Home</Link>
+                        <Link href="/" onMouseUp={() => {animateScroll.scrollToTop()}}>Home</Link>
                     </li>
 
                     <li className="text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
                         <FiTool className="my-auto mr-2"/>
-                        <Link href="./projects">Projects</Link>
+                        <Link href="/projects">Projects</Link>
                     </li>
 
                     <li className="text-yellow-300 font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">
                         <HiOutlineRocketLaunch className="my-auto mr-2"/>
-                        <Link href="./hackathon">The Intercollegiate Hackathon</Link>
+                        <Link href="/hackathon">The Intercollegiate Hackathon</Link>
                     </li>
 
                     <li className="text-white font-semibold flex active:scale-90 hover:scale-105 transition duration-300 ease-out">

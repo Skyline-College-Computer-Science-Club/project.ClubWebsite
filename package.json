@@ -9,11 +9,14 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@vercel/postgres": "^0.8.0",
+        "@yudiel/react-qr-scanner": "^2.0.0-beta.3",
         "babel-eslint": "^10.1.0",
         "file-loader": "^6.2.0",
         "next": "14.0.4",
         "react": "^18",
         "react-dom": "^18",
+        "react-qr-reader": "^3.0.0-beta-1",
         "react-scroll": "^1.9.0",
         "url-loader": "^4.1.1",
         "use-sound": "^2.2.0"

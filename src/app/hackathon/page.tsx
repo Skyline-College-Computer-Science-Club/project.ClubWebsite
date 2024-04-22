@@ -10,8 +10,8 @@ import Image from 'next/image'
 
 import { useState, useEffect } from 'react'
 
-const SHOWTIME = new Date(0).setSeconds(1713830400)
-
+const SHOWTIME = new Date(0).setSeconds(1713826800) // 4:00 - 04/22/24 
+const ENDTIME = new Date(0).setSeconds(1714431600) // 4:00 - 04/29/24
 
 export default function() {
 
@@ -28,7 +28,7 @@ export default function() {
             const dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
             const hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
             const mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "";
-            const sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "0 second";
+            const sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "0 seconds";
             return dDisplay + hDisplay + mDisplay + sDisplay;
         }
     
@@ -37,7 +37,12 @@ export default function() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCountDown(SHOWTIME - Date.now());
+            if ((SHOWTIME - Date.now()) > 0) {
+                setCountDown(SHOWTIME - Date.now());
+            }
+            else {
+                setCountDown(ENDTIME - Date.now());
+            }
         }, 1000);
 
         return () => clearInterval(interval);
@@ -66,7 +71,9 @@ export default function() {
                 </motion.div>
 
                 {/* <div className="text-8xl font-bold text-orange-200">Hackathon</div> */}
-                <div className="text-4xl font-bold font-Ubuntu mt-4 bg-[#00000075] rounded-2xl p-2 px-12" onMouseEnter={() => { setAltFormat(true) }} onMouseLeave={() => { setAltFormat(false) }}>{`${secondsToDhms(countdown / 1000)}`}</div>
+                <div className="text-4xl font-bold font-Ubuntu mt-4 bg-[#00000075] rounded-2xl p-2 px-12" onMouseEnter={() => { setAltFormat(true) }} onMouseLeave={() => { setAltFormat(false) }}>
+                    {`${secondsToDhms(countdown / 1000)}`}
+                </div>
 
                 <div className="flex flex-col sm:flex-row mt-4 gap-3">
                     <a href="https://forms.gle/k9y4ZKbnatqiSBFRA">
