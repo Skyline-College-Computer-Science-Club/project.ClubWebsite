@@ -44,7 +44,7 @@ const MajorLeaderCard: React.FC<props_MajorLeaderCard> = ({ leaderName, index })
     return (
         <motion.div ref={ref} onAnimationStart={() => {setIsAnimating(true)}} onAnimationComplete={() => {setIsAnimating(false)}} onMouseEnter={() => playSfx_hoverThunk()}
             initial={{ opacity: 0, transform: "translateX(50%)" }} animate={isInView ? { opacity: 1, transform: "translateX(0%)" } : ""} transition={{duration: 1, delay: index * 0.1, ease: "easeOut"}} 
-            className={`${isAnimating && "pointer-events-none"} min-w-[230px] max-w-[200px] hover:z-20 outline-2 outline-green-950 outline relative group opacity-0 hover:rounded-b-none hover:!scale-105 transition duration-300 ease-out select-none rounded-xl bg-gradient-to-t from-[#040404] via-green-950 to-green-950`} key={leaderName}>
+            className={`${isAnimating && "pointer-events-none"} min-w-[230px] max-w-[200px] hover:z-20 ring-2 ring-green-950 relative group opacity-0 hover:rounded-b-none hover:!scale-105 transition duration-300 ease-out select-none rounded-xl bg-gradient-to-t from-[#040404] via-green-950 to-green-950`} key={leaderName}>
 
             {/* Leader Portrait + Leader Quote Overlay */}
             <div className="hover:scale-105 active:scale-95 transition duration-300 ease-out" onMouseDown={() => {
