@@ -3,6 +3,10 @@
 const backdrop = '/assets/hackathon/backdrop.png'
 const herologo = '/assets/hackathon/herologo.png'
 
+import Gallery from '../../components/Gallery'
+import { HackathonCollection } from '../../dispositions/gallery'
+
+
 import IntroFade from '../../components/IntroFade'
 
 import { motion } from 'framer-motion'
@@ -19,6 +23,7 @@ export default function() {
     const [countdown, setCountDown] = useState(0);
 
     function secondsToDhms(seconds: number) : string {
+        seconds = Math.abs(seconds)
         const d = Math.floor(seconds / (3600 * 24))
         const h = Math.floor(seconds % (3600 * 24) / 3600)
         const m = Math.floor(seconds % 3600 / 60)
@@ -104,7 +109,13 @@ export default function() {
                     </a>
                 </div>
 
+
             </div>
+
+            <Gallery collection={HackathonCollection} />
+
+            {/* <Gallery /> */}
+
         </>
     )
 }

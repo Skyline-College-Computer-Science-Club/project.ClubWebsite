@@ -47,7 +47,7 @@ export const leadership = {
         'Tyler Kuwada': {
             'role': 'The President',
             'imgSrc': pfp_president,
-            'quote': <p>{"Oh, these weren't homemade, they were made in a factory. A bomb factory. They're bombs."}</p>,
+            'quote': <p>Oh, these weren't homemade, they were made in a factory. A bomb factory. They're bombs.</p>,
             'linktree': '',
             'instagram': 'https://www.instagram.com/tyler_kuwada/',
             'discord': 'https://discordapp.com/users/227633077545992192',
@@ -56,6 +56,7 @@ export const leadership = {
         'Jonas Quiballo': {
             'role': 'The Vice President',
             'imgSrc': pfp_vicepresident,
+            'quote': (<p>Told myself I was gonna lock in—still locking in.</p>),
             'linktree': '',
             'github': 'https://github.com/Waffly10',
             'instagram': 'https://www.instagram.com/_.waffly._/',
@@ -71,6 +72,7 @@ export const leadership = {
         'Jayan Pintor': {
             'role': 'Club Treasurer',
             'imgSrc': pfp_treasurer,
+            'quote': (<p>We all live in a coded world of if statements, never knowing the conditions of each until after interpretation.</p>),
             'linktree': '',
             'github': 'https://github.com/CoderLearnerTime',
             'linkedin': 'https://www.linkedin.com/in/jayanthony-pintor/',
@@ -80,7 +82,7 @@ export const leadership = {
         'Lance Ruiz': {
             'role': 'Projects Manager',
             'imgSrc': pfp_projectmanager,
-            'quote': (<p>This is for the record. History is written by the victor. History is filled with liars.<br/>- Captain $</p>),
+            'quote': (<p>This is for the record. History is written by the victor. History is filled with liars.<br />- Captain $</p>),
             'linktree': 'https://www.linktr.ee/devalto',
             'instagram': '',
             'discord': 'https://discordapp.com/users/168406210687533056',

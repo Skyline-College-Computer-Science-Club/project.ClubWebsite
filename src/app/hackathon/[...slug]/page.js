@@ -155,7 +155,7 @@ export default function({ params }) {
                     {`${decodeURIComponent(params.slug)}`}
                 </div> */}
             </div>
- 
+
             <div className="flex flex-col items-center">
 
                 <Scanner
