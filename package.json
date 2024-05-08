@@ -1,6 +1,7 @@
 {
     "name": "skyline-csc-website",
     "version": "0.1.0",
+    "pretty": "yarn prettier . --write",
     "private": true,
     "scripts": {
         "dev": "next dev",
@@ -12,6 +13,7 @@
         "@vercel/postgres": "^0.8.0",
         "@yudiel/react-qr-scanner": "^2.0.0-beta.3",
         "babel-eslint": "^10.1.0",
+        "eslint-config-prettier": "^9.1.0",
         "file-loader": "^6.2.0",
         "next": "14.0.4",
         "react": "^18",
@@ -30,6 +32,7 @@
         "eslint": "^8.57.0",
         "framer-motion": "^10.16.14",
         "postcss": "^8",
+        "prettier": "3.2.5",
         "react-icons": "^4.11.0",
         "react-typed": "^1.2.0",
         "tailwindcss": "^3.3.0",
