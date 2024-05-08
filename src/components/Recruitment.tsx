@@ -3,14 +3,26 @@
 import { Element } from 'react-scroll'
 import Image from 'next/image'
 
-export default function Recruitment() : React.ReactNode {
+export default function Recruitment(): React.ReactNode {
     return (
-        <div className="w-full h-screen flex justify-center items-center p-4">
+        <div className='w-full h-screen flex justify-center items-center p-4'>
+            <Image
+                src='/assets/home/bg_astronomics_brown.webp'
+                width={1600}
+                height={1000}
+                alt='background'
+                className='-z-10 object-cover aspect-auto` absolute w-full h-full opacity-[80%]'
+            />
 
-            <Image src="/assets/home/bg_astronomics_brown.webp" width={1600} height={1000} alt="background" className="-z-10 object-cover aspect-auto` absolute w-full h-full opacity-[80%]"/>
-
-            <Element name="Recruitment"/>
-            <iframe title="discord" className="mx-10" src="https://ptb.discord.com/widget?id=939701223144185867&theme=dark" width="350" height="500" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <Element name='Recruitment' />
+            <iframe
+                title='discord'
+                className='mx-10'
+                src='https://ptb.discord.com/widget?id=939701223144185867&theme=dark'
+                width='350'
+                height='500'
+                sandbox='allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts'
+            ></iframe>
             {/* <form action="" className="flex flex-col max-w-[600px] w-full ">
                 <div className="pb-8">
                         <p className="text-4xl font-bold inline border-b-4 border-[#4681f4] text-gray-300">Contact</p>

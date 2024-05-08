@@ -3,10 +3,10 @@ const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 
-import defaultTheme from 'tailwindcss/defaultTheme';
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 module.exports = {
-    content: [ "./src/**/*.{js,jsx,ts,tsx}"],
+    content: ['./src/**/*.{js,jsx,ts,tsx}'],
 
     theme: {
         extend: {
@@ -19,20 +19,23 @@ module.exports = {
                 lightpall: '#fcd690',
                 medpall: '#c9aa72',
                 darkpall: '#493d29',
-            }
+            },
         },
 
         fontFamily: {
             Poppins: ['var(--font-poppins)', ...defaultTheme.fontFamily.sans],
             Rubik: ['var(--font-rubik)', ...defaultTheme.fontFamily.sans],
             Ubuntu: ['var(--font-ubuntu)', ...defaultTheme.fontFamily.sans],
-            Open_Sans: ['var(--font-open_sans)', ...defaultTheme.fontFamily.sans],
+            Open_Sans: [
+                'var(--font-open_sans)',
+                ...defaultTheme.fontFamily.sans,
+            ],
         },
     },
 
     variants: {
         extend: {
-            visibility: ["group-hover"],
+            visibility: ['group-hover'],
         },
     },
 
@@ -49,4 +52,3 @@ module.exports = {
         }),
     ],
 }
-

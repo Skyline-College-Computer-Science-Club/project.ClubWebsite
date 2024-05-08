@@ -19,12 +19,12 @@
 body {
     color: rgb(var(--foreground-rgb));
     background: linear-gradient(
-        to bottom,
-        transparent,
-        rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} 
+            to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))
+        )
+        rgb(var(--background-start-rgb));
+}
 
 /* TODO: merge these URLs together at some point */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
@@ -48,12 +48,12 @@ body {
     }
 
     .no-scrollbar {
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
     }
 }
 
-@layer base{
+@layer base {
     /* scrollbar css */
     ::-webkit-scrollbar {
         width: 10px;

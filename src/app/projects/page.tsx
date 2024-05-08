@@ -7,9 +7,9 @@ import ProjectCarousel from '../../components/Carousel'
 export default function Projects() {
     return (
         <div>
-            <IntroFade/>
-            
-            <ProjectCarousel/>
+            <IntroFade />
+
+            <ProjectCarousel />
         </div>
     )
 }
