@@ -14,19 +14,6 @@
 
 */
 
-const dir_leaderPortraits = '/assets/home/leader_portraits/'
-
-const pfp_president = dir_leaderPortraits + 'tylerkuwadaport.png'
-const pfp_vicepresident = dir_leaderPortraits + 'jonasquiballoport.png'
-const pfp_secretary = dir_leaderPortraits + 'kailabautistaport.jpg'
-const pfp_treasurer = dir_leaderPortraits + 'jayanpintorport.jpg'
-const pfp_projectmanager = dir_leaderPortraits + 'lanceruizport.jpg'
-
-const pfp_auxillary1 = dir_leaderPortraits + 'christseport.png'
-
-const pfp_coadvisor1 = dir_leaderPortraits + 'denisehumport.png'
-const pfp_coadvisor2 = dir_leaderPortraits + 'bryanswartoutport.png'
-
 import { BiCrown } from 'react-icons/bi'
 import { CgCrown } from 'react-icons/cg'
 import { GrMoney } from 'react-icons/gr'
@@ -39,6 +26,19 @@ import { AiOutlineGlobal } from 'react-icons/ai'
 import { MdOutlineEmojiEvents } from 'react-icons/md'
 
 import { PiFeatherDuotone, PiHandshakeBold } from 'react-icons/pi'
+
+const dir_leaderPortraits = '/assets/home/leader_portraits/'
+
+const pfp_president = dir_leaderPortraits + 'tylerkuwadaport.png'
+const pfp_vicepresident = dir_leaderPortraits + 'jonasquiballoport.png'
+const pfp_secretary = dir_leaderPortraits + 'kailabautistaport.jpg'
+const pfp_treasurer = dir_leaderPortraits + 'jayanpintorport.jpg'
+const pfp_projectmanager = dir_leaderPortraits + 'lanceruizport.jpg'
+
+const pfp_auxillary1 = dir_leaderPortraits + 'christseport.png'
+
+const pfp_coadvisor1 = dir_leaderPortraits + 'denisehumport.png'
+const pfp_coadvisor2 = dir_leaderPortraits + 'bryanswartoutport.png'
 
 export const FALLBACK_QUOTE = (
     <p>

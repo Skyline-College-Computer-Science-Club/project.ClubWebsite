@@ -44,7 +44,7 @@ export default function Socials(): React.ReactNode {
                         </a>
                     </li>
 
-                    <Link to='contact' smooth='true' duration={500}>
+                    {/* <Link to='contact' smooth='true' duration={500}>
                         <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#2ba288]'>
                             <a
                                 className='flex justify-between items-center w-full text-gray-300'
@@ -53,7 +53,7 @@ export default function Socials(): React.ReactNode {
                                 Message <HiOutlineMail size={30} />
                             </a>
                         </li>
-                    </Link>
+                    </Link> */}
                 </ul>
             </div>
         </div>

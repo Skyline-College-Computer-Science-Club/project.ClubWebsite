@@ -1,7 +1,8 @@
 'use client'
 
-import { useRef } from 'react'
 import Image from 'next/image'
+
+import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const kitty = '/assets/mascot.gif'
@@ -17,7 +18,7 @@ export default function IntroFade(): React.ReactNode {
             initial={{ opacity: 1 }}
             animate={isInView ? { opacity: 0 } : { opacity: 1 }}
             transition={{ duration: 1.4, delay: 0.4, ease: 'easeOut' }}
-            className='z-30 flex flex-col items-center justify-center pointer-events-none absolute w-full h-full bg-black'
+            className='z-30 flex flex-col items-center justify-center pointer-events-none absolute w-full h-screen bg-black'
         >
             <Image
                 src={kitty}

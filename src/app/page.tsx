@@ -7,6 +7,7 @@ import Typed from 'react-typed'
 
 import { HomeCollection } from '../dispositions/gallery'
 
+// components
 import IntroFade from '../components/IntroFade'
 
 import Hero from '../components/Hero'
@@ -17,14 +18,16 @@ import Gallery from '../components/Gallery'
 
 import History from '../components/History'
 import Leadership from '../components/Leadership'
-// import Socials from './components/Socials';
+import Socials from '../components/Socials'
 
 import Recruitment from '../components/Recruitment'
 
 import Footer from '../components/Footer'
 
-const SECTION_TYPED_KEYWORDS = [
+const GALLERY_TYPED_WORDS = [
     'Social Events',
+    'Networking Mixers',
+    'Company Tours',
     'Hackathons',
     'Technology Workshops',
     'Field Trips',
@@ -34,7 +37,8 @@ const SECTION_TYPED_KEYWORDS = [
 
 export default function App() {
     return (
-        <div>
+        <>
+            <Socials />
             <IntroFade />
 
             <Hero />
@@ -50,7 +54,7 @@ export default function App() {
                         Journey with us in&nbsp;
                     </span>
                     <Typed
-                        strings={SECTION_TYPED_KEYWORDS}
+                        strings={GALLERY_TYPED_WORDS}
                         typeSpeed={50}
                         backSpeed={75}
                         backDelay={3000}
@@ -68,6 +72,6 @@ export default function App() {
             {/* <Socials/> */}
 
             <Footer />
-        </div>
+        </>
     )
 }

@@ -229,13 +229,13 @@ export default function ({ params }) {
                     onResult={(result, error) => {
                         console.log(result)
                         if (result && (data != result.text)) {
-                            setData(result.text);
+                            setData(result.text)
                             
                             
                         }
 
                         if (error) {
-                            console.info(error);
+                            console.info(error)
                         }
                     }}
                 />
