@@ -1,29 +1,36 @@
-# 🌍 Our Club Website - ![CodeQL](https://github.com/Skyline-College-Computer-Science-Club/project.ClubWebsite/workflows/CodeQL/badge.svg) ![Vercel](https://img.shields.io/github/deployments/Skyline-College-Computer-Science-Club/project.ClubWebsite/production?&logo=vercel&label=Vercel%20Deployment)
+# 🌍 Our Club Website
+[![Discord](https://img.shields.io/discord/939701223144185867?logo=discord)](https://discord.gg/z5P9kccwRh) ![CodeQL](https://github.com/Skyline-College-Computer-Science-Club/project.ClubWebsite/workflows/CodeQL/badge.svg) [![Vercel](https://img.shields.io/github/deployments/Skyline-College-Computer-Science-Club/project.ClubWebsite/production?&logo=vercel&label=Vercel%20Deployment)](https://github.com/Skyline-College-Computer-Science-Club/project.ClubWebsite/deployments/Production)
 
-> Preview media are outdated as of 12/05/2023.
->
-> <img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/site_preview2.gif" width=400></img> > <img src="https://media.discordapp.net/attachments/1147427497290506332/1155458898183061595/Image_9-24-23_at_4.00_AM.jpeg" width=400></img>
+An informational website created by us, about us, the Computer Science Club @ Skyline College.
 
-An informational website about us, the Computer Science Club @ Skyline College.
+### 🔗 Come and visit us live @ [skycs.club](https://skycs.club) & [skycsc.vercel.app](https://skycsc.vercel.app)
 
-### 🔗 Check it out over at https://skycsc.vercel.app.
 
 Will serve stuff like showcases for our projects, social media links & connections, Discord + GitHub integrations, a photo album?, a _blog_?, resources and intern opportunities, and whatever else our club would want to show to the world.
 
+🙋‍♂️ We encourage all club members to contribute in any way to our website domain!
+
+![Alt](https://repobeats.axiom.co/api/embed/fe1b3c980d478532406427b995d24931828a681c.svg "Repobeats analytics image")
+
 ## 🔰 Quick Setup / Getting Started
 
-1. Clone this repository locally to your computer using Git.
+> Want to help design and add stuff to our project? Setup is easy and merely takes 5 minutes!
 
--   You can do so by clicking the green `<> Code` button above, copying the URI, then using the `git clone <URI>` command in any terminal.
+1. Clone this repository locally to your computer using [Git](https://git-scm.com/downloads).
 
-2. Open the cloned folder in an IDE of your choice, then open a command-line shell and CD into the directory of said folder.
+-   You can do so by clicking the green `<> Code` button above, copying the URL, then using the `git clone <URL>` command in a terminal.
 
--   If using an external, standalone command-line shell, use the `cd` command like so: `cd "Documents\My Projects\project.ClubWebsite-main"`
--   **If you use VSCode**: after opening the folder, open a new VSCode Terminal; it will automatically navigate itself to the currently open directory. (see below)
+2. Open the cloned folder in an IDE of your choice. Also via your terminal, cd into the directory of said folder.
+
+-   If using an external, standalone command-line shell, use the `cd` command like so: 
+
+`cd "Documents\My Projects\project.ClubWebsite-live"`
+
+-   **Alternatively, if you use VSCode**: after opening the folder, open a new Terminal (via top-left bar); it will automatically navigate itself to the currently open directory. (see below)
 
 <img src="https://github.com/Skyline-College-Computer-Science-Club/.github/blob/main/assets/tutorial_media/project.ClubWebsite/open_folder_and_terminal.gif" width=600></img>
 
-3. For this project, you only need to download one installer/program: **[📘Node.js](https://nodejs.org/en)**
+3. For this project, the only dependancy runtime is: **[📘Node.js](https://nodejs.org/en)**
 
 4. After installing Node.js, run the following command in the directory of the downloaded project to install our project's required dependencies, which includes React and the Next.js frameworks:
 
@@ -51,7 +58,7 @@ Steps 4 & 5 can be seen here:
 
 -   You can start by editing the home page's components; modifying the files under `src/components`. The page auto-updates every time you save the file.
 
-After this initial setup, you will only need to re-run Step 5) to continue editing the project in the future.
+💡 After this initial setup, you only need Step 5) when editing the project in the future.
 
 ## 📚 Important Resources and Documentation
 
