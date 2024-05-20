@@ -38,7 +38,6 @@ const GALLERY_TYPED_WORDS = [
 export default function App() {
     return (
         <>
-            <Socials />
             <IntroFade />
 
             <Hero />

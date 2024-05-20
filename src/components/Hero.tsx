@@ -26,7 +26,7 @@ const TYPED_KEYWORDS = [
 ]
 
 const mascotAnimated = '/assets/mascot.gif'
-const backdrop = '/assets/home/hero_back.jpg'
+const backdrop = '/assets/home/skyline_backdrop.jpg'
 const heroOverlay = '/assets/home/hero_overlay_gray.gif'
 
 export default function Hero(): React.ReactNode {
@@ -107,9 +107,9 @@ export default function Hero(): React.ReactNode {
                 {/* bottom     */}{' '}
                 <div className='bg-gradient-to-t from-black to-transparent absolute bottom-0 w-full h-[20%]'></div>
                 {/* cent-left  */}
-                {/* <div className='bg-gradient-to-l from-[#00000075] to-transparent absolute top-0 left-[25%] w-[25%] h-screen'></div> */}
+                <div className='bg-gradient-to-l from-[#00000075] to-transparent absolute top-0 left-[25%] w-[25%] h-screen'></div>
                 {/* cent-right */}
-                {/* <div className='bg-gradient-to-r from-[#00000075] to-transparent absolute top-0 right-[25%] w-[25%] h-screen'></div> */}
+                <div className='bg-gradient-to-r from-[#00000075] to-transparent absolute top-0 right-[25%] w-[25%] h-screen'></div>
             </div>
         </div>
     )

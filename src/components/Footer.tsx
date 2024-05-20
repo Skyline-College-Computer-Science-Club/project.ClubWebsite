@@ -1,12 +1,13 @@
 import Link from 'next/link'
 
+import Image from 'next/image'
+
 import { SiDiscord, SiLinkedin, SiGithub, SiLinktree } from 'react-icons/si'
 
 export default function Footer() {
     return (
-        <div className='z-50 w-full h-[20vh] bg-gradient-to-b from-neutral-800 dark:from-neutral-950 to-neutral-950 dark:to-black bg-opacity-300'>
-            <div className='h-full text-lg font-semibold pt-4'>
-                <p className='text-center font-semibold'>Let&apos;s connect.</p>
+            <div className='flex flex-col items-center w-full h-full bg-gradient-to-b from-neutral-800 dark:from-neutral-950 to-neutral-950 dark:to-black text-lg font-semibold pt-4 text-center'>
+                <p className='font-semibold'>Let&apos;s connect.</p>
 
                 <div className='flex gap-3 justify-center py-4 overflow-x-hidden'>
                     <Link
@@ -46,7 +47,11 @@ export default function Footer() {
                         </button>
                     </Link>
                 </div>
+                <p className="text-neutral-500">Copyright ©️ Skyline Computer Science Club 2022-2025</p>
+                <div className="flex flex-row items-center justify-center gap-4 my-6 w-full">
+                    <Link href="https://skylinecollege.edu/" target="_blank"><Image src={"/assets/bits/skyline_brand.png"} width={128} height={128} alt="" /></Link>
+                    <Link href="https://smccd.edu/" target="_blank"><Image src={"/assets/bits/smccd_brand.png"} width={256} height={128} alt="" /></Link>
+                </div>
             </div>
-        </div>
     )
 }

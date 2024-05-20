@@ -6,7 +6,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const kitty = '/assets/mascot.gif'
-const loader = '/assets/utility/loader.gif'
+const loader = '/assets/bits/loader.gif'
 
 export default function IntroFade(): React.ReactNode {
     const ref = useRef(null)

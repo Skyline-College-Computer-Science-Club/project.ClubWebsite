@@ -129,7 +129,7 @@ export default function Hackathon() {
                 </div>
 
                 <div className='flex flex-col sm:flex-row mt-4 gap-3'>
-                    {/* <a href='https://forms.gle/k9y4ZKbnatqiSBFRA'> */}
+                    {/* <a href='https://forms.gle/k9y4ZKbnatqiS  BFRA'> */}
                         <div className='flex bg-[#c51a1a75] rounded-2xl sm:w-40 h-10 font-semibold transition-all hover:scale-105 text-center'>
                             <span className='absolute flex h-3 w-3'>
                                 <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff4d40] opacity-75'></span>
