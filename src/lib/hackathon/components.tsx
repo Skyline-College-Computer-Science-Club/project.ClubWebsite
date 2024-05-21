@@ -11,7 +11,7 @@ export interface HackathonTimerProps
  * @param startTime - The start time of the hackathon.
  * @param endTime - The end time of the hackathon.
  * @param divProps - Other props that modifies the returned div element.
- * @returns
+ * @returns A div element that displays the countdown to the start or end of a hackathon.
  */
 export const HackathonTimer: React.FC<HackathonTimerProps> = ({
     startTime,
