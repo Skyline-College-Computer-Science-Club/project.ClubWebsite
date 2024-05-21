@@ -1,8 +1,6 @@
 // Functions for handling time in a hackathon page
 import { parse } from 'date-fns'
 
-// Converts seconds to days, hours, minutes, and seconds as a string
-// Example output: T + 21 : 07 : 46 : 30
 /**
  * Converts seconds to days, hours, minutes, and seconds as a string.
  * @param seconds - The number of seconds to convert.
