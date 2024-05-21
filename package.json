@@ -13,6 +13,7 @@
         "@vercel/postgres": "^0.8.0",
         "@yudiel/react-qr-scanner": "^2.0.0-beta.3",
         "babel-eslint": "^10.1.0",
+        "date-fns": "^3.6.0",
         "eslint-config-prettier": "^9.1.0",
         "file-loader": "^6.2.0",
         "next": "14.0.4",
