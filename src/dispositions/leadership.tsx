@@ -124,6 +124,7 @@ export const leadership = {
         'Denise Hum': {
             role: 'Club Co-Advisor',
             imgSrc: pfp_coadvisor1,
+            quote: 'Data are just summaries of thousands of stories—tell a few of those stories to help make the data meaningful.',
             linktree: '',
             discord: 'https://discordapp.com/users/735277805662765066',
             github: '',
@@ -139,6 +140,15 @@ export const leadership = {
             linkedin: 'https://www.linkedin.com/in/swartoutbryan/',
             icon: <PiHandshakeBold />,
         },
+        // 'Luis Prado': {
+        //     role: 'Club Co-Advisor',
+        //     imgSrc: pfp_coadvisor2,
+        //     linktree: '',
+        //     discord: 'https://discordapp.com/users/373597111192911892',
+        //     github: '',
+        //     linkedin: 'https://www.linkedin.com/in/luis-jibaja-prado-82b4b9135/',
+        //     icon: <PiHandshakeBold />,
+        // },
     },
     minor: {
         'Web Master': {

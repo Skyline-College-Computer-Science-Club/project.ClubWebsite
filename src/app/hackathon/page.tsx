@@ -113,7 +113,12 @@ export default function Hackathon() {
 
                 {/* <div className="text-8xl font-bold text-orange-200">Hackathon</div> */}
                 <div
-                    className={'text-center font-bold font-Ubuntu mt-4 bg-[#00000075] rounded-2xl p-2 px-12 ' + (altFormat ? 'sm:text-xl text-xl' : 'sm:text-4xl text-2xl')}
+                    className={
+                        'text-center font-bold font-Ubuntu mt-4 bg-[#00000075] rounded-2xl p-2 px-12 ' +
+                        (altFormat
+                            ? 'sm:text-xl text-xl'
+                            : 'sm:text-4xl text-2xl')
+                    }
                     onMouseEnter={() => {
                         setAltFormat(true)
                     }}
@@ -125,20 +130,22 @@ export default function Hackathon() {
                 </div>
 
                 <div className='text-sm sm:text-xl text-center font-bold mt-4 bg-[#44444470] rounded-2xl p-2 px-12 whitespace-pre-line'>
-                    {"Our Exploration Mission has come to an end!\nThanks for participating in this historic event! See you next year!"}
+                    {
+                        'Our Exploration Mission has come to an end!\nThanks for participating in this historic event! See you next year!'
+                    }
                 </div>
 
                 <div className='flex flex-col sm:flex-row mt-4 gap-3'>
                     {/* <a href='https://forms.gle/k9y4ZKbnatqiS  BFRA'> */}
-                        <div className='flex bg-[#c51a1a75] rounded-2xl sm:w-40 h-10 font-semibold transition-all hover:scale-105 text-center'>
-                            <span className='absolute flex h-3 w-3'>
-                                <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff4d40] opacity-75'></span>
-                                <span className='relative inline-flex rounded-full h-3 w-3 bg-[#ff4d40]'></span>
-                            </span>
-                            <span className='mx-auto my-auto text-center'>
-                                ⛔ Apps Closed
-                            </span>
-                        </div>
+                    <div className='flex bg-[#c51a1a75] rounded-2xl sm:w-40 h-10 font-semibold transition-all hover:scale-105 text-center'>
+                        <span className='absolute flex h-3 w-3'>
+                            <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff4d40] opacity-75'></span>
+                            <span className='relative inline-flex rounded-full h-3 w-3 bg-[#ff4d40]'></span>
+                        </span>
+                        <span className='mx-auto my-auto text-center'>
+                            ⛔ Apps Closed
+                        </span>
+                    </div>
                     {/* </a> */}
                     <a href='https://drive.google.com/file/d/1H9kzRPuWqiKmZSB3WRJo_PqzxrOWLSpB/view?usp=sharing'>
                         <div className='bg-[#ffd035a4] rounded-2xl p-2 px-6 font-semibold transition-all hover:scale-105 text-center'>
@@ -164,7 +171,6 @@ export default function Hackathon() {
                         </div>
                     </a>
                 </div>
-
             </div>
 
             {/* <Gallery /> */}

@@ -76,12 +76,10 @@ body {
         background-color: black;
     }
 
-    p {
-        color: white;
-    }
-
+    a,
+    p,
     h1 {
-        color: white;
+        color: rgb(var(--foreground-rgb));
     }
 
     .title-main {

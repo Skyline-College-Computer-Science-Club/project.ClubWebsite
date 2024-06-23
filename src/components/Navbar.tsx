@@ -51,10 +51,10 @@ export default function Navbar(): React.ReactNode {
                         !announceDismissed
                             ? { opacity: 1, translateY: '0%' }
                             : {
-                                  opacity: 0,
-                                  translateY: '-100%',
-                                  position: 'absolute',
-                              }
+                                opacity: 0,
+                                translateY: '-100%',
+                                position: 'absolute',
+                            }
                     }
                     transition={{ duration: 1, ease: 'easeOut' }}
                 >
@@ -78,7 +78,7 @@ export default function Navbar(): React.ReactNode {
 
             {/* Top Bar */}
             <motion.div
-                className='z-20 flex relative h-[80px] px-4 justify-between items-center text-gray-300 bg-gradient-to-b from-[#000000bb] to-transparent'
+                className='z-20 flex relative h-[80px] px-4 justify-between items-center text-gray-300 bg-gradient-to-b from-[#000000cc] to-transparent'
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1, ease: 'easeOut' }}

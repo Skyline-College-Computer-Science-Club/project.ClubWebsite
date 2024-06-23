@@ -96,7 +96,7 @@ const MajorLeaderCard: React.FC<props_MajorLeaderCard> = ({
 
                     <div className='aspect-square w-full flex items-center px-6 font-semibold text-shadow-lg shadow-black'>
                         {/* whitespace-pre-line enables usage of specifically \n */}
-                        <div className='text-center whitespace-pre-line'>
+                        <div className='text-center text-white whitespace-pre-line'>
                             {majorLeaderDetails.quote
                                 ? majorLeaderDetails.quote
                                 : FALLBACK_QUOTE}
@@ -259,10 +259,10 @@ const MinorLeaderCard: React.FC<props_MinorLeaderCard> = ({
 export default function Leadership(): React.ReactNode {
     return (
         // bg-[radial-gradient(#000_1px,transparent_1px)]
-        <div className='w-full h-full py-80  text-gray-300 bg-gradient-to-b from-black via-[#031302] to-black'>
+        <div className='w-full h-full py-80 text-gray-300 bg-gradient-to-b from-black via-[#031302] to-black'>
             <Element name='leadership' />
 
-            <div className='flex flex-col justify-center items-center w-full h-full px-[8vw] xl:px-[15vw] gap-6'>
+            <div className='flex flex-col justify-center items-center w-full h-full px-[8vw] xl:px-[15vw] gap-6 overflow-X-hidden'>
                 <div>
                     <h1 className='title-main w-full text-center text-4xl font-semibold drop-shadow-[0_0_30px_rgba(255,255,255,1)]'>
                         Our Club Leadership
@@ -273,7 +273,7 @@ export default function Leadership(): React.ReactNode {
                 </div>
 
                 {/* <div className="grid grid-cols-4 gap-6 my-4 mx-[20%]"> */}
-                <div className='w-full text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)] overflow-hidden'></div>
+                <div className='w-full text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]'></div>
 
                 {/* Major Leadership */}
                 <div className='flex flex-row flex-wrap justify-center align-middle gap-x-8 gap-y-6'>
@@ -301,8 +301,9 @@ export default function Leadership(): React.ReactNode {
                     )}
                 </div>
 
-                <p className='text-neutral-700 font-Poppins font-semibold'>
-                    pssst! past Officers to be shown soon!
+                <p className='text-neutral-700 font-Poppins font-semibold text-center'>
+                    pssst! past Leadership will be shown soon!~our history
+                    books.
                 </p>
                 <div className='w-full text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]'></div>
             </div>

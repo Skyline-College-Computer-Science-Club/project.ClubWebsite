@@ -9,6 +9,8 @@ import Image from 'next/image'
 import { IoMdArrowRoundDown } from 'react-icons/io'
 import { Link } from 'react-scroll'
 
+import { motion } from 'framer-motion'
+
 const TYPED_KEYWORDS = [
     'Design',
     'Pioneer',
@@ -34,25 +36,34 @@ export default function Hero(): React.ReactNode {
         <div className='w-full h-screen bg-black'>
             <Element name='hero' />
 
-            {/* Actual backdrop image */}
-            <Image
-                width={1920}
-                height={1080}
-                className='absolute w-full h-full blur-[0px] object-cover'
-                src={backdrop}
-                alt='background banner'
-                priority
-            />
+            <motion.div
+                    className='absolute w-full h-screen pointer-events-none'
+                    initial={{ transform: 'translateY(10%)' }}
+                    animate={{ transform: 'translateY(0%)' }}
+                    transition={{ duration: 3, ease: 'backOut' }}
+            >
 
-            {/* Hero .gif overlay */}
-            <Image
-                width={1920}
-                height={1080}
-                src={heroOverlay}
-                className='opacity-10 absolute top-0 w-full h-full drop-shadow-lg'
-                alt='overlay'
-                priority
-            />
+                {/* Actual backdrop image */}
+                <Image
+                    width={1920}
+                    height={1080}
+                    className='absolute w-full h-full blur-[0px] object-cover'
+                    src={backdrop}
+                    alt='background banner'
+                    priority
+                />
+
+                {/* Hero .gif overlay */}
+                <Image
+                    width={1920}
+                    height={1080}
+                    src={heroOverlay}
+                    className='opacity-10 absolute top-0 w-full h-full drop-shadow-lg'
+                    alt='overlay'
+                    priority
+                />
+
+            </motion.div>
 
             <div className='absolute w-full h-full mx-auto flex flex-col items-center justify-center pb-20'>
                 {/* mascot */}
@@ -66,7 +77,7 @@ export default function Hero(): React.ReactNode {
 
                 {/* The main texts */}
                 <h1 className='z-20 title-main text-xl md:2xl text-center sm:text-5xl text-shadow shadow-black font-bold text-white my-2'>
-                    Computer Science Club at Skyline
+                    The Computer Science Club at Skyline
                 </h1>
 
                 <div className='z-20 text-white text-center text-shadow shadow-black sm:text-2xl text-xl font-semibold` w-full'>
@@ -74,7 +85,7 @@ export default function Hero(): React.ReactNode {
                     <h1 className='title-main font-bold sm:text-[30px] text-[20px] sm:pt-[20px] pt-[10px]'>
                         {'>'} We{' '}
                         <Typed
-                            className='text-green-400 drop-shadow-[0_0_8px_rgba(150,255,150,0.5)]'
+                            className='text-[#FCD690] drop-shadow-[0_0_8px_rgba(245,210,140,255)]'
                             strings={TYPED_KEYWORDS}
                             typeSpeed={120}
                             backSpeed={80}
@@ -95,7 +106,7 @@ export default function Hero(): React.ReactNode {
                     className='z-20 mt-6 relative group w-[240px] active:scale-95 duration-150 border-[1px] hover:border-green-900 border-white rounded-2xl hover:outline hover:outline-[6px] active:outline-4 text-white text-lg title-main overflow-hidden'
                 >
                     <IoMdArrowRoundDown className='absolute w-full h-full group-hover:translate-y-0 -translate-y-[100%] duration-300 pointer-events-none bg-gradient-to-t from-[#16a34aec] to-[#ffffff91]' />
-                    <button className='flex w-full justify-center p-2 font-semibold text-shadow-lg shadow-black hover:bg-green-600 duration-300 hover:border-green-300 overflow-hidden'>
+                    <button className='flex w-full justify-center p-2 font-semibold text-shadow-lg shadow-black hover:bg-green-600 bg-neutral-900 bg-opacity-50 duration-300 hover:border-green-300 overflow-hidden'>
                         <p className='text-center'>I&apos;m Interested</p>
                     </button>
                 </Link>
