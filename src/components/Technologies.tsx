@@ -202,7 +202,7 @@ export default function Technologies(): React.ReactNode {
                     backSpeed={75}
                     backDelay={5000}
                     loop
-                    className='bg-gradient-to-t from-yellow-300 to-green-400 bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(50,255,100,0.5)]'
+                    className='bg-gradient-to-t from-yellow-300 to-green-400 bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(50,255,100,0.7)]'
                 ></Typed>
             </h1>
 
@@ -236,7 +236,7 @@ export default function Technologies(): React.ReactNode {
                                     <div
                                         onMouseEnter={() => playSfx_Click()}
                                         key={technology_name}
-                                        className='flex h-[70%] mx-5 hover:scale-110 duration-300 bg-[#000000bb] outline outline-1 outline-white rounded-3xl pl-5'
+                                        className='flex h-[70%] mx-5 hover:scale-110 duration-300 bg-[#000000bb] outline outline-1 text-white outline-white rounded-3xl pl-5'
                                     >
                                         {TECHNOLOGIES[technology_name]}
                                         {/* <p className={TECH_TEXT_CLASSES}>{technology_name}</p> */}

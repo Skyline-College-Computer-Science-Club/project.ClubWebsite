@@ -249,7 +249,7 @@ const MinorLeaderCard: React.FC<props_MinorLeaderCard> = ({
                     {roleName}
                 </h1>
                 <h2 className='text-lg font-semibold text-center'>
-                    {minorLeaderDetails.name}
+                    {minorLeaderDetails.label}
                 </h2>
             </div>
         </motion.div>
@@ -275,7 +275,7 @@ export default function Leadership(): React.ReactNode {
                 {/* <div className="grid grid-cols-4 gap-6 my-4 mx-[20%]"> */}
                 <div className='w-full text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]'></div>
 
-                {/* Major Leadership */}
+                {/* Major Leadership Role Cards */}
                 <div className='flex flex-row flex-wrap justify-center align-middle gap-x-8 gap-y-6'>
                     {Object.keys(leadership.major).map(
                         (majorLeaderName, index) => (
@@ -288,7 +288,7 @@ export default function Leadership(): React.ReactNode {
                     )}
                 </div>
 
-                {/* Minor Leadership Roles */}
+                {/* Minor Leadership Role Cards */}
                 <div className='flex flex-row flex-wrap justify-center align-middle gap-x-8 gap-y-6'>
                     {Object.keys(leadership.minor).map(
                         (minorLeaderRoleName, index) => (
@@ -302,9 +302,9 @@ export default function Leadership(): React.ReactNode {
                 </div>
 
                 <p className='text-neutral-700 font-Poppins font-semibold text-center'>
-                    pssst! past Leadership will be shown soon!~our history
-                    books.
+                    pssst! past Leadership will be shown soon!~our history books.
                 </p>
+
                 <div className='w-full text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]'></div>
             </div>
         </div>

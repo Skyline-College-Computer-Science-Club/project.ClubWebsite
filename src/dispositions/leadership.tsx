@@ -53,8 +53,8 @@ export const leadership = {
             imgSrc: pfp_president,
             quote: (
                 <p>
-                    Oh, these weren't homemade, they were made in a factory. A
-                    bomb factory. They're bombs.
+                    Oh, these weren't homemade, they were made in a factory.
+                    A bomb factory. They're bombs.
                 </p>
             ),
             linktree: '',
@@ -65,32 +65,33 @@ export const leadership = {
         'Jonas Quiballo': {
             role: 'The Vice President',
             imgSrc: pfp_vicepresident,
-            quote: <p>Told myself I was gonna lock in—still locking in.</p>,
+            quote: <p>Told myself I was gonna lock-in. Still locking-in.</p>,
             linktree: '',
             github: 'https://github.com/Waffly10',
             instagram: 'https://www.instagram.com/_.waffly._/',
             icon: <CgCrown />,
         },
         'Kaila Bautista': {
-            role: 'Club Secretary',
+            role: 'The Club Secretary',
             imgSrc: pfp_secretary,
             linktree: '',
             instagram: 'https://instagram.com/kqilamae',
             icon: <PiFeatherDuotone />,
         },
         'Jayan Pintor': {
-            role: 'Club Treasurer',
+            role: 'The Club Treasurer',
             imgSrc: pfp_treasurer,
             quote: (
                 <p>
-                    We all live in a coded world of if statements, never knowing
-                    the conditions of each until after interpretation.
+                    We all live in a coded world of if-statements... never knowing
+                    the conditions of each until interpretation.
                 </p>
             ),
             linktree: '',
             github: 'https://github.com/CoderLearnerTime',
             linkedin: 'https://www.linkedin.com/in/jayanthony-pintor/',
             instagram: 'https://www.instagram.com/0p_photos/',
+            website: 'https://www.jayanthonypintor.study',
             icon: <GrMoney />,
         },
         'Lance Ruiz': {
@@ -100,7 +101,8 @@ export const leadership = {
                 <p>
                     This is for the record. History is written by the victor.
                     History is filled with liars.
-                    <br />- Captain $
+                    <br />
+                    - Captain $
                 </p>
             ),
             linktree: 'https://www.linktr.ee/devalto',
@@ -114,17 +116,21 @@ export const leadership = {
         'Chris Tse': {
             role: 'SOCC Advisor',
             imgSrc: pfp_auxillary1,
-            quote: <p>A true Isaiah Rashad fan.</p>,
+            quote: ( 
+                <p>
+                    A true Isaiah Rashad fan.
+                </p> 
+            ),
             linktree: 'https://linktr.ee/isaiahrashadfan',
-            discord: 'https://discordapp.com/users/85194740890337280',
             instagram: 'https://www.instagram.com/cchristse',
+            discord: 'https://discordapp.com/users/85194740890337280',
             linkedin: 'https://www.linkedin.com/in/chris-tse-irf/',
             icon: <FaRegHandPeace />,
         },
         'Denise Hum': {
             role: 'Club Co-Advisor',
             imgSrc: pfp_coadvisor1,
-            quote: 'Data are just summaries of thousands of stories—tell a few of those stories to help make the data meaningful.',
+            quote: 'Data are summaries of thousands of stories. Tell a few of those stories to help make the data meaningful.',
             linktree: '',
             discord: 'https://discordapp.com/users/735277805662765066',
             github: '',
@@ -140,29 +146,29 @@ export const leadership = {
             linkedin: 'https://www.linkedin.com/in/swartoutbryan/',
             icon: <PiHandshakeBold />,
         },
-        // 'Luis Prado': {
-        //     role: 'Club Co-Advisor',
-        //     imgSrc: pfp_coadvisor2,
-        //     linktree: '',
-        //     discord: 'https://discordapp.com/users/373597111192911892',
-        //     github: '',
-        //     linkedin: 'https://www.linkedin.com/in/luis-jibaja-prado-82b4b9135/',
-        //     icon: <PiHandshakeBold />,
-        // },
+        'Luis Prado': {
+            role: 'Club Co-Advisor',
+            imgSrc: pfp_coadvisor2,
+            linktree: '',
+            discord: 'https://discordapp.com/users/373597111192911892',
+            github: '',
+            linkedin: 'https://www.linkedin.com/in/luis-jibaja-prado-82b4b9135/',
+            icon: <PiHandshakeBold />,
+        },
     },
     minor: {
         'Web Master': {
-            name: 'Lance Ruiz',
+            label: 'Lance Ruiz',
             color: 'from-[#1eb0b0]',
             icon: <AiOutlineGlobal />,
         },
         'Social Outreach': {
-            name: 'Chris Tse & Kaila Bautista',
+            label: 'Chris Tse & Kaila Bautista',
             color: 'from-[#651e94]',
             icon: <PiHandshakeBold />,
         },
         'Event Planners': {
-            name: 'Tyler Kuwada & Lance Ruiz',
+            label: 'Tyler Kuwada & Lance Ruiz',
             color: 'from-[#9c710c]',
             icon: <MdOutlineEmojiEvents />,
         },
