@@ -175,11 +175,11 @@ export default function About(): React.ReactNode {
                             </span>
                         </h1>
                         <p className='text-sm mx-auto text-center py-2 px-4'>
-                            In an always evolving, inter-connected world,{' '}
+                            In an always-evolving, inter-connected world,{' '}
                             <b>networking is as important as ever!</b> Meet with
-                            other fellow students and bring-out your inner{' '}
+                            other fellow students and share your{' '}
                             <b>interests and passions!</b> Meet your future{' '}
-                            <b>industry colleagues</b> and explore computer
+                            <b>industry colleagues</b> and explore all of computer
                             science together!
                         </p>
                     </motion.div>
@@ -248,7 +248,7 @@ export default function About(): React.ReactNode {
                                 fullstack
                             </b>{' '}
                             development! Experience <b>real-world project</b>{' '}
-                            workflows with fellow members! Or even propose and{' '}
+                            workflows with fellow members! Or—even propose and{' '}
                             <b>lead your own project!</b>
                         </p>
                     </motion.div>

@@ -101,7 +101,7 @@ export default function Hero(): React.ReactNode {
                 <Link
                     to='about'
                     smooth={true}
-                    offset={40}
+                    offset={-140}
                     duration={1500}
                     className='z-20 mt-6 relative group w-[240px] active:scale-95 duration-150 border-[1px] hover:border-green-900 border-white rounded-2xl hover:outline hover:outline-[6px] active:outline-4 text-white text-lg title-main overflow-hidden'
                 >

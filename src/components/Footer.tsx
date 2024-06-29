@@ -7,6 +7,7 @@ import { SiDiscord, SiLinkedin, SiGithub, SiLinktree } from 'react-icons/si'
 export default function Footer() {
     return (
         <div className='w-full h-full bg-gradient-to-b from-neutral-800 dark:from-neutral-950 to-neutral-950 dark:to-black text-lg font-semibold pt-4 text-center'>
+            
             <p className='font-semibold'>Let&apos;s connect.</p>
 
             <div className='flex flex-row flex-wrap gap-3 justify-center py-4 overflow-x-hidden'>
@@ -34,7 +35,7 @@ export default function Footer() {
                     href='https://github.com/Skyline-College-Computer-Science-Club/'
                     target='_blank'
                 >
-                    <button className='flex group w-full justify-center bg-neutral-700 dark:bg-neutral-900 bg-opacity-80 rounded-md gap-1 py-2 px-4 active:scale-95 hover:bg-yellow-900 hover:outline-4 hover:text-white active:outline-2 hover:outline-double outline-white border-[1px] border-neutral-800 hover:outline-yellow-700 active:outline-neutral-200 duration-200 active:duration-200'>
+                    <button className='flex group w-full justify-center bg-neutral-700 dark:bg-neutral-900 bg-opacity-80 rounded-md gap-1 py-2 px-4 active:scale-95 hover:bg-yellow-700 hover:outline-4 hover:text-white active:outline-2 hover:outline-double outline-white border-[1px] border-neutral-800 hover:outline-yellow-700 active:outline-neutral-200 duration-200 active:duration-200'>
                         <SiGithub className='my-auto group-hover:text-white' />
                         GitHub
                     </button>
@@ -47,10 +48,8 @@ export default function Footer() {
                     </button>
                 </Link>
             </div>
-            <p className='text-neutral-500 text-sm sm:text-lg'>
-                Copyright ©️ Skyline Computer Science Club 2022-2025
-            </p>
-            <div className='flex flex-row items-center justify-center gap-4 py-6 w-full'>
+
+            <div className='flex flex-row items-center justify-center gap-4 py-2 w-full'>
                 <Link href='https://skylinecollege.edu/' target='_blank'>
                     <Image
                         src={'/assets/bits/skyline_brand.png'}
@@ -68,6 +67,19 @@ export default function Footer() {
                     />
                 </Link>
             </div>
+            
+            <div className='pt-4 pb-10'>
+                <Link href='https://github.com/Skyline-College-Computer-Science-Club/project.ClubWebsite' target='_blank'>
+                    <p className='text-red-500 text-sm sm:text-lg'>
+                        Made with ☕ & 💞 by Students, for Students.
+                    </p>
+                </Link>
+                <p className='text-neutral-500 text-sm sm:text-lg'>
+                    Copyright ©️ Skyline Computer Science Club 2022-2025
+                </p>
+            </div>
+            
+            
         </div>
     )
 }
